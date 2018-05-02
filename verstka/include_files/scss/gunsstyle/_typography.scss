@@ -1,0 +1,16 @@
+@import "compass/typography";
+@import "compass/css3";
+
+$base-font-size: 14px !global;
+$base-line-height: 1.45rem !global;
+$base-font-weight: 600;
+$rhythm-unit: 'rem' !global;
+$rem-with-px-fallback: true !global;
+
+$h1: 3.157rem;
+$h2: 2.369rem;
+$h3: 1.777rem;
+$h4: 1.333rem;
+$h5: 1rem;
+$h6: 0.75rem;
+$small: 0.563rem;

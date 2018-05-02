@@ -1,0 +1,62 @@
+@keyframes pp-from-top {
+  0% { top: -150px; opacity: .1; }
+  100% {
+    @media (min-width: 800px) { top: 50px; }
+    @media (max-width: 800px) { top: 46px; }
+    opacity: 1;
+   }
+}
+@media (max-width: 370px) {
+  @keyframes pp-from-top {
+    0% { left: 60%; opacity: .1; }
+    100% { left: 0; opacity: 1; }
+  }
+}
+.popup {
+  position: absolute;
+  z-index: 6;
+  @include padding-leader(.5);
+  @include padding-trailer(.5);
+  padding-left: 10px;
+  padding-right: 10px;
+  background: $cwhite;
+  width: 370px;
+  left: calc(50% - 185px);
+  top: 50px;
+  animation: $transition pp-from-top linear;
+  &__header {
+    @include adjust-font-size-to($base-font-size * 1.25, 1);
+    @include padding-trailer(.5);
+    @include margin-trailer(.5);
+    border-bottom: 1px solid $cgrey;
+    span {
+      display: inline-block;
+      vertical-align: top;
+      max-width: calc(100% - 20px);
+    }
+    i {
+      width: 20px;
+      display: inline-block;
+      vertical-align: top;
+      float: right;
+      cursor: pointer;
+      padding-right: 5px;
+      padding-bottom: 5px;
+    }
+  }
+  &__body {
+    @include padding-trailer(.5);
+    @include margin-trailer(.5);
+    border-bottom: 1px solid $cgrey;
+  }
+  &__footer {
+    text-align: left;
+  }
+  @media (max-width: 800px) {
+    top: 46px;
+  }
+  @media (max-width: 370px) {
+    width: 100%;
+    left: 0;
+  }
+}

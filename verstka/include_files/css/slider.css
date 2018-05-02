@@ -1,0 +1,259 @@
+@keyframes slide-by-prev {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+@keyframes slide-by-next {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+/* line 10, ../scss/gunsstyle/_slider.scss */
+.slider {
+  display: inline-block;
+}
+/* line 13, ../scss/gunsstyle/_slider.scss */
+.slider > div:first-child {
+  height: 392px;
+  width: 100%;
+  padding: 0;
+  float: left;
+  position: relative;
+}
+/* line 19, ../scss/gunsstyle/_slider.scss */
+.slider > div:first-child > div {
+  width: 100%;
+  display: none;
+  height: 100%;
+  overflow: hidden;
+}
+/* line 24, ../scss/gunsstyle/_slider.scss */
+.slider > div:first-child > div > a {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+/* line 30, ../scss/gunsstyle/_slider.scss */
+.slider > div:first-child > div > a > img {
+  min-width: 100%;
+  height: 100%;
+  -o-object-position: center;
+  object-position: center;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+/* line 36, ../scss/gunsstyle/_slider.scss */
+.slider > div:first-child > div > a > p {
+  position: absolute;
+  height: 40px;
+  vertical-align: middle;
+  bottom: -40px;
+  left: 0;
+  width: 100%;
+  padding: 5px 20px;
+  background: rgba(30, 30, 30, 0.5);
+  color: whitesmoke;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-size: 25px;
+  font-size: 1.777rem;
+  line-height: 28px;
+  line-height: 1.96786rem;
+}
+/* line 50, ../scss/gunsstyle/_slider.scss */
+.slider > div:first-child > div > a:hover p {
+  bottom: 0;
+}
+/* line 55, ../scss/gunsstyle/_slider.scss */
+.slider > div:first-child > div.current {
+  display: block;
+}
+/* line 56, ../scss/gunsstyle/_slider.scss */
+.slider > div:first-child > div.bprev, .slider > div:first-child > div.bnext {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+}
+/* line 62, ../scss/gunsstyle/_slider.scss */
+.slider > div:first-child > div.bprev {
+  display: block;
+}
+/* line 64, ../scss/gunsstyle/_slider.scss */
+.slider > div:first-child > div.bprev img {
+  animation: .3s slide-by-prev ease-in-out;
+}
+/* line 66, ../scss/gunsstyle/_slider.scss */
+.slider > div:first-child > div.bnext {
+  display: block;
+}
+/* line 68, ../scss/gunsstyle/_slider.scss */
+.slider > div:first-child > div.bnext img {
+  animation: .3s slide-by-next ease-in-out;
+}
+/* line 71, ../scss/gunsstyle/_slider.scss */
+.slider > div:first-child > a {
+  position: absolute;
+  padding: 10px 20px;
+  z-index: 2;
+  top: calc((100% - 35px) / 2);
+  color: #1e1e1e;
+  font-size: 14px;
+  font-size: 1rem;
+  line-height: 16px;
+  line-height: 1.13929rem;
+  background: whitesmoke;
+  text-transform: capitalize;
+  text-decoration: none;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+/* line 82, ../scss/gunsstyle/_slider.scss */
+.slider > div:first-child > a.nav-next {
+  right: 0;
+  -webkit-box-shadow: 3px 0 3px rgba(30, 30, 30, 0.5);
+  -moz-box-shadow: 3px 0 3px rgba(30, 30, 30, 0.5);
+  box-shadow: 3px 0 3px rgba(30, 30, 30, 0.5);
+}
+/* line 83, ../scss/gunsstyle/_slider.scss */
+.slider > div:first-child > a.nav-prev {
+  left: 0;
+  -webkit-box-shadow: -3px 0 3px rgba(30, 30, 30, 0.5);
+  -moz-box-shadow: -3px 0 3px rgba(30, 30, 30, 0.5);
+  box-shadow: -3px 0 3px rgba(30, 30, 30, 0.5);
+}
+/* line 84, ../scss/gunsstyle/_slider.scss */
+.slider > div:first-child > a:hover {
+  background: #e8e8e8;
+}
+/* line 88, ../scss/gunsstyle/_slider.scss */
+.slider > div:first-child > a:active.nav-prev {
+  -webkit-box-shadow: inset 3px 0 3px rgba(30, 30, 30, 0.5);
+  -moz-box-shadow: inset 3px 0 3px rgba(30, 30, 30, 0.5);
+  box-shadow: inset 3px 0 3px rgba(30, 30, 30, 0.5);
+}
+/* line 91, ../scss/gunsstyle/_slider.scss */
+.slider > div:first-child > a:active.nav-next {
+  -webkit-box-shadow: inset -3px 0 3px rgba(30, 30, 30, 0.5);
+  -moz-box-shadow: inset -3px 0 3px rgba(30, 30, 30, 0.5);
+  box-shadow: inset -3px 0 3px rgba(30, 30, 30, 0.5);
+}
+/* line 97, ../scss/gunsstyle/_slider.scss */
+.slider > div:last-child {
+  width: 100%;
+  padding: 0;
+}
+/* line 100, ../scss/gunsstyle/_slider.scss */
+.slider > div:last-child a {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: #ababab;
+  margin: 0 10px 0 0;
+  vertical-align: middle;
+  position: relative;
+}
+/* line 109, ../scss/gunsstyle/_slider.scss */
+.slider > div:last-child a:active:not(.current) {
+  -moz-box-shadow: inset 0 2px 2px rgba(145, 145, 145, 0.7);
+  -webkit-box-shadow: inset 0 2px 2px rgba(145, 145, 145, 0.7);
+  box-shadow: inset 0 2px 2px rgba(145, 145, 145, 0.7);
+}
+/* line 112, ../scss/gunsstyle/_slider.scss */
+.slider > div:last-child a.current {
+  background: #2a3e6d;
+}
+/* line 115, ../scss/gunsstyle/_slider.scss */
+.slider > div:last-child a .fimage {
+  position: absolute;
+  height: 50px;
+  width: 100px;
+  top: -55px;
+  left: 0;
+  z-index: 3;
+  background: whitesmoke;
+  border: 1px solid #919191;
+  padding: 3px;
+}
+/* line 125, ../scss/gunsstyle/_slider.scss */
+.slider > div:last-child a .fimage img {
+  width: 100%;
+  height: 100%;
+}
+/* line 129, ../scss/gunsstyle/_slider.scss */
+.slider > div:last-child a .fimage:after, .slider > div:last-child a .fimage:before {
+  position: absolute;
+  content: '';
+  left: 2px;
+  bottom: -10px;
+  border: 5px solid transparent;
+  border-top: 5px solid #919191;
+}
+/* line 137, ../scss/gunsstyle/_slider.scss */
+.slider > div:last-child a .fimage:after {
+  border-top: 5px solid whitesmoke;
+  bottom: -9px;
+}
+
+@media screen and (max-width: 1023px) {
+  /* line 147, ../scss/gunsstyle/_slider.scss */
+  .slider {
+    margin-top: 10px;
+    margin-top: 0.725rem;
+    margin-bottom: 10px;
+    margin-bottom: 0.725rem;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 767px) {
+  /* line 156, ../scss/gunsstyle/_slider.scss */
+  .slider > div:first-child {
+    max-height: 264px;
+    height: max-content;
+  }
+  /* line 159, ../scss/gunsstyle/_slider.scss */
+  .slider > div:first-child > div {
+    max-height: 264px;
+    height: max-content;
+  }
+  /* line 163, ../scss/gunsstyle/_slider.scss */
+  .slider > div:first-child > div > a > img {
+    height: auto;
+    width: 100%;
+  }
+  /* line 170, ../scss/gunsstyle/_slider.scss */
+  .slider > div:last-child {
+    display: none;
+  }
+}
+@media screen and (min-width: 1024px) {
+  /* line 175, ../scss/gunsstyle/_slider.scss */
+  .slider {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-top: 10px;
+    margin-top: 0.725rem;
+    width: 75%;
+    padding: 0;
+  }
+}

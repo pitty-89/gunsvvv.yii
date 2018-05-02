@@ -1,0 +1,70 @@
+@mixin box-sizing($box) {
+  -webkit-box-sizing: $box;
+  -moz-box-sizing: $box;
+  box-sizing: $box;
+}
+@mixin setColors ($arItems, $parent, $param, $useHref) {
+  #{$parent} {
+    @each $iItem, $vItem in $arItems {
+      &-#{$iItem} { #{$param}: $vItem; }
+    }
+  }
+  @if($useHref == true) {
+    @each $iItem, $vItem in $arItems {
+      @include setColorOnHref(#{$parent}-#{$iItem}, $vItem);
+    }
+  }
+}
+@mixin setColorOnHref($class, $color) {
+  a#{$class}:visited,
+  a:visited #{$class},
+  #{$class} > a:visited,
+  a#{$class},
+  a #{$class},
+  #{$class} > a { color: $color; }
+  a#{$class}:focus,
+  a:focus #{$class},
+  #{$class} > a:focus,
+  a:hover #{$class},
+  #{$class} > a:hover,
+  a#{$class}:hover {
+    color: darken($color, 10);
+  }
+}
+@mixin transition ($value) {
+  -webkit-transform: $value;
+  -moz-transform: $value;
+  -ms-transform: $value;
+  -o-transform: $value;
+  transform: $value;
+}
+@mixin mspan($value) {
+  padding: 0 0;
+}
+@mixin bshadow($text) {
+  -webkit-box-shadow: $text;
+  -moz-box-shadow: $text;
+  box-shadow: $text;
+}
+@mixin border-radius($text) {
+  -webkit-border-radius: $text;
+  -moz-border-radius: $text;
+  border-radius: $text;
+}
+@mixin box-shadow($text) {
+  -webkit-box-shadow: $text;
+  -moz-box-shadow: $text;
+  box-shadow: $text;
+}
+@mixin object-position($text) {
+  -o-object-position: $text;
+  object-position: $text;
+}
+@mixin object-fit($text) {
+  -o-object-fit: $text;
+  object-fit: $text;
+}
+@mixin padding-lt ($leader, $trailer) {
+  @include padding-leader($leader);
+  @include padding-trailer($trailer);
+}

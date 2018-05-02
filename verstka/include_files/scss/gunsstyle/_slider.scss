@@ -1,0 +1,181 @@
+@keyframes slide-by-prev {
+  0% { opacity: 0; transform: translateX(-100%); }
+  100% { opacity: 1; transform: translateX(0%); }
+}
+@keyframes slide-by-next {
+  0% { opacity: 0; transform: translateX(100%); }
+  100% { opacity: 1; transform: translateX(0%); }
+}
+
+.slider {
+  display: inline-block;
+  & > div {
+    &:first-child {
+      height: 392px;
+      width: 100%;
+      padding: 0;
+      float: left;
+      position: relative;
+      & > div {
+        width: 100%;
+        display: none;
+        height: 100%;
+        overflow: hidden;
+        & > a {
+          position: relative;
+          overflow: hidden;
+          width: 100%;
+          height: 100%;
+          display: block;
+          & > img {
+            min-width: 100%;
+            height: 100%;
+            @include object-position(center);
+            @include object-fit(cover);
+          }
+          & > p {
+            position: absolute;
+            height: 40px;
+            vertical-align: middle;
+            bottom: -40px;
+            left: 0;
+            width: 100%;
+            padding: 5px 20px;
+            background: rgba($cblack, .5);
+            color: $cwhite;
+            @include transition($transition);
+            @include adjust-font-size-to($h3);
+          }
+          &:hover {
+            p {
+              bottom: 0;
+            }
+          }
+        }
+        &.current { display: block; }
+        &.bprev, &.bnext {
+          position: absolute;
+          z-index: 2;
+          top: 0;
+          left: 0;
+        }
+        &.bprev {
+          display: block;
+          img { animation: .3s slide-by-prev ease-in-out; }
+        }
+        &.bnext {
+          display: block;
+          img { animation: .3s slide-by-next ease-in-out; }
+        }
+      }
+      & > a {
+        position: absolute;
+        padding: 10px 20px;
+        z-index: 2;
+        top: calc((100% - 35px) / 2);
+        color: $cblack;
+        @include adjust-font-size-to($h5);
+        background: $cwhite;
+        text-transform: capitalize;
+        text-decoration: none;
+        @include transition($transition);
+        &.nav-next { right: 0; @include bshadow(3px 0 3px rgba($cblack, .5)); }
+        &.nav-prev { left: 0; @include bshadow(-3px 0 3px rgba($cblack, .5)); }
+        &:hover {
+          background: darken($cwhite, 5);
+        }
+        &:active {
+          &.nav-prev {
+            @include bshadow(inset 3px 0 3px rgba($cblack, .5));
+          }
+          &.nav-next {
+            @include bshadow(inset -3px 0 3px rgba($cblack, .5));
+          }
+        }
+      }
+    }
+    &:last-child {
+      width: 100%;
+      padding: 0;
+      a {
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        @include border-radius(10px);
+        background: lighten($cgrey, 10);
+        margin: 0 10px 0 0;
+        vertical-align: middle;
+        position: relative;
+        &:active:not(.current) {
+          @include box-shadow(inset 0 2px 2px rgba($cgrey, .7));
+        }
+        &.current {
+          background: $cblue;
+        }
+        .fimage {
+          position: absolute;
+          height: 50px;
+          width: 100px;
+          top: -55px;
+          left: 0;
+          z-index: 3;
+          background: $cwhite;
+          border: 1px solid $cgrey;
+          padding: 3px;
+          img {
+            width: 100%;
+            height: 100%;
+          }
+          &:after, &:before {
+            position: absolute;
+            content: '';
+            left: 2px;
+            bottom: -10px;
+            border: 5px solid transparent;
+            border-top: 5px solid $cgrey;
+          }
+          &:after {
+            border-top: 5px solid $cwhite;
+            bottom: -9px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1023px) {
+  .slider {
+    @include margin-leader(.5);
+    @include margin-trailer(.5);
+    width: 100%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .slider {
+    & > div {
+      &:first-child {
+        max-height: 264px;
+        height: max-content;
+        & > div {
+          max-height: 264px;
+          height: max-content;
+          & > a {
+            & > img {
+              height: auto;
+              width: 100%;
+            }
+          }
+        }
+      }
+      &:last-child { display: none; }
+    }
+  }
+}
+@media screen and (min-width: 1024px) {
+  .slider {
+    @include box-sizing(border-box);
+    @include margin-leader(.5);
+    width: 75%;
+    padding: 0;
+  }
+}

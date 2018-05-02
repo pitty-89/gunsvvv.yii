@@ -1,0 +1,298 @@
+/* line 2, ../scss/catalog.scss */
+.temp-binline, .container__catalog-item > a, .container__catalog-item > a img, .container__catalog-item > a span, .container__catalog-item > div {
+  vertical-align: top;
+  display: inline-block;
+}
+
+/* line 8, ../scss/catalog.scss */
+.container__catalog-item {
+  width: 100%;
+  display: flex;
+  flex-flow: row;
+}
+/* line 12, ../scss/catalog.scss */
+.container__catalog-item > a {
+  width: 340px;
+  height: 340px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  margin-bottom: 1.45rem;
+  -moz-border-radius: 180px;
+  -webkit-border-radius: 180px;
+  border-radius: 180px;
+  -moz-box-shadow: 0 0 5px rgba(42, 62, 109, 0.1);
+  -webkit-box-shadow: 0 0 5px rgba(42, 62, 109, 0.1);
+  box-shadow: 0 0 5px rgba(42, 62, 109, 0.1);
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border: 1px solid rgba(99, 128, 195, 0.5);
+  overflow: hidden;
+  position: relative;
+}
+/* line 25, ../scss/catalog.scss */
+.container__catalog-item > a img {
+  width: 100%;
+  filter: hue-rotate(225deg) grayscale(50%) saturate(50%);
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+/* line 31, ../scss/catalog.scss */
+.container__catalog-item > a span {
+  position: absolute;
+  z-index: 2;
+  text-transform: uppercase;
+  font-size: 32px;
+  color: whitesmoke;
+  font-family: RobotoLight;
+}
+/* line 40, ../scss/catalog.scss */
+.container__catalog-item > a:focus {
+  outline: none;
+}
+/* line 41, ../scss/catalog.scss */
+.container__catalog-item > a:focus, .container__catalog-item > a:hover {
+  -moz-box-shadow: 0 0 5px rgba(42, 62, 109, 0.6);
+  -webkit-box-shadow: 0 0 5px rgba(42, 62, 109, 0.6);
+  box-shadow: 0 0 5px rgba(42, 62, 109, 0.6);
+}
+/* line 44, ../scss/catalog.scss */
+.container__catalog-item > a:focus img, .container__catalog-item > a:hover img {
+  filter: hue-rotate(0deg);
+}
+/* line 50, ../scss/catalog.scss */
+.container__catalog-item > a.weapon:before {
+  position: absolute;
+  content: '';
+  background: #6380c3;
+  top: 0;
+  left: 0;
+  height: 90px;
+  width: 100%;
+  z-index: 1;
+}
+/* line 60, ../scss/catalog.scss */
+.container__catalog-item > a.weapon span {
+  width: 100%;
+  text-align: center;
+  line-height: 90px;
+}
+/* line 67, ../scss/catalog.scss */
+.container__catalog-item > a.protection:before {
+  position: absolute;
+  z-index: 0;
+  left: -10px;
+  top: -50px;
+  width: 250px;
+  height: 250px;
+  -moz-border-radius: 150px;
+  -webkit-border-radius: 150px;
+  border-radius: 150px;
+  background: #6380c3;
+  content: '';
+}
+/* line 78, ../scss/catalog.scss */
+.container__catalog-item > a.protection span {
+  top: 42px;
+  left: 50px;
+  width: 250px;
+  line-height: 42px;
+}
+/* line 85, ../scss/catalog.scss */
+.container__catalog-item > a.amunition {
+  border: 1px solid #6380c3;
+}
+/* line 87, ../scss/catalog.scss */
+.container__catalog-item > a.amunition span {
+  height: 70px;
+  width: 100%;
+  text-align: center;
+  line-height: 90px;
+  background: #6380c3;
+}
+/* line 94, ../scss/catalog.scss */
+.container__catalog-item > a.amunition:before {
+  width: 70px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  content: '';
+  background: #6380c3;
+  z-index: 1;
+}
+/* line 104, ../scss/catalog.scss */
+.container__catalog-item > a.amunition:after {
+  width: 100%;
+  height: 45px;
+  bottom: 0;
+  left: 0;
+  content: '';
+  position: absolute;
+  background: #6380c3;
+  z-index: 1;
+}
+/* line 116, ../scss/catalog.scss */
+.container__catalog-item > a.special:after {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  left: -40px;
+  bottom: -130px;
+  background: whitesmoke;
+  width: 280px;
+  height: 280px;
+  -moz-border-radius: 150px;
+  -webkit-border-radius: 150px;
+  border-radius: 150px;
+}
+/* line 127, ../scss/catalog.scss */
+.container__catalog-item > a.special span {
+  color: #6380c3;
+  bottom: 50px;
+  left: 46px;
+  line-height: 38px;
+  width: 60px;
+}
+/* line 136, ../scss/catalog.scss */
+.container__catalog-item > a.other span {
+  line-height: 42px;
+  background: #6380c3;
+  right: 0;
+  top: 0;
+  width: 240px;
+  height: 110px;
+  padding-left: 25px;
+  padding-top: 45px;
+}
+/* line 146, ../scss/catalog.scss */
+.container__catalog-item > a.other:after {
+  content: '';
+  position: absolute;
+  background: #6380c3;
+  left: 0;
+  bottom: 0;
+  height: 120px;
+  width: 140px;
+  z-index: 1;
+}
+/* line 158, ../scss/catalog.scss */
+.container__catalog-item > div {
+  width: calc(100% - 380px);
+  padding-left: 50px;
+  margin-bottom: 20px;
+  margin-bottom: 1.45rem;
+  display: inline-flex;
+  flex-flow: wrap;
+}
+/* line 166, ../scss/catalog.scss */
+.container__catalog-item > div ul {
+  padding-top: 20px;
+  padding-top: 1.45rem;
+  padding-bottom: 20px;
+  padding-bottom: 1.45rem;
+  width: 100%;
+}
+/* line 170, ../scss/catalog.scss */
+.container__catalog-item > div ul li {
+  display: block;
+}
+/* line 172, ../scss/catalog.scss */
+.container__catalog-item > div ul li a {
+  padding-left: 20px;
+  position: relative;
+  display: block;
+  text-decoration: none;
+  color: #919191;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-size: 25px;
+  font-size: 1.777rem;
+  line-height: 26px;
+  line-height: 1.885rem;
+  font-size: 1.777rem;
+}
+/* line 181, ../scss/catalog.scss */
+.container__catalog-item > div ul li a:before {
+  content: '\2013';
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+/* line 187, ../scss/catalog.scss */
+.container__catalog-item > div ul li a:hover {
+  color: #d4534a;
+}
+/* line 195, ../scss/catalog.scss */
+.container__catalog-item > div p {
+  color: #919191;
+  font-family: RobotoLight;
+  height: max-content;
+  font-size: 19px;
+  font-size: 1.333rem;
+  line-height: 20px;
+  line-height: 1.45rem;
+  margin-bottom: 0;
+}
+
+/* line 208, ../scss/catalog.scss */
+.ancors {
+  position: fixed;
+  right: 20px;
+  top: calc(50vh - 100px);
+}
+/* line 212, ../scss/catalog.scss */
+.ancors a {
+  width: 30px;
+  height: 30px;
+  display: block;
+  position: relative;
+  background: white;
+  border: 1px solid rgba(99, 128, 195, 0.5);
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  margin-bottom: 0.725rem;
+  -moz-box-shadow: 2px 2px 3px rgba(30, 30, 30, 0.3);
+  -webkit-box-shadow: 2px 2px 3px rgba(30, 30, 30, 0.3);
+  box-shadow: 2px 2px 3px rgba(30, 30, 30, 0.3);
+}
+/* line 223, ../scss/catalog.scss */
+.ancors a span {
+  display: none;
+}
+/* line 226, ../scss/catalog.scss */
+.ancors a:hover {
+  background: #6380c3;
+}
+/* line 228, ../scss/catalog.scss */
+.ancors a:hover span {
+  display: inline-block;
+  position: absolute;
+  right: 35px;
+  top: 0;
+  background: rgba(30, 30, 30, 0.7);
+  color: whitesmoke;
+  font-size: 1rem;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 4px;
+  padding-top: 0.29rem;
+  padding-bottom: 4px;
+  padding-bottom: 0.29rem;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  white-space: nowrap;
+}

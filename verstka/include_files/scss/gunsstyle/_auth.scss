@@ -1,0 +1,14 @@
+.form-auth {
+  label {
+    display: block;
+    vertical-align: top;
+    @include margin-trailer(.5);
+    span {
+      display: block;
+      @include adjust-font-size-to($base-font-size, 1);
+    }
+    input[type="text"] {
+
+    }
+  }
+}

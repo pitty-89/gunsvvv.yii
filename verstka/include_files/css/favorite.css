@@ -1,0 +1,1774 @@
+/* line 5, ../../../../../../../../var/lib/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../../var/lib/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../../var/lib/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../../var/lib/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../../var/lib/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../../var/lib/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../../var/lib/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../../var/lib/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../../var/lib/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 1, ../scss/gunsstyle/_icomoon.scss */
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 16, ../scss/gunsstyle/_icomoon.scss */
+.icon-gunsvvv-sm:before {
+  content: "\e901";
+}
+
+/* line 19, ../scss/gunsstyle/_icomoon.scss */
+.icon-gunsvvv:before {
+  content: "\e900";
+}
+
+/* line 22, ../scss/gunsstyle/_icomoon.scss */
+.icon-asterisk:before {
+  content: "\f069";
+}
+
+/* line 25, ../scss/gunsstyle/_icomoon.scss */
+.icon-search:before {
+  content: "\f002";
+}
+
+/* line 28, ../scss/gunsstyle/_icomoon.scss */
+.icon-star-o:before {
+  content: "\f006";
+}
+
+/* line 31, ../scss/gunsstyle/_icomoon.scss */
+.icon-user:before {
+  content: "\f007";
+}
+
+/* line 34, ../scss/gunsstyle/_icomoon.scss */
+.icon-film:before {
+  content: "\f008";
+}
+
+/* line 37, ../scss/gunsstyle/_icomoon.scss */
+.icon-th-large:before {
+  content: "\f009";
+}
+
+/* line 40, ../scss/gunsstyle/_icomoon.scss */
+.icon-th-list:before {
+  content: "\f00b";
+}
+
+/* line 43, ../scss/gunsstyle/_icomoon.scss */
+.icon-check:before {
+  content: "\f00c";
+}
+
+/* line 46, ../scss/gunsstyle/_icomoon.scss */
+.icon-close:before {
+  content: "\f00d";
+}
+
+/* line 49, ../scss/gunsstyle/_icomoon.scss */
+.icon-remove:before {
+  content: "\f00d";
+}
+
+/* line 52, ../scss/gunsstyle/_icomoon.scss */
+.icon-times:before {
+  content: "\f00d";
+}
+
+/* line 55, ../scss/gunsstyle/_icomoon.scss */
+.icon-search-plus:before {
+  content: "\f00e";
+}
+
+/* line 58, ../scss/gunsstyle/_icomoon.scss */
+.icon-search-minus:before {
+  content: "\f010";
+}
+
+/* line 61, ../scss/gunsstyle/_icomoon.scss */
+.icon-power-off:before {
+  content: "\f011";
+}
+
+/* line 64, ../scss/gunsstyle/_icomoon.scss */
+.icon-signal:before {
+  content: "\f012";
+}
+
+/* line 67, ../scss/gunsstyle/_icomoon.scss */
+.icon-cog:before {
+  content: "\f013";
+}
+
+/* line 70, ../scss/gunsstyle/_icomoon.scss */
+.icon-gear:before {
+  content: "\f013";
+}
+
+/* line 73, ../scss/gunsstyle/_icomoon.scss */
+.icon-trash-o:before {
+  content: "\f014";
+}
+
+/* line 76, ../scss/gunsstyle/_icomoon.scss */
+.icon-home:before {
+  content: "\f015";
+}
+
+/* line 79, ../scss/gunsstyle/_icomoon.scss */
+.icon-file-o:before {
+  content: "\f016";
+}
+
+/* line 82, ../scss/gunsstyle/_icomoon.scss */
+.icon-clock-o:before {
+  content: "\f017";
+}
+
+/* line 85, ../scss/gunsstyle/_icomoon.scss */
+.icon-road:before {
+  content: "\f018";
+}
+
+/* line 88, ../scss/gunsstyle/_icomoon.scss */
+.icon-download:before {
+  content: "\f019";
+}
+
+/* line 91, ../scss/gunsstyle/_icomoon.scss */
+.icon-repeat:before {
+  content: "\f01e";
+}
+
+/* line 94, ../scss/gunsstyle/_icomoon.scss */
+.icon-rotate-right:before {
+  content: "\f01e";
+}
+
+/* line 97, ../scss/gunsstyle/_icomoon.scss */
+.icon-refresh:before {
+  content: "\f021";
+}
+
+/* line 100, ../scss/gunsstyle/_icomoon.scss */
+.icon-lock:before {
+  content: "\f023";
+}
+
+/* line 103, ../scss/gunsstyle/_icomoon.scss */
+.icon-flag:before {
+  content: "\f024";
+}
+
+/* line 106, ../scss/gunsstyle/_icomoon.scss */
+.icon-qrcode:before {
+  content: "\f029";
+}
+
+/* line 109, ../scss/gunsstyle/_icomoon.scss */
+.icon-align-justify:before {
+  content: "\f039";
+}
+
+/* line 112, ../scss/gunsstyle/_icomoon.scss */
+.icon-list:before {
+  content: "\f03a";
+}
+
+/* line 115, ../scss/gunsstyle/_icomoon.scss */
+.icon-video-camera:before {
+  content: "\f03d";
+}
+
+/* line 118, ../scss/gunsstyle/_icomoon.scss */
+.icon-image:before {
+  content: "\f03e";
+}
+
+/* line 121, ../scss/gunsstyle/_icomoon.scss */
+.icon-photo:before {
+  content: "\f03e";
+}
+
+/* line 124, ../scss/gunsstyle/_icomoon.scss */
+.icon-picture-o:before {
+  content: "\f03e";
+}
+
+/* line 127, ../scss/gunsstyle/_icomoon.scss */
+.icon-pencil:before {
+  content: "\f040";
+}
+
+/* line 130, ../scss/gunsstyle/_icomoon.scss */
+.icon-map-marker:before {
+  content: "\f041";
+}
+
+/* line 133, ../scss/gunsstyle/_icomoon.scss */
+.icon-tint:before {
+  content: "\f043";
+}
+
+/* line 136, ../scss/gunsstyle/_icomoon.scss */
+.icon-edit:before {
+  content: "\f044";
+}
+
+/* line 139, ../scss/gunsstyle/_icomoon.scss */
+.icon-pencil-square-o:before {
+  content: "\f044";
+}
+
+/* line 142, ../scss/gunsstyle/_icomoon.scss */
+.icon-chevron-left:before {
+  content: "\f053";
+}
+
+/* line 145, ../scss/gunsstyle/_icomoon.scss */
+.icon-chevron-right:before {
+  content: "\f054";
+}
+
+/* line 148, ../scss/gunsstyle/_icomoon.scss */
+.icon-mail-forward:before {
+  content: "\f064";
+}
+
+/* line 151, ../scss/gunsstyle/_icomoon.scss */
+.icon-share:before {
+  content: "\f064";
+}
+
+/* line 154, ../scss/gunsstyle/_icomoon.scss */
+.icon-expand:before {
+  content: "\f065";
+}
+
+/* line 157, ../scss/gunsstyle/_icomoon.scss */
+.icon-compress:before {
+  content: "\f066";
+}
+
+/* line 160, ../scss/gunsstyle/_icomoon.scss */
+.icon-eye:before {
+  content: "\f06e";
+}
+
+/* line 163, ../scss/gunsstyle/_icomoon.scss */
+.icon-eye-slash:before {
+  content: "\f070";
+}
+
+/* line 166, ../scss/gunsstyle/_icomoon.scss */
+.icon-calendar:before {
+  content: "\f073";
+}
+
+/* line 169, ../scss/gunsstyle/_icomoon.scss */
+.icon-chevron-up:before {
+  content: "\f077";
+}
+
+/* line 172, ../scss/gunsstyle/_icomoon.scss */
+.icon-chevron-down:before {
+  content: "\f078";
+}
+
+/* line 175, ../scss/gunsstyle/_icomoon.scss */
+.icon-twitter-square:before {
+  content: "\f081";
+}
+
+/* line 178, ../scss/gunsstyle/_icomoon.scss */
+.icon-facebook-square:before {
+  content: "\f082";
+}
+
+/* line 181, ../scss/gunsstyle/_icomoon.scss */
+.icon-camera-retro:before {
+  content: "\f083";
+}
+
+/* line 184, ../scss/gunsstyle/_icomoon.scss */
+.icon-thumbs-o-up:before {
+  content: "\f087";
+}
+
+/* line 187, ../scss/gunsstyle/_icomoon.scss */
+.icon-thumbs-o-down:before {
+  content: "\f088";
+}
+
+/* line 190, ../scss/gunsstyle/_icomoon.scss */
+.icon-twitter:before {
+  content: "\f099";
+}
+
+/* line 193, ../scss/gunsstyle/_icomoon.scss */
+.icon-facebook:before {
+  content: "\f09a";
+}
+
+/* line 196, ../scss/gunsstyle/_icomoon.scss */
+.icon-facebook-f:before {
+  content: "\f09a";
+}
+
+/* line 199, ../scss/gunsstyle/_icomoon.scss */
+.icon-github:before {
+  content: "\f09b";
+}
+
+/* line 202, ../scss/gunsstyle/_icomoon.scss */
+.icon-pinterest-square:before {
+  content: "\f0d3";
+}
+
+/* line 205, ../scss/gunsstyle/_icomoon.scss */
+.icon-google-plus-square:before {
+  content: "\f0d4";
+}
+
+/* line 208, ../scss/gunsstyle/_icomoon.scss */
+.icon-google-plus:before {
+  content: "\f0d5";
+}
+
+/* line 211, ../scss/gunsstyle/_icomoon.scss */
+.icon-comment-o:before {
+  content: "\f0e5";
+}
+
+/* line 214, ../scss/gunsstyle/_icomoon.scss */
+.icon-comments-o:before {
+  content: "\f0e6";
+}
+
+/* line 217, ../scss/gunsstyle/_icomoon.scss */
+.icon-clipboard:before {
+  content: "\f0ea";
+}
+
+/* line 220, ../scss/gunsstyle/_icomoon.scss */
+.icon-paste:before {
+  content: "\f0ea";
+}
+
+/* line 223, ../scss/gunsstyle/_icomoon.scss */
+.icon-file-text-o:before {
+  content: "\f0f6";
+}
+
+/* line 226, ../scss/gunsstyle/_icomoon.scss */
+.icon-angle-left:before {
+  content: "\f104";
+}
+
+/* line 229, ../scss/gunsstyle/_icomoon.scss */
+.icon-angle-right:before {
+  content: "\f105";
+}
+
+/* line 232, ../scss/gunsstyle/_icomoon.scss */
+.icon-angle-up:before {
+  content: "\f106";
+}
+
+/* line 235, ../scss/gunsstyle/_icomoon.scss */
+.icon-angle-down:before {
+  content: "\f107";
+}
+
+/* line 238, ../scss/gunsstyle/_icomoon.scss */
+.icon-rouble:before {
+  content: "\f158";
+}
+
+/* line 241, ../scss/gunsstyle/_icomoon.scss */
+.icon-rub:before {
+  content: "\f158";
+}
+
+/* line 244, ../scss/gunsstyle/_icomoon.scss */
+.icon-ruble:before {
+  content: "\f158";
+}
+
+/* line 247, ../scss/gunsstyle/_icomoon.scss */
+.icon-youtube-square:before {
+  content: "\f166";
+}
+
+/* line 250, ../scss/gunsstyle/_icomoon.scss */
+.icon-youtube:before {
+  content: "\f167";
+}
+
+/* line 253, ../scss/gunsstyle/_icomoon.scss */
+.icon-vk:before {
+  content: "\f189";
+}
+
+/* line 256, ../scss/gunsstyle/_icomoon.scss */
+.icon-newspaper-o:before {
+  content: "\f1ea";
+}
+
+/* line 259, ../scss/gunsstyle/_icomoon.scss */
+.icon-wifi:before {
+  content: "\f1eb";
+}
+
+/* line 262, ../scss/gunsstyle/_icomoon.scss */
+.icon-cc-visa:before {
+  content: "\f1f0";
+}
+
+/* line 265, ../scss/gunsstyle/_icomoon.scss */
+.icon-cc-mastercard:before {
+  content: "\f1f1";
+}
+
+/* line 268, ../scss/gunsstyle/_icomoon.scss */
+.icon-cc-paypal:before {
+  content: "\f1f4";
+}
+
+/* line 271, ../scss/gunsstyle/_icomoon.scss */
+.icon-facebook-official:before {
+  content: "\f230";
+}
+
+/* line 274, ../scss/gunsstyle/_icomoon.scss */
+.icon-whatsapp:before {
+  content: "\f232";
+}
+
+/* line 277, ../scss/gunsstyle/_icomoon.scss */
+.icon-odnoklassniki:before {
+  content: "\f263";
+}
+
+/* line 280, ../scss/gunsstyle/_icomoon.scss */
+.icon-odnoklassniki-square:before {
+  content: "\f264";
+}
+
+/* line 283, ../scss/gunsstyle/_icomoon.scss */
+.icon-map-signs:before {
+  content: "\f277";
+}
+
+/* line 286, ../scss/gunsstyle/_icomoon.scss */
+.icon-map-o:before {
+  content: "\f278";
+}
+
+/* line 289, ../scss/gunsstyle/_icomoon.scss */
+.icon-map:before {
+  content: "\f279";
+}
+
+/* line 292, ../scss/gunsstyle/_icomoon.scss */
+.icon-credit-card-alt:before {
+  content: "\f283";
+}
+
+/* line 295, ../scss/gunsstyle/_icomoon.scss */
+.icon-shopping-basket:before {
+  content: "\f291";
+}
+
+/* line 298, ../scss/gunsstyle/_icomoon.scss */
+.icon-wheelchair-alt:before {
+  content: "\f29b";
+}
+
+/* line 301, ../scss/gunsstyle/_icomoon.scss */
+.icon-blind:before {
+  content: "\f29d";
+}
+
+/* line 304, ../scss/gunsstyle/_icomoon.scss */
+.icon-volume-control-phone:before {
+  content: "\f2a0";
+}
+
+/* line 307, ../scss/gunsstyle/_icomoon.scss */
+.icon-address-book:before {
+  content: "\f2b9";
+}
+
+/* line 310, ../scss/gunsstyle/_icomoon.scss */
+.icon-address-book-o:before {
+  content: "\f2ba";
+}
+
+/* line 313, ../scss/gunsstyle/_icomoon.scss */
+.icon-address-card:before {
+  content: "\f2bb";
+}
+
+/* line 316, ../scss/gunsstyle/_icomoon.scss */
+.icon-vcard:before {
+  content: "\f2bb";
+}
+
+/* line 319, ../scss/gunsstyle/_icomoon.scss */
+.icon-address-card-o:before {
+  content: "\f2bc";
+}
+
+/* line 322, ../scss/gunsstyle/_icomoon.scss */
+.icon-vcard-o:before {
+  content: "\f2bc";
+}
+
+/* line 325, ../scss/gunsstyle/_icomoon.scss */
+.icon-user-circle:before {
+  content: "\f2bd";
+}
+
+/* line 328, ../scss/gunsstyle/_icomoon.scss */
+.icon-drivers-license:before {
+  content: "\f2c2";
+}
+
+/* line 331, ../scss/gunsstyle/_icomoon.scss */
+.icon-id-card:before {
+  content: "\f2c2";
+}
+
+/* line 334, ../scss/gunsstyle/_icomoon.scss */
+.icon-drivers-license-o:before {
+  content: "\f2c3";
+}
+
+/* line 337, ../scss/gunsstyle/_icomoon.scss */
+.icon-id-card-o:before {
+  content: "\f2c3";
+}
+
+@font-face {
+  font-family: "europe";
+  src: url("/verstka/include_files/fonts/EuropeExt/EuropeExt.eot");
+  src: local("/verstka/include_files/fonts/EuropeExt/EuropeExt"), url("/verstka/include_files/fonts/EuropeExt/EuropeExt.eot?#iefix") format("embedded-opentype"), url("/verstka/include_files/fonts/EuropeExt/EuropeExt.woff") format("woff"), url("/verstka/include_files/fonts/EuropeExt/EuropeExt.ttf") format("truetype"), url("/verstka/include_files/fonts/EuropeExt/EuropeExt.svg#fonts") format("svg");
+}
+@font-face {
+  font-family: "europebold";
+  src: url("/verstka/include_files/fonts/EuropeExt_Bold/EuropeExt_Bold.eot");
+  src: local("/verstka/include_files/fonts/EuropeExt_Bold/EuropeExt_Bold"), url("/verstka/include_files/fonts/EuropeExt_Bold/EuropeExt_Bold.eot?#iefix") format("embedded-opentype"), url("/verstka/include_files/fonts/EuropeExt_Bold/EuropeExt_Bold.woff") format("woff"), url("/verstka/include_files/fonts/EuropeExt_Bold/EuropeExt_Bold.ttf") format("truetype"), url("/verstka/include_files/fonts/EuropeExt_Bold/EuropeExt_Bold.svg#fonts") format("svg");
+}
+@font-face {
+  font-family: "icomoon";
+  src: url("/verstka/include_files/fonts/IcoMoon/IcoMoon.eot");
+  src: local("/verstka/include_files/fonts/IcoMoon/IcoMoon"), url("/verstka/include_files/fonts/IcoMoon/IcoMoon.eot?#iefix") format("embedded-opentype"), url("/verstka/include_files/fonts/IcoMoon/IcoMoon.woff") format("woff"), url("/verstka/include_files/fonts/IcoMoon/IcoMoon.ttf") format("truetype"), url("/verstka/include_files/fonts/IcoMoon/IcoMoon.svg#fonts") format("svg");
+}
+@font-face {
+  font-family: "RobotoRegular";
+  src: url("/verstka/include_files/fonts/RobotoRegular/RobotoRegular.eot");
+  src: local("/verstka/include_files/fonts/RobotoRegular/RobotoRegular"), url("/verstka/include_files/fonts/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"), url("/verstka/include_files/fonts/RobotoRegular/RobotoRegular.woff") format("woff"), url("/verstka/include_files/fonts/RobotoRegular/RobotoRegular.ttf") format("truetype"), url("/verstka/include_files/fonts/RobotoRegular/RobotoRegular.svg#fonts") format("svg");
+}
+@font-face {
+  font-family: "RobotoBold";
+  src: url("/verstka/include_files/fonts/RobotoBold/RobotoBold.eot");
+  src: local("/verstka/include_files/fonts/RobotoBold/RobotoBold"), url("/verstka/include_files/fonts/RobotoBold/RobotoBold.eot?#iefix") format("embedded-opentype"), url("/verstka/include_files/fonts/RobotoBold/RobotoBold.woff") format("woff"), url("/verstka/include_files/fonts/RobotoBold/RobotoBold.ttf") format("truetype"), url("/verstka/include_files/fonts/RobotoBold/RobotoBold.svg#fonts") format("svg");
+}
+@font-face {
+  font-family: "RobotoLight";
+  src: url("/verstka/include_files/fonts/RobotoLight/RobotoLight.eot");
+  src: local("/verstka/include_files/fonts/RobotoLight/RobotoLight"), url("/verstka/include_files/fonts/RobotoLight/RobotoLight.eot?#iefix") format("embedded-opentype"), url("/verstka/include_files/fonts/RobotoLight/RobotoLight.woff") format("woff"), url("/verstka/include_files/fonts/RobotoLight/RobotoLight.ttf") format("truetype"), url("/verstka/include_files/fonts/RobotoLight/RobotoLight.svg#fonts") format("svg");
+}
+/* line 5, ../scss/gunsstyle/_base.scss */
+body {
+  margin: 0;
+  padding: 0;
+  color: #1e1e1e;
+  min-height: 100vh;
+}
+
+/* line 12, ../scss/gunsstyle/_base.scss */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 16, ../scss/gunsstyle/_base.scss */
+html {
+  font-size: 14px;
+  line-height: 1.45rem;
+}
+/* line 19, ../scss/gunsstyle/_base.scss */
+html body {
+  font-family: RobotoRegular;
+}
+
+/* line 23, ../scss/gunsstyle/_base.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+}
+
+/* line 26, ../scss/gunsstyle/_base.scss */
+h1 {
+  font-size: 44px;
+  font-size: 3.157rem;
+  line-height: 46px;
+  line-height: 3.31429rem;
+}
+
+/* line 29, ../scss/gunsstyle/_base.scss */
+h2 {
+  font-size: 33px;
+  font-size: 2.369rem;
+  line-height: 35px;
+  line-height: 2.48571rem;
+}
+
+/* line 32, ../scss/gunsstyle/_base.scss */
+h3 {
+  font-size: 25px;
+  font-size: 1.777rem;
+  line-height: 28px;
+  line-height: 1.96786rem;
+}
+
+/* line 35, ../scss/gunsstyle/_base.scss */
+h4 {
+  font-size: 19px;
+  font-size: 1.333rem;
+  line-height: 20px;
+  line-height: 1.45rem;
+}
+
+/* line 38, ../scss/gunsstyle/_base.scss */
+h5 {
+  font-size: 14px;
+  font-size: 1rem;
+  line-height: 16px;
+  line-height: 1.13929rem;
+}
+
+/* line 41, ../scss/gunsstyle/_base.scss */
+h6 {
+  font-size: 11px;
+  font-size: 0.75rem;
+  line-height: 13px;
+  line-height: 0.93214rem;
+}
+
+/* line 44, ../scss/gunsstyle/_base.scss */
+smal {
+  font-size: 8px;
+  font-size: 0.563rem;
+  line-height: 10px;
+  line-height: 0.725rem;
+}
+
+/* line 47, ../scss/gunsstyle/_base.scss */
+.shadow {
+  position: relative;
+}
+/* line 49, ../scss/gunsstyle/_base.scss */
+.shadow:before {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(30, 30, 30, 0.6);
+  content: '';
+  top: 0;
+  left: 0;
+  z-index: 5;
+}
+
+/* line 60, ../scss/gunsstyle/_base.scss */
+.hidden {
+  display: none;
+}
+
+/* line 61, ../scss/gunsstyle/_base.scss */
+.module {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background: red;
+}
+
+/* line 65, ../scss/gunsstyle/_base.scss */
+.line, .footer {
+  width: 100%;
+}
+
+/* line 68, ../scss/gunsstyle/_base.scss */
+.divider {
+  width: 100%;
+  height: 100%;
+  background-color: #919191;
+  margin-top: 20px;
+  margin-top: 1.45rem;
+  margin-bottom: 20px;
+  margin-bottom: 1.45rem;
+}
+
+/* line 75, ../scss/gunsstyle/_base.scss */
+.footer {
+  text-align: center;
+  margin-bottom: 0;
+  background: radial-gradient(#1e1e1e 15%, rgba(0, 0, 0, 0) 16%) 0 0, radial-gradient(#1e1e1e 15%, rgba(0, 0, 0, 0) 16%) 8px 8px, radial-gradient(rgba(245, 245, 245, 0.1) 15%, rgba(0, 0, 0, 0) 20%) 0 1px, radial-gradient(rgba(245, 245, 245, 0.1) 15%, rgba(0, 0, 0, 0) 20%) 8px 9px;
+  background-color: #1e1e1e;
+  background-size: 16px 16px;
+  padding-top: 10px;
+  padding-top: 0.725rem;
+  padding-bottom: 10px;
+  padding-bottom: 0.725rem;
+}
+/* line 88, ../scss/gunsstyle/_base.scss */
+.footer > ul {
+  margin: 0 auto;
+  width: initial;
+  display: inline-block;
+  line-height: initial;
+}
+/* line 93, ../scss/gunsstyle/_base.scss */
+.footer > ul > li {
+  display: inline-block;
+  padding: 2px 6px 0 0;
+  margin: 0 3px 0 0;
+  line-height: 15px;
+  vertical-align: top;
+  border-right: 1px solid #919191;
+}
+/* line 100, ../scss/gunsstyle/_base.scss */
+.footer > ul > li:last-child {
+  border-right: 0;
+  padding: 2px 0 0 0;
+  margin: 0 0 0 0;
+}
+/* line 105, ../scss/gunsstyle/_base.scss */
+.footer > ul > li a {
+  color: #919191;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+/* line 108, ../scss/gunsstyle/_base.scss */
+.footer > ul > li a:hover {
+  color: #d4534a;
+}
+
+/* line 115, ../scss/gunsstyle/_base.scss */
+.container {
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+/* line 9, ../scss/gunsstyle/_mixin.scss */
+.text-white {
+  color: white;
+}
+/* line 9, ../scss/gunsstyle/_mixin.scss */
+.text-black {
+  color: #1e1e1e;
+}
+/* line 9, ../scss/gunsstyle/_mixin.scss */
+.text-blue {
+  color: #9b9b9b;
+}
+
+/* line 19, ../scss/gunsstyle/_mixin.scss */
+a.text-white:visited,
+a:visited .text-white,
+.text-white > a:visited,
+a.text-white,
+a .text-white,
+.text-white > a {
+  color: white;
+}
+
+/* line 25, ../scss/gunsstyle/_mixin.scss */
+a.text-white:focus,
+a:focus .text-white,
+.text-white > a:focus,
+a:hover .text-white,
+.text-white > a:hover,
+a.text-white:hover {
+  color: #e6e6e6;
+}
+
+/* line 19, ../scss/gunsstyle/_mixin.scss */
+a.text-black:visited,
+a:visited .text-black,
+.text-black > a:visited,
+a.text-black,
+a .text-black,
+.text-black > a {
+  color: #1e1e1e;
+}
+
+/* line 25, ../scss/gunsstyle/_mixin.scss */
+a.text-black:focus,
+a:focus .text-black,
+.text-black > a:focus,
+a:hover .text-black,
+.text-black > a:hover,
+a.text-black:hover {
+  color: #050505;
+}
+
+/* line 19, ../scss/gunsstyle/_mixin.scss */
+a.text-blue:visited,
+a:visited .text-blue,
+.text-blue > a:visited,
+a.text-blue,
+a .text-blue,
+.text-blue > a {
+  color: #9b9b9b;
+}
+
+/* line 25, ../scss/gunsstyle/_mixin.scss */
+a.text-blue:focus,
+a:focus .text-blue,
+.text-blue > a:focus,
+a:hover .text-blue,
+.text-blue > a:hover,
+a.text-blue:hover {
+  color: #828282;
+}
+
+/* line 9, ../scss/gunsstyle/_mixin.scss */
+.bgd-white {
+  background: white;
+}
+/* line 9, ../scss/gunsstyle/_mixin.scss */
+.bgd-black {
+  background: #1e1e1e;
+}
+/* line 9, ../scss/gunsstyle/_mixin.scss */
+.bgd-blue {
+  background: #9b9b9b;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 120, ../scss/gunsstyle/_base.scss */
+  .footer {
+    margin-top: 10px;
+    margin-top: 0.725rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  /* line 135, ../scss/gunsstyle/_base.scss */
+  .footer > ul {
+    width: 100%;
+  }
+  /* line 137, ../scss/gunsstyle/_base.scss */
+  .footer > ul > li {
+    width: 100%;
+    margin: 0 0 10px 0;
+    padding: 0;
+    border-right: 0;
+    text-align: left;
+  }
+  /* line 143, ../scss/gunsstyle/_base.scss */
+  .footer > ul > li > a {
+    display: inline-block;
+    width: 100%;
+    padding: 3px 10px;
+  }
+}
+@media screen and (min-width: 768px) {
+  /* line 156, ../scss/gunsstyle/_base.scss */
+  .line, .footer {
+    margin-top: 10px;
+    margin-top: 0.725rem;
+    margin-bottom: 5px;
+    margin-bottom: 0.3625rem;
+  }
+  /* line 159, ../scss/gunsstyle/_base.scss */
+  .line.no-mt, .no-mt.footer {
+    margin-top: 0px;
+    margin-top: 0rem;
+  }
+
+  /* line 163, ../scss/gunsstyle/_base.scss */
+  .footer {
+    margin-top: 5px;
+    margin-top: 0.3625rem;
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1024px) {
+  /* line 172, ../scss/gunsstyle/_base.scss */
+  .line, .footer {
+    margin-top: 20px;
+    margin-top: 1.45rem;
+    margin-bottom: 10px;
+    margin-bottom: 0.725rem;
+  }
+  /* line 175, ../scss/gunsstyle/_base.scss */
+  .line.no-mt, .no-mt.footer {
+    margin-top: 0px;
+    margin-top: 0rem;
+  }
+
+  /* line 179, ../scss/gunsstyle/_base.scss */
+  .footer {
+    margin-top: 10px;
+    margin-top: 0.725rem;
+    margin-bottom: 0;
+  }
+}
+/* line 1, ../scss/gunsstyle/_menu_slides.scss */
+.menu-slides {
+  font-family: 'europebold';
+  vertical-align: top;
+}
+/* line 4, ../scss/gunsstyle/_menu_slides.scss */
+.menu-slides > ul {
+  width: 100%;
+  margin-top: 0;
+}
+/* line 7, ../scss/gunsstyle/_menu_slides.scss */
+.menu-slides > ul > li {
+  display: inline-block;
+  vertical-align: top;
+  width: 25%;
+  overflow: hidden;
+  height: 270px;
+}
+/* line 13, ../scss/gunsstyle/_menu_slides.scss */
+.menu-slides > ul > li a {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+/* line 18, ../scss/gunsstyle/_menu_slides.scss */
+.menu-slides > ul > li a img {
+  width: 100%;
+  -o-object-position: center;
+  object-position: center;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+/* line 24, ../scss/gunsstyle/_menu_slides.scss */
+.menu-slides > ul > li a div {
+  width: initial;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  z-index: 2;
+}
+/* line 31, ../scss/gunsstyle/_menu_slides.scss */
+.menu-slides > ul > li a div p {
+  margin-top: 81px;
+  margin-top: 5.8rem;
+  padding-top: 20px;
+  padding-top: 1.45rem;
+  padding-bottom: 20px;
+  padding-bottom: 1.45rem;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: relative;
+  z-index: 1;
+}
+/* line 40, ../scss/gunsstyle/_menu_slides.scss */
+.menu-slides > ul > li a div:after {
+  content: '';
+  position: absolute;
+  background: rgba(30, 30, 30, 0.4);
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 0;
+}
+/* line 52, ../scss/gunsstyle/_menu_slides.scss */
+.menu-slides > ul > li a:hover img {
+  transform: scale(1.03);
+}
+/* line 58, ../scss/gunsstyle/_menu_slides.scss */
+.menu-slides > ul > li:nth-child(even) a {
+  color: whitesmoke;
+}
+/* line 60, ../scss/gunsstyle/_menu_slides.scss */
+.menu-slides > ul > li:nth-child(even) a:hover, .menu-slides > ul > li:nth-child(even) a:active, .menu-slides > ul > li:nth-child(even) a:focus {
+  color: whitesmoke;
+}
+/* line 61, ../scss/gunsstyle/_menu_slides.scss */
+.menu-slides > ul > li:nth-child(even) a:before {
+  background: rgba(30, 30, 30, 0.5);
+}
+/* line 65, ../scss/gunsstyle/_menu_slides.scss */
+.menu-slides > ul > li:nth-child(odd) a {
+  color: #2a3e6d;
+}
+/* line 67, ../scss/gunsstyle/_menu_slides.scss */
+.menu-slides > ul > li:nth-child(odd) a:hover, .menu-slides > ul > li:nth-child(odd) a:active, .menu-slides > ul > li:nth-child(odd) a:focus {
+  color: #2a3e6d;
+}
+/* line 68, ../scss/gunsstyle/_menu_slides.scss */
+.menu-slides > ul > li:nth-child(odd) a:before {
+  background: rgba(245, 245, 245, 0.5);
+}
+
+@media screen and (max-width: 1347px) {
+  /* line 78, ../scss/gunsstyle/_menu_slides.scss */
+  .menu-slides > ul > li {
+    height: 20vw;
+  }
+}
+@media screen and (max-width: 900px) {
+  /* line 87, ../scss/gunsstyle/_menu_slides.scss */
+  .menu-slides > ul > li {
+    width: calc(50% - 5px);
+    height: calc(50vw - 100px);
+    margin-bottom: 10px;
+    margin-bottom: 0.725rem;
+  }
+  /* line 90, ../scss/gunsstyle/_menu_slides.scss */
+  .menu-slides > ul > li:nth-child(odd) {
+    margin-right: 10px;
+  }
+  /* line 93, ../scss/gunsstyle/_menu_slides.scss */
+  .menu-slides > ul > li a img {
+    height: 100%;
+  }
+  /* line 97, ../scss/gunsstyle/_menu_slides.scss */
+  .menu-slides > ul > li a div p {
+    margin-top: 20px;
+    margin-top: 1.45rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  /* line 107, ../scss/gunsstyle/_menu_slides.scss */
+  .menu-slides {
+    margin-top: 10px;
+    margin-top: 0.725rem;
+    margin-bottom: 10px;
+    margin-bottom: 0.725rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  /* line 118, ../scss/gunsstyle/_menu_slides.scss */
+  .menu-slides > ul > li a div p {
+    margin-top: 10px;
+    margin-top: 0.725rem;
+  }
+  /* line 120, ../scss/gunsstyle/_menu_slides.scss */
+  .menu-slides > ul > li a div p br {
+    display: none;
+  }
+}
+@media screen and (max-width: 550px) {
+  /* line 133, ../scss/gunsstyle/_menu_slides.scss */
+  .menu-slides > ul > li a div {
+    width: 100%;
+    right: 0;
+  }
+}
+@media screen and (max-width: 400px) {
+  /* line 145, ../scss/gunsstyle/_menu_slides.scss */
+  .menu-slides > ul > li {
+    width: calc(100% - 20px);
+    height: 120px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+}
+@media screen and (min-width: 768px) {
+  /* line 156, ../scss/gunsstyle/_menu_slides.scss */
+  .menu-slides {
+    width: 100%;
+    margin-top: 5px;
+    margin-top: 0.3625rem;
+    margin-bottom: 5px;
+    margin-bottom: 0.3625rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  /* line 163, ../scss/gunsstyle/_menu_slides.scss */
+  .menu-slides {
+    margin-top: 10px;
+    margin-top: 0.725rem;
+    margin-bottom: 10px;
+    margin-bottom: 0.725rem;
+  }
+}
+/* line 1, ../scss/gunsstyle/_menu_left.scss */
+.menu {
+  display: inline-block;
+  vertical-align: top;
+  font-family: "europe";
+  width: 25%;
+}
+/* line 5, ../scss/gunsstyle/_menu_left.scss */
+.menu a {
+  font-size: 19px;
+  font-size: 1.333rem;
+  line-height: 20px;
+  line-height: 1.45rem;
+  font-weight: 600;
+  color: #2a3e6d;
+  display: block;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  text-decoration: none;
+}
+/* line 12, ../scss/gunsstyle/_menu_left.scss */
+.menu a:hover {
+  color: #d4534a;
+}
+/* line 15, ../scss/gunsstyle/_menu_left.scss */
+.menu a.menu__toggle-list {
+  display: none;
+}
+/* line 20, ../scss/gunsstyle/_menu_left.scss */
+.menu > ul li a {
+  font-size: 14px;
+  font-size: 1rem;
+  line-height: 20px;
+  line-height: 1.45rem;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+/* line 25, ../scss/gunsstyle/_menu_left.scss */
+.menu > ul li.auth a {
+  display: inline-block;
+  width: initial;
+}
+/* line 26, ../scss/gunsstyle/_menu_left.scss */
+.menu > ul li.auth span {
+  font-size: 14px;
+  font-size: 1rem;
+  line-height: 20px;
+  line-height: 1.45rem;
+  display: inline-block;
+  margin: 0 2px;
+}
+
+@media screen and (max-width: 1023px) {
+  /* line 36, ../scss/gunsstyle/_menu_left.scss */
+  .menu {
+    width: calc(100% - 20px);
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 0px;
+    margin-top: 0rem;
+  }
+  /* line 41, ../scss/gunsstyle/_menu_left.scss */
+  .menu > a {
+    width: 16.6666%;
+    display: inline-block;
+    vertical-align: top;
+  }
+  /* line 44, ../scss/gunsstyle/_menu_left.scss */
+  .menu > a i {
+    font-size: 56px;
+    font-size: 4rem;
+    line-height: 61px;
+    line-height: 4.35rem;
+  }
+  /* line 47, ../scss/gunsstyle/_menu_left.scss */
+  .menu > ul {
+    width: 83.3333%;
+    display: inline-block;
+    vertical-align: top;
+  }
+  /* line 51, ../scss/gunsstyle/_menu_left.scss */
+  .menu > ul li {
+    margin-top: 20px;
+    margin-top: 1.45rem;
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 10px;
+  }
+  /* line 56, ../scss/gunsstyle/_menu_left.scss */
+  .menu > ul li:first-child {
+    padding: 0 0;
+  }
+  /* line 57, ../scss/gunsstyle/_menu_left.scss */
+  .menu > ul li a {
+    display: inline-block;
+    width: initial;
+  }
+}
+@media screen and (max-width: 767px) {
+  /* line 66, ../scss/gunsstyle/_menu_left.scss */
+  .menu {
+    margin-top: 10px;
+    margin-top: 0.725rem;
+  }
+}
+@media screen and (max-width: 730px) {
+  /* line 73, ../scss/gunsstyle/_menu_left.scss */
+  .menu > a.menu__toggle-list {
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px;
+    width: initial;
+    vertical-align: top;
+    line-height: initial;
+    float: right;
+  }
+  /* line 81, ../scss/gunsstyle/_menu_left.scss */
+  .menu > a.menu__toggle-list i {
+    display: inline-block;
+    line-height: 2.6rem;
+    font-size: 3rem;
+  }
+  /* line 88, ../scss/gunsstyle/_menu_left.scss */
+  .menu > ul {
+    display: none;
+  }
+  /* line 90, ../scss/gunsstyle/_menu_left.scss */
+  .menu > ul.menu__toggle-open {
+    display: block;
+    width: 300px;
+    max-width: 100%;
+    position: absolute;
+    top: 82px;
+    right: 0;
+    z-index: 5;
+    background: whitesmoke;
+    border: 1px solid #2a3e6d;
+    -moz-box-shadow: -1px 1px 2px rgba(30, 30, 30, 0.6);
+    -webkit-box-shadow: -1px 1px 2px rgba(30, 30, 30, 0.6);
+    box-shadow: -1px 1px 2px rgba(30, 30, 30, 0.6);
+  }
+  /* line 101, ../scss/gunsstyle/_menu_left.scss */
+  .menu > ul.menu__toggle-open > li {
+    width: 100%;
+    margin-top: 0;
+  }
+  /* line 104, ../scss/gunsstyle/_menu_left.scss */
+  .menu > ul.menu__toggle-open > li > span {
+    display: none;
+  }
+  /* line 107, ../scss/gunsstyle/_menu_left.scss */
+  .menu > ul.menu__toggle-open > li > a {
+    width: 100%;
+    display: inline-block;
+    padding: 10px 20px;
+  }
+}
+@media screen and (max-width: 600px) {
+  /* line 120, ../scss/gunsstyle/_menu_left.scss */
+  .menu > a i {
+    font-size: 11vw;
+    line-height: 12vw;
+  }
+}
+@media screen and (min-width: 1024px) {
+  /* line 125, ../scss/gunsstyle/_menu_left.scss */
+  .menu {
+    width: 25%;
+  }
+  /* line 127, ../scss/gunsstyle/_menu_left.scss */
+  .menu > a {
+    width: 100%;
+    padding: 0 10px;
+  }
+  /* line 130, ../scss/gunsstyle/_menu_left.scss */
+  .menu > a i {
+    font-size: 140px;
+    font-size: 10rem;
+    line-height: 162px;
+    line-height: 11.6rem;
+  }
+  /* line 132, ../scss/gunsstyle/_menu_left.scss */
+  .menu > ul {
+    padding: 0 10px;
+    width: 83.3333%;
+    margin-top: 10px;
+    margin-top: 0.725rem;
+  }
+  /* line 136, ../scss/gunsstyle/_menu_left.scss */
+  .menu > ul li {
+    width: 100%;
+  }
+  /* line 139, ../scss/gunsstyle/_menu_left.scss */
+  .menu > ul li:not(.auth) a {
+    width: 100%;
+  }
+}
+@keyframes slide-by-prev {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+@keyframes slide-by-next {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+/* line 10, ../scss/gunsstyle/_slider.scss */
+.slider {
+  display: inline-block;
+}
+/* line 13, ../scss/gunsstyle/_slider.scss */
+.slider > div:first-child {
+  height: 392px;
+  width: 100%;
+  padding: 0;
+  float: left;
+  position: relative;
+}
+/* line 19, ../scss/gunsstyle/_slider.scss */
+.slider > div:first-child > div {
+  width: 100%;
+  display: none;
+  height: 100%;
+  overflow: hidden;
+}
+/* line 24, ../scss/gunsstyle/_slider.scss */
+.slider > div:first-child > div > a {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+/* line 30, ../scss/gunsstyle/_slider.scss */
+.slider > div:first-child > div > a > img {
+  min-width: 100%;
+  height: 100%;
+  -o-object-position: center;
+  object-position: center;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+/* line 36, ../scss/gunsstyle/_slider.scss */
+.slider > div:first-child > div > a > p {
+  position: absolute;
+  height: 40px;
+  vertical-align: middle;
+  bottom: -40px;
+  left: 0;
+  width: 100%;
+  padding: 5px 20px;
+  background: rgba(30, 30, 30, 0.5);
+  color: whitesmoke;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-size: 25px;
+  font-size: 1.777rem;
+  line-height: 28px;
+  line-height: 1.96786rem;
+}
+/* line 50, ../scss/gunsstyle/_slider.scss */
+.slider > div:first-child > div > a:hover p {
+  bottom: 0;
+}
+/* line 55, ../scss/gunsstyle/_slider.scss */
+.slider > div:first-child > div.current {
+  display: block;
+}
+/* line 56, ../scss/gunsstyle/_slider.scss */
+.slider > div:first-child > div.bprev, .slider > div:first-child > div.bnext {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+}
+/* line 62, ../scss/gunsstyle/_slider.scss */
+.slider > div:first-child > div.bprev {
+  display: block;
+}
+/* line 64, ../scss/gunsstyle/_slider.scss */
+.slider > div:first-child > div.bprev img {
+  animation: .3s slide-by-prev ease-in-out;
+}
+/* line 66, ../scss/gunsstyle/_slider.scss */
+.slider > div:first-child > div.bnext {
+  display: block;
+}
+/* line 68, ../scss/gunsstyle/_slider.scss */
+.slider > div:first-child > div.bnext img {
+  animation: .3s slide-by-next ease-in-out;
+}
+/* line 71, ../scss/gunsstyle/_slider.scss */
+.slider > div:first-child > a {
+  position: absolute;
+  padding: 10px 20px;
+  z-index: 2;
+  top: calc((100% - 35px) / 2);
+  color: #1e1e1e;
+  font-size: 14px;
+  font-size: 1rem;
+  line-height: 16px;
+  line-height: 1.13929rem;
+  background: whitesmoke;
+  text-transform: capitalize;
+  text-decoration: none;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+/* line 82, ../scss/gunsstyle/_slider.scss */
+.slider > div:first-child > a.nav-next {
+  right: 0;
+  -webkit-box-shadow: 3px 0 3px rgba(30, 30, 30, 0.5);
+  -moz-box-shadow: 3px 0 3px rgba(30, 30, 30, 0.5);
+  box-shadow: 3px 0 3px rgba(30, 30, 30, 0.5);
+}
+/* line 83, ../scss/gunsstyle/_slider.scss */
+.slider > div:first-child > a.nav-prev {
+  left: 0;
+  -webkit-box-shadow: -3px 0 3px rgba(30, 30, 30, 0.5);
+  -moz-box-shadow: -3px 0 3px rgba(30, 30, 30, 0.5);
+  box-shadow: -3px 0 3px rgba(30, 30, 30, 0.5);
+}
+/* line 84, ../scss/gunsstyle/_slider.scss */
+.slider > div:first-child > a:hover {
+  background: #e8e8e8;
+}
+/* line 88, ../scss/gunsstyle/_slider.scss */
+.slider > div:first-child > a:active.nav-prev {
+  -webkit-box-shadow: inset 3px 0 3px rgba(30, 30, 30, 0.5);
+  -moz-box-shadow: inset 3px 0 3px rgba(30, 30, 30, 0.5);
+  box-shadow: inset 3px 0 3px rgba(30, 30, 30, 0.5);
+}
+/* line 91, ../scss/gunsstyle/_slider.scss */
+.slider > div:first-child > a:active.nav-next {
+  -webkit-box-shadow: inset -3px 0 3px rgba(30, 30, 30, 0.5);
+  -moz-box-shadow: inset -3px 0 3px rgba(30, 30, 30, 0.5);
+  box-shadow: inset -3px 0 3px rgba(30, 30, 30, 0.5);
+}
+/* line 97, ../scss/gunsstyle/_slider.scss */
+.slider > div:last-child {
+  width: 100%;
+  padding: 0;
+}
+/* line 100, ../scss/gunsstyle/_slider.scss */
+.slider > div:last-child a {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: #ababab;
+  margin: 0 10px 0 0;
+  vertical-align: middle;
+  position: relative;
+}
+/* line 109, ../scss/gunsstyle/_slider.scss */
+.slider > div:last-child a:active:not(.current) {
+  -moz-box-shadow: inset 0 2px 2px rgba(145, 145, 145, 0.7);
+  -webkit-box-shadow: inset 0 2px 2px rgba(145, 145, 145, 0.7);
+  box-shadow: inset 0 2px 2px rgba(145, 145, 145, 0.7);
+}
+/* line 112, ../scss/gunsstyle/_slider.scss */
+.slider > div:last-child a.current {
+  background: #2a3e6d;
+}
+/* line 115, ../scss/gunsstyle/_slider.scss */
+.slider > div:last-child a .fimage {
+  position: absolute;
+  height: 50px;
+  width: 100px;
+  top: -55px;
+  left: 0;
+  z-index: 3;
+  background: whitesmoke;
+  border: 1px solid #919191;
+  padding: 3px;
+}
+/* line 125, ../scss/gunsstyle/_slider.scss */
+.slider > div:last-child a .fimage img {
+  width: 100%;
+  height: 100%;
+}
+/* line 129, ../scss/gunsstyle/_slider.scss */
+.slider > div:last-child a .fimage:after, .slider > div:last-child a .fimage:before {
+  position: absolute;
+  content: '';
+  left: 2px;
+  bottom: -10px;
+  border: 5px solid transparent;
+  border-top: 5px solid #919191;
+}
+/* line 137, ../scss/gunsstyle/_slider.scss */
+.slider > div:last-child a .fimage:after {
+  border-top: 5px solid whitesmoke;
+  bottom: -9px;
+}
+
+@media screen and (max-width: 1023px) {
+  /* line 147, ../scss/gunsstyle/_slider.scss */
+  .slider {
+    margin-top: 10px;
+    margin-top: 0.725rem;
+    margin-bottom: 10px;
+    margin-bottom: 0.725rem;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 767px) {
+  /* line 156, ../scss/gunsstyle/_slider.scss */
+  .slider > div:first-child {
+    max-height: 264px;
+    height: max-content;
+  }
+  /* line 159, ../scss/gunsstyle/_slider.scss */
+  .slider > div:first-child > div {
+    max-height: 264px;
+    height: max-content;
+  }
+  /* line 163, ../scss/gunsstyle/_slider.scss */
+  .slider > div:first-child > div > a > img {
+    height: auto;
+    width: 100%;
+  }
+  /* line 170, ../scss/gunsstyle/_slider.scss */
+  .slider > div:last-child {
+    display: none;
+  }
+}
+@media screen and (min-width: 1024px) {
+  /* line 175, ../scss/gunsstyle/_slider.scss */
+  .slider {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-top: 10px;
+    margin-top: 0.725rem;
+    width: 75%;
+    padding: 0;
+  }
+}
+/* line 1, ../scss/gunsstyle/_inputs.scss */
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  font-size: 14px;
+  line-height: 1.45rem;
+  padding-top: 6px;
+  padding-top: 0.435rem;
+  padding-bottom: 6px;
+  padding-bottom: 0.435rem;
+  border: 1px solid #919191;
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: RobotoRegular;
+}
+/* line 61, ../../../../../../../../var/lib/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
+input[type="text"]:-moz-placeholder,
+input[type="password"]:-moz-placeholder {
+  font-style: normal;
+  color: #919191;
+  font-family: RobotoLight;
+}
+/* line 64, ../../../../../../../../var/lib/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
+input[type="text"]::-moz-placeholder,
+input[type="password"]::-moz-placeholder {
+  font-style: normal;
+  color: #919191;
+  font-family: RobotoLight;
+}
+/* line 67, ../../../../../../../../var/lib/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
+input[type="text"]:-ms-input-placeholder,
+input[type="password"]:-ms-input-placeholder {
+  font-style: normal;
+  color: #919191;
+  font-family: RobotoLight;
+}
+/* line 56, ../../../../../../../../var/lib/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
+input[type="text"]::-webkit-input-placeholder,
+input[type="password"]::-webkit-input-placeholder {
+  font-style: normal;
+  color: #919191;
+  font-family: RobotoLight;
+}
+
+/* line 3, ../scss/gunsstyle/_buttons.scss */
+.btn {
+  display: inline-block;
+  font-size: 14px;
+  border: 1px solid #2a3e6d;
+  background: whitesmoke;
+  color: #2a3e6d;
+  padding-left: 12px;
+  padding-right: 12px;
+  line-height: 1.45rem;
+  padding-top: 6px;
+  padding-top: 0.435rem;
+  padding-bottom: 6px;
+  padding-bottom: 0.435rem;
+  cursor: pointer;
+  text-decoration: none;
+  vertical-align: top;
+  font-family: RobotoRegular;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+/* line 18, ../scss/gunsstyle/_buttons.scss */
+.btn:focus {
+  outline: none;
+}
+/* line 19, ../scss/gunsstyle/_buttons.scss */
+.btn:not(.disabled):active {
+  -moz-transition: 0;
+  -o-transition: 0;
+  -webkit-transition: 0;
+  transition: 0;
+  -moz-box-shadow: inset 0 2px 3px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: inset 0 2px 3px rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0 2px 3px rgba(0, 0, 0, 0.15);
+}
+/* line 23, ../scss/gunsstyle/_buttons.scss */
+.btn.disabled {
+  cursor: default;
+  background: gainsboro;
+  color: #ababab;
+  border: 1px solid #ababab;
+}
+/* line 29, ../scss/gunsstyle/_buttons.scss */
+.btn.success {
+  background: #3f5da4;
+  color: whitesmoke;
+  border: 1px solid #3f5da4;
+}
+/* line 33, ../scss/gunsstyle/_buttons.scss */
+.btn.success:not(.disabled):hover {
+  background: #385392;
+}
+/* line 34, ../scss/gunsstyle/_buttons.scss */
+.btn.success.disabled {
+  background: #56678d;
+  border: 1px solid #5877bf;
+}
+/* line 39, ../scss/gunsstyle/_buttons.scss */
+.btn.danger {
+  background: #d4534a;
+  color: whitesmoke;
+  border: 1px solid #d4534a;
+}
+/* line 43, ../scss/gunsstyle/_buttons.scss */
+.btn.danger:not(.disabled):hover {
+  background: #cf3f35;
+}
+/* line 44, ../scss/gunsstyle/_buttons.scss */
+.btn.danger.disabled {
+  background: #be6660;
+  border: 1px solid #de7a73;
+}
+/* line 49, ../scss/gunsstyle/_buttons.scss */
+.btn.small {
+  font-size: 11px;
+  font-size: 0.75rem;
+  line-height: 20px;
+  line-height: 1.45rem;
+}
+/* line 52, ../scss/gunsstyle/_buttons.scss */
+.btn.large {
+  font-size: 18px;
+  font-size: 1.25rem;
+  line-height: 30px;
+  line-height: 2.175rem;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+/* line 56, ../scss/gunsstyle/_buttons.scss */
+.btn.large:not(.disabled):active {
+  -moz-box-shadow: inset 0 3px 4px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: inset 0 3px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0 3px 4px rgba(0, 0, 0, 0.15);
+}

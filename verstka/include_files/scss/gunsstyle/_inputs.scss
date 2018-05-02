@@ -1,0 +1,18 @@
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+    @include padding-lt(.3, .3);
+    border: 1px solid $cgrey;
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: RobotoRegular;
+    @include input-placeholder {
+        font-style: normal;
+        color: $cgrey;
+        font-family: RobotoLight;
+    }
+}

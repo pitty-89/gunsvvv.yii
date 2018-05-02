@@ -1,0 +1,96 @@
+@keyframes pp-from-top {
+  0% {
+    top: -150px;
+    opacity: .1;
+  }
+  100% {
+    @media (min-width: 800px) {
+      top: 50px;
+    }
+    @media (max-width: 800px) {
+      top: 46px;
+    }
+    opacity: 1;
+  }
+}
+@media (max-width: 370px) {
+  @keyframes pp-from-top {
+    0% {
+      left: 60%;
+      opacity: .1;
+    }
+    100% {
+      left: 0;
+      opacity: 1;
+    }
+  }
+}
+/* line 15, ../scss/gunsstyle/_popup.scss */
+.popup {
+  position: absolute;
+  z-index: 6;
+  padding-top: 10px;
+  padding-top: 0.725rem;
+  padding-bottom: 10px;
+  padding-bottom: 0.725rem;
+  padding-left: 10px;
+  padding-right: 10px;
+  background: whitesmoke;
+  width: 370px;
+  left: calc(50% - 185px);
+  top: 50px;
+  animation: 0.3s pp-from-top linear;
+}
+/* line 27, ../scss/gunsstyle/_popup.scss */
+.popup__header {
+  font-size: 18px;
+  font-size: 1.25rem;
+  line-height: 20px;
+  line-height: 1.45rem;
+  padding-bottom: 10px;
+  padding-bottom: 0.725rem;
+  margin-bottom: 10px;
+  margin-bottom: 0.725rem;
+  border-bottom: 1px solid #919191;
+}
+/* line 32, ../scss/gunsstyle/_popup.scss */
+.popup__header span {
+  display: inline-block;
+  vertical-align: top;
+  max-width: calc(100% - 20px);
+}
+/* line 37, ../scss/gunsstyle/_popup.scss */
+.popup__header i {
+  width: 20px;
+  display: inline-block;
+  vertical-align: top;
+  float: right;
+  cursor: pointer;
+  padding-right: 5px;
+  padding-bottom: 5px;
+}
+/* line 47, ../scss/gunsstyle/_popup.scss */
+.popup__body {
+  padding-bottom: 10px;
+  padding-bottom: 0.725rem;
+  margin-bottom: 10px;
+  margin-bottom: 0.725rem;
+  border-bottom: 1px solid #919191;
+}
+/* line 52, ../scss/gunsstyle/_popup.scss */
+.popup__footer {
+  text-align: left;
+}
+@media (max-width: 800px) {
+  /* line 15, ../scss/gunsstyle/_popup.scss */
+  .popup {
+    top: 46px;
+  }
+}
+@media (max-width: 370px) {
+  /* line 15, ../scss/gunsstyle/_popup.scss */
+  .popup {
+    width: 100%;
+    left: 0;
+  }
+}

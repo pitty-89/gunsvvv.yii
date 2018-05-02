@@ -1,0 +1,253 @@
+@import "gunsstyle/config";
+.temp-binline {
+  vertical-align: top;
+  display: inline-block;
+}
+$bgdByBefore: lighten($cblue, 28%);
+.container {
+  &__catalog-item {
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    & > a {
+      @extend .temp-binline;
+      width: 340px;
+      height: 340px;
+      margin-left: 20px;
+      margin-right: 20px;
+      @include margin-trailer(1);
+      @include border-radius(180px);
+      @include box-shadow(0 0 5px rgba($cblue, .1));
+      @include transition($transition);
+      border: 1px solid rgba($bgdByBefore, .5);
+      overflow: hidden;
+      position: relative;
+      img {
+        @extend .temp-binline;
+        width: 100%;
+        filter: hue-rotate(225deg) grayscale(50%) saturate(50%);
+        @include transition($transition);
+      }
+      span {
+        @extend .temp-binline;
+        position: absolute;
+        z-index: 2;
+        text-transform: uppercase;
+        font-size: 32px;
+        color: $cwhite;
+        font-family: RobotoLight;
+      }
+      &:focus { outline: none; }
+      &:focus,
+      &:hover {
+        @include box-shadow(0 0 5px rgba($cblue, .6));
+        img {
+          filter: hue-rotate(0deg);
+        }
+      }
+
+      &.weapon {
+        &:before {
+          position: absolute;
+          content: '';
+          background: $bgdByBefore;
+          top: 0;
+          left: 0;
+          height: 90px;
+          width: 100%;
+          z-index: 1;
+        }
+        span {
+          width: 100%;
+          text-align: center;
+          line-height: 90px;
+        }
+      }
+      &.protection {
+        &:before {
+          position: absolute;
+          z-index: 0;
+          left: -10px;
+          top: -50px;
+          width: 250px;
+          height: 250px;
+          @include border-radius(150px);
+          background: $bgdByBefore;
+          content: '';
+        }
+        span {
+          top: 42px;
+          left: 50px;
+          width: 250px;
+          line-height: 42px;
+        }
+      }
+      &.amunition {
+        border: 1px solid $bgdByBefore;
+        span {
+          height: 70px;
+          width: 100%;
+          text-align: center;
+          line-height: 90px;
+          background: $bgdByBefore;
+        }
+        &:before {
+          width: 70px;
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 100%;
+          content: '';
+          background: $bgdByBefore;
+          z-index: 1;
+        }
+        &:after {
+          width: 100%;
+          height: 45px;
+          bottom: 0;
+          left: 0;
+          content: '';
+          position: absolute;
+          background: $bgdByBefore;
+          z-index: 1;
+        }
+      }
+      &.special {
+        &:after {
+          content: '';
+          position: absolute;
+          z-index: 1;
+          left: -40px;
+          bottom: -130px;
+          background: $cwhite;
+          width: 280px;
+          height: 280px;
+          @include border-radius(150px);
+        }
+        span {
+          color: $bgdByBefore;
+          bottom: 50px;
+          left: 46px;
+          line-height: 38px;
+          width: 60px;
+        }
+      }
+      &.other {
+        span {
+          line-height: 42px;
+          background: $bgdByBefore;
+          right: 0;
+          top: 0;
+          width: 240px;
+          height: 110px;
+          padding-left: 25px;
+          padding-top: 45px;
+        }
+        &:after {
+          content: '';
+          position: absolute;
+          background: $bgdByBefore;
+          left: 0;
+          bottom: 0;
+          height: 120px;
+          width: 140px;
+          z-index: 1;
+        }
+      }
+    }
+    & > div {
+      @extend .temp-binline;
+      width: calc(100% - 380px);
+      padding-left: 50px;
+      @include margin-trailer(1);
+      display: inline-flex;
+      flex-flow: wrap;
+
+      ul {
+        @include padding-leader(1);
+        @include padding-trailer(1);
+        width: 100%;
+        li {
+          display: block;
+          a {
+            padding-left: 20px;
+            position: relative;
+            display: block;
+            text-decoration: none;
+            color: $cgrey;
+            @include transition($transition);
+            @include adjust-font-size-to($h3, 1.3);
+            font-size: $h3;
+            &:before {
+              content: '\2013';
+              position: absolute;
+              left: 0;
+              top: 0;
+            }
+            &:hover {
+              color: $corange;
+              &:before {
+              }
+            }
+          }
+        }
+      }
+      p {
+        color: $cgrey;
+        font-family: RobotoLight;
+        height: max-content;
+        @include adjust-font-size-to($h4, 1
+
+
+        );
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+.ancors {
+  position: fixed;
+  right: 20px;
+  top: calc(50vh - 100px);
+  a {
+    width: 30px;
+    height: 30px;
+    display: block;
+    position: relative;
+    background: white;
+    border: 1px solid rgba($bgdByBefore, .5);
+    @include transition($transition);
+    @include border-radius(20px);
+    @include margin-trailer(.5);
+    @include box-shadow(2px 2px 3px rgba($cblack, .3));
+    span {
+      display: none;
+    }
+    &:hover {
+      background: $bgdByBefore;
+      span {
+        display: inline-block;
+        position: absolute;
+        right: 35px;
+        top: 0;
+        $cBgd : rgba($cblack, .7);
+        background: $cBgd;
+        color: $cwhite;
+        font-size: $h5;
+        padding-left: 10px;
+        padding-right: 10px;
+        @include padding-lt(.2,.2);
+        @include border-radius(20px);
+        white-space: nowrap;
+        // &:after {
+        //   content: '';
+        //   position: absolute;
+        //   border: 5px solid transparent;
+        //   border-left: 10px solid $cBgd;
+        //   right: -15px;
+        //   top: 10px;
+        // }
+      }
+    }
+  }
+}

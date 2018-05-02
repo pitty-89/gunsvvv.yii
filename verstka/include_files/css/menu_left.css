@@ -1,0 +1,201 @@
+/* line 1, ../scss/gunsstyle/_menu_left.scss */
+.menu {
+  display: inline-block;
+  vertical-align: top;
+  font-family: "europe";
+  width: 25%;
+}
+/* line 5, ../scss/gunsstyle/_menu_left.scss */
+.menu a {
+  font-size: 19px;
+  font-size: 1.333rem;
+  line-height: 20px;
+  line-height: 1.45rem;
+  font-weight: 600;
+  color: #2a3e6d;
+  display: block;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  text-decoration: none;
+}
+/* line 12, ../scss/gunsstyle/_menu_left.scss */
+.menu a:hover {
+  color: #d4534a;
+}
+/* line 15, ../scss/gunsstyle/_menu_left.scss */
+.menu a.menu__toggle-list {
+  display: none;
+}
+/* line 20, ../scss/gunsstyle/_menu_left.scss */
+.menu > ul li a {
+  font-size: 14px;
+  font-size: 1rem;
+  line-height: 20px;
+  line-height: 1.45rem;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+/* line 25, ../scss/gunsstyle/_menu_left.scss */
+.menu > ul li.auth a {
+  display: inline-block;
+  width: initial;
+}
+/* line 26, ../scss/gunsstyle/_menu_left.scss */
+.menu > ul li.auth span {
+  font-size: 14px;
+  font-size: 1rem;
+  line-height: 20px;
+  line-height: 1.45rem;
+  display: inline-block;
+  margin: 0 2px;
+}
+
+@media screen and (max-width: 1023px) {
+  /* line 36, ../scss/gunsstyle/_menu_left.scss */
+  .menu {
+    width: calc(100% - 20px);
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 0px;
+    margin-top: 0rem;
+  }
+  /* line 41, ../scss/gunsstyle/_menu_left.scss */
+  .menu > a {
+    width: 16.6666%;
+    display: inline-block;
+    vertical-align: top;
+  }
+  /* line 44, ../scss/gunsstyle/_menu_left.scss */
+  .menu > a i {
+    font-size: 56px;
+    font-size: 4rem;
+    line-height: 61px;
+    line-height: 4.35rem;
+  }
+  /* line 47, ../scss/gunsstyle/_menu_left.scss */
+  .menu > ul {
+    width: 83.3333%;
+    display: inline-block;
+    vertical-align: top;
+  }
+  /* line 51, ../scss/gunsstyle/_menu_left.scss */
+  .menu > ul li {
+    margin-top: 20px;
+    margin-top: 1.45rem;
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 10px;
+  }
+  /* line 56, ../scss/gunsstyle/_menu_left.scss */
+  .menu > ul li:first-child {
+    padding: 0 0;
+  }
+  /* line 57, ../scss/gunsstyle/_menu_left.scss */
+  .menu > ul li a {
+    display: inline-block;
+    width: initial;
+  }
+}
+@media screen and (max-width: 767px) {
+  /* line 66, ../scss/gunsstyle/_menu_left.scss */
+  .menu {
+    margin-top: 10px;
+    margin-top: 0.725rem;
+  }
+}
+@media screen and (max-width: 730px) {
+  /* line 73, ../scss/gunsstyle/_menu_left.scss */
+  .menu > a.menu__toggle-list {
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px;
+    width: initial;
+    vertical-align: top;
+    line-height: initial;
+    float: right;
+  }
+  /* line 81, ../scss/gunsstyle/_menu_left.scss */
+  .menu > a.menu__toggle-list i {
+    display: inline-block;
+    line-height: 2.6rem;
+    font-size: 3rem;
+  }
+  /* line 88, ../scss/gunsstyle/_menu_left.scss */
+  .menu > ul {
+    display: none;
+  }
+  /* line 90, ../scss/gunsstyle/_menu_left.scss */
+  .menu > ul.menu__toggle-open {
+    display: block;
+    width: 300px;
+    max-width: 100%;
+    position: absolute;
+    top: 82px;
+    right: 0;
+    z-index: 5;
+    background: whitesmoke;
+    border: 1px solid #2a3e6d;
+    -moz-box-shadow: -1px 1px 2px rgba(30, 30, 30, 0.6);
+    -webkit-box-shadow: -1px 1px 2px rgba(30, 30, 30, 0.6);
+    box-shadow: -1px 1px 2px rgba(30, 30, 30, 0.6);
+  }
+  /* line 101, ../scss/gunsstyle/_menu_left.scss */
+  .menu > ul.menu__toggle-open > li {
+    width: 100%;
+    margin-top: 0;
+  }
+  /* line 104, ../scss/gunsstyle/_menu_left.scss */
+  .menu > ul.menu__toggle-open > li > span {
+    display: none;
+  }
+  /* line 107, ../scss/gunsstyle/_menu_left.scss */
+  .menu > ul.menu__toggle-open > li > a {
+    width: 100%;
+    display: inline-block;
+    padding: 10px 20px;
+  }
+}
+@media screen and (max-width: 600px) {
+  /* line 120, ../scss/gunsstyle/_menu_left.scss */
+  .menu > a i {
+    font-size: 11vw;
+    line-height: 12vw;
+  }
+}
+@media screen and (min-width: 1024px) {
+  /* line 125, ../scss/gunsstyle/_menu_left.scss */
+  .menu {
+    width: 25%;
+  }
+  /* line 127, ../scss/gunsstyle/_menu_left.scss */
+  .menu > a {
+    width: 100%;
+    padding: 0 10px;
+  }
+  /* line 130, ../scss/gunsstyle/_menu_left.scss */
+  .menu > a i {
+    font-size: 140px;
+    font-size: 10rem;
+    line-height: 162px;
+    line-height: 11.6rem;
+  }
+  /* line 132, ../scss/gunsstyle/_menu_left.scss */
+  .menu > ul {
+    padding: 0 10px;
+    width: 83.3333%;
+    margin-top: 10px;
+    margin-top: 0.725rem;
+  }
+  /* line 136, ../scss/gunsstyle/_menu_left.scss */
+  .menu > ul li {
+    width: 100%;
+  }
+  /* line 139, ../scss/gunsstyle/_menu_left.scss */
+  .menu > ul li:not(.auth) a {
+    width: 100%;
+  }
+}

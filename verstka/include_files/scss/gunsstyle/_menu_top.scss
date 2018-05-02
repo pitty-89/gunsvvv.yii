@@ -1,0 +1,326 @@
+.header {
+  position: relative;
+  z-index: 4;
+  &:before {
+    content: '';
+    position: absolute;
+    z-index: 0;
+    left: 0;
+    top: 0;
+    display: inline-block;
+    height: 0;
+    width: 100%;
+    @include padding-trailer(4.9);
+    background: -webkit-gradient(linear, left top, left bottom, from(lighten($cblue, 25)), to(lighten($cblue, 8)));
+    border-bottom: 2px solid $cwhite;
+    @include box-shadow(0 3px 4px rgba($cblack, .3));
+  }
+  & > a {
+    width: 16.6666%;
+    text-align: center;
+    color: $cblue;
+    text-decoration: none;
+    @include adjust-font-size-to(8.489rem);
+    @include transition($transition);
+    i {
+      width: 70%;
+      background: url("/verstka/include_files/images/logo/l_blue.png") no-repeat;
+      background-size: contain;
+      vertical-align: top;
+      display: inline-block;
+      height: 0;
+      @include padding-trailer(5);
+      @include transition($transition);
+      &:before {
+        content: unset;
+      }
+    }
+    &:hover {
+      text-decoration: none;
+      color: $corange;
+      i {
+        background: url("/verstka/include_files/images/logo/l_orange.png") no-repeat;
+        background-size: contain;
+      }
+    }
+  }
+  & > div {
+    width: 83.3333%;
+    & > div {
+
+    }
+  }
+  & > * {
+    @include margin-leader(1);
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    z-index: 1;
+  }
+  &__search {
+    text-align: right;
+    @include margin-trailer(.3);
+    form {
+      width: 30%;
+      display: inline-block;
+      margin: 0 10px 0 0;
+      white-space: nowrap;
+      input[type="text"] { width: calc(100% - 40px); }
+      .btn {
+        border: 1px solid $cgrey;
+        border-left: 0;
+      }
+    }
+  }
+  &__menu {
+    &__item {
+      display: inline-block;
+      vertical-align: top;
+      position: relative;
+      a {
+        display: inline-block;
+        vertical-align: top;
+        @include padding-lt(.4, .4);
+        padding-left: 10px;
+        padding-right: 10px;
+        text-decoration: none;
+        @include transition($transition);
+        color: $cwhite;
+        font-family: RobotoRegular;
+        &:hover { color: $corange; }
+      }
+      &.with-sub {
+        & > a {
+          padding-right: 20px;
+          position: relative;
+          &:after {
+            font-family: icomoon;
+            font-size: $base-font-size;
+            @include padding-lt(.4, .4);
+            content: '\f105';
+            position: absolute;
+            right: 8px;
+            top: 2px;
+            line-height: inherit;
+          }
+        }
+        &.open {
+          & > a {
+            &:after { content: '\f107'; }
+          }
+        }
+      }
+      &.open {
+        & > a { color: $corange; background: $cblue; }
+        & > .header__menu__item-sublist { display: block; }
+      }
+      &-sublist {
+        display: none;
+        position: absolute;
+        top: 39px;
+        z-index: 4;
+        left: 0;
+        & > div {
+          a {
+            width: 100%;
+            min-width: 200px;
+            background: $cwhite;
+            color: $cblue;
+            padding-left: 10px;
+            padding-right: 10px;
+            @include padding-lt(.4, .4);
+            @include transition($transition);
+            white-space: nowrap;
+            border-bottom: 1px solid $cblue;
+          }
+          &.with-sub {
+            & > a {
+              position: relative;
+              padding-right: 20px;
+              &:after {
+                font-family: 'icomoon';
+                font-size: $base-font-size;
+                @include padding-lt(.4, .4);
+                content: '\f105';
+                position: absolute;
+                right: 8px;
+                top: 0;
+                line-height: inherit;
+              }
+            }
+          }
+          &.open {
+            position: relative;
+            & > a { color: $corange; background: $cblue; border-bottom: 1px solid $corange; }
+            & > div {
+              display: block;
+              position: absolute;
+              left: 100%;
+              z-index: 2;
+              top: 0;
+              a {
+                &:hover { color: $corange; background: $cblue; border-bottom: 1px solid $corange; }
+                &:last-child {
+                  border-bottom: 0;
+                  &:hover { border-bottom: 0; }
+                }
+              }
+            }
+          }
+          &:last-child {
+            & > a { border-bottom: 0; }
+            &:hover & > a { border-bottom: 0; }
+          }
+        }
+      }
+      &.auth { float: right; }
+      &.reg { float: right; }
+    }
+  }
+  @media (max-width: 800px) {
+    @include margin-trailer(1);
+    z-index: 5;
+    &:before {
+      @include padding-trailer(0);
+    }
+    & > * {
+      @include margin-leader(0);
+    }
+    & > div {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      background: -webkit-gradient(linear, left top, left bottom, from(lighten($cblue, 25)), to(lighten($cblue, 8)));
+      border-bottom: 2px solid $cwhite;
+      @include box-shadow(0 3px 4px rgba($cblack, .3));
+    }
+    & > a {
+      display: none;
+    }
+    &__search {
+      display: inline-block;
+      order: 1;
+      margin-bottom: 0;
+      form {
+        width: auto;
+        margin: 5px 10px;
+      }
+    }
+    &__menu {
+      display: none;
+      @keyframes menu-by-left {
+        0% { opacity: .1; left: -80%; }
+        100% { opacity: 1; left: 0; }
+      }
+      &.open {
+        display: flex;
+        flex-flow: wrap;
+        flex-direction: column;
+        position: absolute;
+        width: 320px;
+        max-width: 100%;
+        top: 46px;
+        left: 0;
+        background: $cwhite;
+        z-index: 6;
+        animation: $transition menu-by-left ease-in-out;
+      }
+      &-toggle {
+        order: 0;
+        padding: 5px 0;
+        width: 40px;
+        height: 44px;
+        display: inline-block;
+        color: white;
+        cursor: pointer;
+        text-align: center;
+        i {
+          position: relative;
+          font-size: 22px;
+          display: block;
+          height: 100%;
+          &:after {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            display: inline-block;
+            content: 'МЕНЮ';
+            font-size: 10px;
+            vertical-align: top;
+            font-family: RobotoRegular;
+          }
+        }
+      }
+      &__item {
+        display: block;
+        & > a {
+          color: $cblue;
+          width: 100%;
+          font-size: $base-font-size + 2;
+          font-family: RobotoBold;
+        }
+        order: 0;
+        &.reg {
+          float: none;
+          order: 2;
+        }
+        &.auth {
+          float: none;
+          order: 1;
+        }
+        &-sublist {
+          width: 100%;
+          position: relative;
+          top: 0;
+          & > a {
+            &:first-child {
+              @include box-shadow(inset 0 2px 4px rgba($cblack, .7));
+              &.open {
+                @include box-shadow(inset 0 2px 4px rgba($cwhite, .7));
+              }
+            }
+            &:last-child {
+              @include box-shadow(inset 0 -2px 4px rgba($cblack, .7));
+              &.open {
+                @include box-shadow(inset 0 -2px 4px rgba($cwhite, .7));
+              }
+            }
+          }
+          & > .with-sub {
+            & > a {
+              white-space: normal;
+            }
+            &.open {
+              & > a {
+                &:after {
+                  content: '\f107';
+                }
+              }
+              & > div {
+                position: relative;
+                left: 0;
+                top: 0;
+              }
+            }
+            &:first-child {
+              & > a {
+                @include box-shadow(inset 0 2px 4px rgba($cblack, .7));
+              }
+            }
+            &:last-child {
+              & > a {
+                @include box-shadow(inset 0 -2px 4px rgba($cblack, .7));
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @media (min-width: 801px) {
+    &__menu {
+      &-toggle { display: none; }
+    }
+  }
+}

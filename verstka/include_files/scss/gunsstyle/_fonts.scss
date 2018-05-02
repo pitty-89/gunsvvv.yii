@@ -1,0 +1,26 @@
+$fFamilySrc : "/verstka/include_files/fonts/";
+$arFName : (
+        'europe'          : 'EuropeExt',
+        'europebold'      : 'EuropeExt_Bold',
+//        'helvetica'       : 'HelveticaNeueCyr-Medium',
+//        'helvetica-light' : 'HelveticaNeueCyr-Thin',
+//        'helvetica-bold'  : 'HelveticaNeueCyr-Bold',
+        "icomoon"         : 'IcoMoon',
+        'RobotoRegular'   : 'RobotoRegular',
+        'RobotoBold'     : 'RobotoBold',
+        'RobotoLight'    : 'RobotoLight'
+);
+@import 'icomoon';
+@each $title, $font in $arFName {
+  $fSrc : "/verstka/include_files/fonts/#{$font}/#{$font}";
+  @font-face {
+    font-family: $title;
+    src: url("#{$fSrc}.eot");
+    src: local("#{$fSrc}"),
+    url("#{$fSrc}.eot?#iefix") format("embedded-opentype"),
+    url("#{$fSrc}.woff") format("woff"),
+    /* url("#{$fSrc}.woff2") format("woff2"),*/
+    url("#{$fSrc}.ttf") format("truetype"),
+    url("#{$fSrc}.svg#fonts") format("svg")
+  }
+}

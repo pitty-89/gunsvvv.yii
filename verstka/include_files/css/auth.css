@@ -1,0 +1,15 @@
+/* line 2, ../scss/gunsstyle/_auth.scss */
+.form-auth label {
+  display: block;
+  vertical-align: top;
+  margin-bottom: 10px;
+  margin-bottom: 0.725rem;
+}
+/* line 6, ../scss/gunsstyle/_auth.scss */
+.form-auth label span {
+  display: block;
+  font-size: 14px;
+  font-size: 1rem;
+  line-height: 20px;
+  line-height: 1.45rem;
+}
