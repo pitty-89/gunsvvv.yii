@@ -240,14 +240,241 @@
   line-height: 1.45rem;
   margin-bottom: 0;
 }
+@media (max-width: 1140px) {
+  /* line 8, ../scss/catalog.scss */
+  .container__catalog-item {
+    width: calc(100% - 140px);
+  }
+}
+@media (max-width: 1000px) {
+  /* line 8, ../scss/catalog.scss */
+  .container__catalog-item {
+    width: calc(100% - 70px);
+    margin: 0 0;
+  }
+}
+@media (max-width: 900px) {
+  /* line 214, ../scss/catalog.scss */
+  .container__catalog-item > a {
+    width: 240px;
+    height: 226px;
+  }
+  /* line 217, ../scss/catalog.scss */
+  .container__catalog-item > a span {
+    font-size: 22px;
+  }
+  /* line 221, ../scss/catalog.scss */
+  .container__catalog-item > a.weapon span {
+    line-height: 60px;
+  }
+  /* line 222, ../scss/catalog.scss */
+  .container__catalog-item > a.weapon:before {
+    height: 60px;
+  }
+  /* line 227, ../scss/catalog.scss */
+  .container__catalog-item > a.protection span {
+    top: 30px;
+    left: 40px;
+    text-align: center;
+    line-height: normal;
+    width: 110px;
+  }
+  /* line 234, ../scss/catalog.scss */
+  .container__catalog-item > a.protection:before {
+    height: 175px;
+    width: 175px;
+  }
+  /* line 240, ../scss/catalog.scss */
+  .container__catalog-item > a.amunition span {
+    height: 42px;
+    line-height: 56px;
+  }
+  /* line 244, ../scss/catalog.scss */
+  .container__catalog-item > a.amunition:before {
+    width: 34px;
+  }
+  /* line 247, ../scss/catalog.scss */
+  .container__catalog-item > a.amunition:after {
+    height: 42px;
+  }
+  /* line 252, ../scss/catalog.scss */
+  .container__catalog-item > a.special span {
+    left: 42px;
+    bottom: 22px;
+    line-height: 27px;
+  }
+  /* line 258, ../scss/catalog.scss */
+  .container__catalog-item > a.special:after {
+    width: 220px;
+    height: 215px;
+  }
+  /* line 264, ../scss/catalog.scss */
+  .container__catalog-item > a.other span {
+    line-height: 38px;
+    height: 81px;
+    width: 122px;
+    padding-left: 10px;
+    padding-top: 32px;
+  }
+  /* line 271, ../scss/catalog.scss */
+  .container__catalog-item > a.other:after {
+    height: 80px;
+    width: 100px;
+  }
+  /* line 277, ../scss/catalog.scss */
+  .container__catalog-item > div {
+    width: calc(100% - 240px);
+    padding-left: 20px;
+  }
+  /* line 282, ../scss/catalog.scss */
+  .container__catalog-item > div ul li a {
+    font-size: 1.4rem;
+  }
+  /* line 285, ../scss/catalog.scss */
+  .container__catalog-item > div p {
+    line-height: 1.25rem;
+    font-size: 1.25rem;
+  }
+}
+@media (max-width: 740px) {
+  /* line 8, ../scss/catalog.scss */
+  .container__catalog-item {
+    display: inline-flex;
+    width: calc(50% - 15px);
+    flex-flow: wrap;
+    position: relative;
+    overflow: hidden;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-bottom: 0.725rem;
+  }
+  /* line 299, ../scss/catalog.scss */
+  .container__catalog-item > a {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    border: 0;
+    overflow: visible;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+  }
+  /* line 306, ../scss/catalog.scss */
+  .container__catalog-item > a.amunition:after, .container__catalog-item > a.other:after, .container__catalog-item > a.special:after {
+    content: unset;
+  }
+  /* line 309, ../scss/catalog.scss */
+  .container__catalog-item > a.weapon:before, .container__catalog-item > a.protection:before, .container__catalog-item > a.amunition:before, .container__catalog-item > a:before {
+    content: unset;
+  }
+  /* line 313, ../scss/catalog.scss */
+  .container__catalog-item > a.weapon span, .container__catalog-item > a.protection span, .container__catalog-item > a.amunition span, .container__catalog-item > a.special span, .container__catalog-item > a.other span,
+  .container__catalog-item > a span {
+    background: #6380c3;
+    width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 1;
+    line-height: 28px;
+    top: 0;
+    left: 0;
+    padding: 0 10px;
+    margin: 0 0;
+    color: whitesmoke;
+    text-align: left;
+  }
+  /* line 332, ../scss/catalog.scss */
+  .container__catalog-item > a img {
+    display: none;
+  }
+  /* line 336, ../scss/catalog.scss */
+  .container__catalog-item > div {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    position: relative;
+  }
+  /* line 341, ../scss/catalog.scss */
+  .container__catalog-item > div img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+    min-height: 100%;
+    min-width: 100%;
+    filter: hue-rotate(225deg) grayscale(50%) saturate(50%);
+  }
+  /* line 350, ../scss/catalog.scss */
+  .container__catalog-item > div ul {
+    width: calc(100% - 20px);
+    margin: 0 10px;
+    padding-top: 10px;
+    padding-top: 0.725rem;
+    padding-bottom: 10px;
+    padding-bottom: 0.725rem;
+  }
+  /* line 355, ../scss/catalog.scss */
+  .container__catalog-item > div ul li a {
+    padding: 0 0;
+    margin-bottom: 1px;
+    color: whitesmoke;
+  }
+  /* line 359, ../scss/catalog.scss */
+  .container__catalog-item > div ul li a:before {
+    content: unset;
+  }
+  /* line 362, ../scss/catalog.scss */
+  .container__catalog-item > div ul li a span {
+    background: #6380c3;
+  }
+  /* line 364, ../scss/catalog.scss */
+  .container__catalog-item > div ul li a span:before {
+    content: '\2013';
+  }
+  /* line 371, ../scss/catalog.scss */
+  .container__catalog-item > div p {
+    color: whitesmoke;
+    background: #6380c3;
+    width: calc(100% - 20px);
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-bottom: 0.725rem;
+    font-size: .85rem;
+    position: relative;
+    z-index: 1;
+  }
+}
+@media (max-width: 650px) {
+  /* line 8, ../scss/catalog.scss */
+  .container__catalog-item {
+    width: calc(100% - 20px);
+    margin-bottom: 20px;
+    margin-bottom: 1.45rem;
+  }
+  /* line 396, ../scss/catalog.scss */
+  .container__catalog-item .protection ~ div img,
+  .container__catalog-item .weapon ~ div img {
+    height: 100%;
+    min-height: auto;
+    min-width: auto;
+    left: auto;
+    right: 0;
+  }
+}
+@media (min-width: 741px) {
+  /* line 407, ../scss/catalog.scss */
+  .container__catalog-item > div img {
+    display: none;
+  }
+}
 
-/* line 208, ../scss/catalog.scss */
+/* line 414, ../scss/catalog.scss */
 .ancors {
   position: fixed;
   right: 20px;
-  top: calc(50vh - 100px);
 }
-/* line 212, ../scss/catalog.scss */
+/* line 417, ../scss/catalog.scss */
 .ancors a {
   width: 30px;
   height: 30px;
@@ -268,15 +495,15 @@
   -webkit-box-shadow: 2px 2px 3px rgba(30, 30, 30, 0.3);
   box-shadow: 2px 2px 3px rgba(30, 30, 30, 0.3);
 }
-/* line 223, ../scss/catalog.scss */
+/* line 428, ../scss/catalog.scss */
 .ancors a span {
   display: none;
 }
-/* line 226, ../scss/catalog.scss */
+/* line 431, ../scss/catalog.scss */
 .ancors a:hover {
   background: #6380c3;
 }
-/* line 228, ../scss/catalog.scss */
+/* line 433, ../scss/catalog.scss */
 .ancors a:hover span {
   display: inline-block;
   position: absolute;
@@ -295,4 +522,30 @@
   -webkit-border-radius: 20px;
   border-radius: 20px;
   white-space: nowrap;
+}
+@media (max-width: 900px) {
+  /* line 459, ../scss/catalog.scss */
+  .ancors a {
+    width: 22px;
+    height: 22px;
+  }
+}
+@media (max-width: 740px) {
+  /* line 414, ../scss/catalog.scss */
+  .ancors {
+    display: none;
+    right: 10px;
+  }
+}
+@media (max-height: 410px) {
+  /* line 414, ../scss/catalog.scss */
+  .ancors {
+    top: 140px;
+  }
+}
+@media (min-height: 411px) {
+  /* line 414, ../scss/catalog.scss */
+  .ancors {
+    top: calc(50vh - 100px);
+  }
 }

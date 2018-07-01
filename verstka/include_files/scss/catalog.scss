@@ -203,12 +203,217 @@ $bgdByBefore: lighten($cblue, 28%);
         margin-bottom: 0;
       }
     }
+    @media (max-width: 1140px) {
+      width: calc(100% - 140px);
+    }
+    @media (max-width: 1000px) {
+      width: calc(100% - 70px);
+      margin: 0 0;
+    }
+    @media (max-width: 900px) {
+      & > a {
+        width: 240px;
+        height: 226px;
+        span {
+          font-size: 22px;
+        }
+        &.weapon {
+          span { line-height: 60px; }
+          &:before {
+            height: 60px;
+          }
+        }
+        &.protection {
+          span {
+            top: 30px;
+            left: 40px;
+            text-align: center;
+            line-height: normal;
+            width: 110px;
+          }
+          &:before {
+            height: 175px;
+            width: 175px;
+          }
+        }
+        &.amunition {
+          span {
+            height: 42px;
+            line-height: 56px;
+          }
+          &:before {
+            width: 34px;
+          }
+          &:after {
+            height: 42px;
+          }
+        }
+        &.special {
+          span {
+            left: 42px;
+            bottom: 22px;
+            line-height: 27px;
+
+          }
+          &:after {
+            width: 220px;
+            height: 215px;
+          }
+        }
+        &.other {
+          span {
+            line-height: 38px;
+            height: 81px;
+            width: 122px;
+            padding-left: 10px;
+            padding-top: 32px;
+          }
+          &:after {
+            height: 80px;
+            width: 100px;
+          }
+        }
+      }
+      & > div {
+        width: calc(100% - 240px);
+        padding-left: 20px;
+        ul {
+          li {
+            a { font-size: 1.4rem; }
+          }
+        }
+        p {
+          line-height: 1.25rem;
+          font-size: 1.25rem;
+        }
+      }
+    }
+    @media (max-width: 740px) {
+      display: inline-flex;
+      width: calc(50% - 15px);
+      flex-flow: wrap;
+      position: relative;
+      overflow: hidden;
+      margin-left: 10px;
+      @include margin-trailer(.5);
+      & > a {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        border: 0;
+        overflow: visible;
+        @include border-radius(0);
+        &.amunition:after,
+        &.other:after,
+        &.special:after { content: unset; }
+        &.weapon:before,
+        &.protection:before,
+        &.amunition:before,
+        &:before { content: unset; }
+        &.weapon span,
+        &.protection span,
+        &.amunition span,
+        &.special span,
+        &.other span,
+        span {
+           background: $bgdByBefore;
+           width: 100%;
+           height: auto;
+           position: relative;
+           z-index: 1;
+           line-height: 28px;
+           top: 0;
+           left: 0;
+           padding: 0 10px;
+           margin: 0 0;
+           color: $cwhite;
+           text-align: left;
+         }
+        img {
+          display: none;
+        }
+      }
+      & > div {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        position: relative;
+        img {
+          position: absolute;
+          left: 0;
+          top: 0;
+          z-index: 0;
+          min-height: 100%;
+          min-width: 100%;
+          filter: hue-rotate(225deg) grayscale(50%) saturate(50%);
+        }
+        ul {
+          width: calc(100% - 20px);
+          margin: 0 10px;
+          @include padding-lt(.5,.5);
+          li {
+            a {
+              padding: 0 0;
+              margin-bottom: 1px;
+              color: $cwhite;
+              &:before {
+                content: unset;
+              }
+              span {
+                background: $bgdByBefore;
+                &:before {
+                  content: '\2013';
+                }
+              }
+            }
+          }
+        }
+        p {
+          color: $cwhite;
+          background: $bgdByBefore;
+          width: calc(100% - 20px);
+          margin-left: 10px;
+          margin-right: 10px;
+          @include margin-trailer(.5);
+          font-size: .85rem;
+          position :relative;
+          z-index: 1;
+        }
+      }
+    }
+    @media (max-width: 650px) {
+      width: calc(100% - 20px);
+      @include margin-trailer(1);
+      & > a {
+      }
+      & > div {
+        ul {
+
+        }
+      }
+      .protection ~ div,
+      .weapon ~ div {
+        img {
+          height: 100%;
+          min-height: auto;
+          min-width: auto;
+          left: auto;
+          right: 0;
+        }
+      }
+    }
+    @media (min-width: 741px) {
+      & > div {
+        img {
+          display: none;
+        }
+      }
+    }
   }
 }
 .ancors {
   position: fixed;
   right: 20px;
-  top: calc(50vh - 100px);
   a {
     width: 30px;
     height: 30px;
@@ -249,5 +454,21 @@ $bgdByBefore: lighten($cblue, 28%);
         // }
       }
     }
+  }
+  @media (max-width: 900px) {
+    a {
+      width: 22px;
+      height: 22px;
+    }
+  }
+  @media (max-width: 740px) {
+    display: none;
+    right: 10px;
+  }
+  @media (max-height: 410px) {
+    top: 140px;
+  }
+  @media (min-height: 411px) {
+    top: calc(50vh - 100px);
   }
 }

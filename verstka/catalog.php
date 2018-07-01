@@ -13,6 +13,7 @@ foreach ($arTopMenu['catalog']['dropdown'] as $iItem => $arItem) {
         ?><img src="<?= $arItem['image'] ?>" /><?
       ?></a><?
       ?><div><?
+        ?><img src="<?= $arItem['image'] ?>" /><?
         if (!empty($arItem['dropdown'])) {
           ?><ul><?
           foreach ($arItem['dropdown'] as $arSubItem) {
