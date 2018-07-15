@@ -971,22 +971,20 @@ a.text-blue:hover {
 @media screen and (min-width: 1024px) {
   /* line 172, ../scss/gunsstyle/_base.scss */
   .line, .footer {
-    margin-top: 20px;
-    margin-top: 1.45rem;
-    margin-bottom: 10px;
-    margin-bottom: 0.725rem;
+    max-width: 1400px;
+    width: 100%;
+    margin: 1.45rem auto 0.725rem auto;
   }
-  /* line 175, ../scss/gunsstyle/_base.scss */
+  /* line 176, ../scss/gunsstyle/_base.scss */
   .line.no-mt, .no-mt.footer {
     margin-top: 0px;
     margin-top: 0rem;
   }
 
-  /* line 179, ../scss/gunsstyle/_base.scss */
+  /* line 180, ../scss/gunsstyle/_base.scss */
   .footer {
-    margin-top: 10px;
-    margin-top: 0.725rem;
-    margin-bottom: 0;
+    max-width: 1400px;
+    margin: 0.725rem auto 0 auto;
   }
 }
 /* line 1, ../scss/gunsstyle/_inputs.scss */

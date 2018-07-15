@@ -170,14 +170,15 @@ smal {
     //@include padding-leader(1);
   }
   .line {
-    @include margin-leader(1);
-    @include margin-trailer(.5);
+    max-width: $maxWidthContent;
+    width: 100%;
+    margin: $base-line-height auto $base-line-height * .5 auto;
     &.no-mt {
       @include margin-leader(0);
     }
   }
   .footer {
-    @include margin-leader(.5);
-    margin-bottom: 0;
+    max-width: $maxWidthContent;
+    margin: $base-line-height * .5 auto 0 auto;
   }
 }
