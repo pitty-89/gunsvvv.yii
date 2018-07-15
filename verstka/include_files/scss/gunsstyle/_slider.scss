@@ -199,6 +199,7 @@
     & > div {
       &:first-child {
         height: calc(100vh - 26px - 270px - 1.45rem * 3.5);
+        max-height: 1050px;
       }
     }
   }

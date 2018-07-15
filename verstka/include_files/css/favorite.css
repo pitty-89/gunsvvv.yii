@@ -1645,9 +1645,10 @@ a.text-blue:hover {
   /* line 200, ../scss/gunsstyle/_slider.scss */
   .slider > div:first-child {
     height: calc(100vh - 26px - 270px - 1.45rem * 3.5);
+    max-height: 1050px;
   }
 
-  /* line 205, ../scss/gunsstyle/_slider.scss */
+  /* line 206, ../scss/gunsstyle/_slider.scss */
   .menu-slides {
     max-width: 1400px;
     width: 100%;
