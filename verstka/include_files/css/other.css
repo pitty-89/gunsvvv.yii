@@ -920,19 +920,19 @@ a.text-blue:hover {
   background: #9b9b9b;
 }
 
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
   /* line 120, ../scss/gunsstyle/_base.scss */
   .footer {
     margin-top: 10px;
     margin-top: 0.725rem;
   }
 }
-@media screen and (max-width: 550px) {
-  /* line 135, ../scss/gunsstyle/_base.scss */
+@media (max-width: 550px) {
+  /* line 126, ../scss/gunsstyle/_base.scss */
   .footer > ul {
     width: 100%;
   }
-  /* line 137, ../scss/gunsstyle/_base.scss */
+  /* line 128, ../scss/gunsstyle/_base.scss */
   .footer > ul > li {
     width: 100%;
     margin: 0 0 10px 0;
@@ -940,51 +940,55 @@ a.text-blue:hover {
     border-right: 0;
     text-align: left;
   }
-  /* line 143, ../scss/gunsstyle/_base.scss */
+  /* line 134, ../scss/gunsstyle/_base.scss */
   .footer > ul > li > a {
     display: inline-block;
     width: 100%;
     padding: 3px 10px;
   }
 }
-@media screen and (min-width: 768px) {
-  /* line 156, ../scss/gunsstyle/_base.scss */
+@media (min-width: 768px) {
+  /* line 147, ../scss/gunsstyle/_base.scss */
   .line, .footer {
     margin-top: 10px;
     margin-top: 0.725rem;
     margin-bottom: 5px;
     margin-bottom: 0.3625rem;
   }
-  /* line 159, ../scss/gunsstyle/_base.scss */
+  /* line 150, ../scss/gunsstyle/_base.scss */
   .line.no-mt, .no-mt.footer {
     margin-top: 0px;
     margin-top: 0rem;
   }
 
-  /* line 163, ../scss/gunsstyle/_base.scss */
+  /* line 154, ../scss/gunsstyle/_base.scss */
   .footer {
     margin-top: 5px;
     margin-top: 0.3625rem;
     margin-bottom: 0;
   }
 }
-@media screen and (min-width: 1024px) {
-  /* line 172, ../scss/gunsstyle/_base.scss */
+@media (min-width: 1024px) {
+  /* line 163, ../scss/gunsstyle/_base.scss */
   .line, .footer {
     max-width: 1400px;
     width: 100%;
     margin: 1.45rem auto 0.725rem auto;
   }
-  /* line 176, ../scss/gunsstyle/_base.scss */
+  /* line 167, ../scss/gunsstyle/_base.scss */
   .line.no-mt, .no-mt.footer {
     margin-top: 0px;
     margin-top: 0rem;
   }
 
-  /* line 180, ../scss/gunsstyle/_base.scss */
+  /* line 171, ../scss/gunsstyle/_base.scss */
   .footer {
-    max-width: 1400px;
+    max-width: none;
     margin: 0.725rem auto 0 auto;
+  }
+  /* line 173, ../scss/gunsstyle/_base.scss */
+  .footer > ul {
+    max-width: 1400px;
   }
 }
 /* line 1, ../scss/gunsstyle/_inputs.scss */
