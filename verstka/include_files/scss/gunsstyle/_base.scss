@@ -116,21 +116,12 @@ smal {
 @include setColors($arColors, '.text', 'color', true);
 @include setColors($arColors, '.bgd', 'background', false);
 
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
   .footer {
     @include margin-leader(.5);
   }
 }
-@media screen and (max-width: 600px) {
-  .footer {
-    & > ul {
-      & > li {
-
-      }
-    }
-  }
-}
-@media screen and (max-width: 550px) {
+@media (max-width: 550px) {
   .footer {
     & > ul {
       width: 100%;
@@ -149,7 +140,7 @@ smal {
     }
   }
 }
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
   body {
     //@include padding-leader(.5);
   }
@@ -165,7 +156,7 @@ smal {
     margin-bottom: 0;
   }
 }
-@media screen and (min-width: 1024px) {
+@media (min-width: 1024px) {
   body {
     //@include padding-leader(1);
   }
@@ -178,7 +169,10 @@ smal {
     }
   }
   .footer {
-    max-width: $maxWidthContent;
+    max-width: none;
+    & > ul {
+      max-width: $maxWidthContent;
+    }
     margin: $base-line-height * .5 auto 0 auto;
   }
 }

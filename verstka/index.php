@@ -47,32 +47,26 @@
         ?></div>
     </div>
 </div>
+<?
+$arItems = [
+  ['title' => 'Видео', 'src' => 'include_files/images/list_menus/1.png', 'link' => 'video.php'],
+  ['title' => 'Новости', 'src' => 'include_files/images/list_menus/2.png', 'link' => 'news.php'],
+  ['title' => 'Каталог', 'src' => 'include_files/images/list_menus/3.png', 'link' => 'catalog.php', 'position' => 'center bottom'],
+  ['title' => 'Информационный <br>портал', 'src' => 'include_files/images/list_menus/4.png', 'link' => 'portal.php'],
+];
+?>
 <div class="menu-slides">
-    <ul class="menu-slides">
-        <li>
-            <a href="#">
-                <img src="include_files/images/list_menus/1.png" alt="Видео">
-                <div><p>GunsVVV <br/>Видео</p></div>
-            </a>
-        </li><?
+    <ul>
+      <?foreach ($arItems as $arItem) {
+        $bgdPosition = isset($arItem['position']) && $arItem['position'] !== '' ? 'background-position: ' . $arItem['position'] . ';' : '';
         ?><li>
-            <a href="#">
-                <img src="include_files/images/list_menus/2.png" alt="Новости">
-                <div><p>GunsVVV <br/>Новости</p></div>
-            </a>
+          <a href="<?= $arItem['link'] ?>" style="background-image: url('<?= $arItem['src'] ?>');<?= $bgdPosition ?>">
+            <div>
+              <p>GunsVVV <br/><?= $arItem['title'] ?></p>
+            </div>
+          </a>
         </li><?
-        ?><li>
-            <a href="#">
-                <img src="include_files/images/list_menus/3.png" alt="Каталог">
-                <div><p>GunsVVV <br/>Каталог</p></div>
-            </a>
-        </li><?
-        ?><li>
-            <a href="#">
-                <img src="include_files/images/list_menus/4.png" alt="Информационный портал">
-                <div><p>GunsVVV <br/>Информационный <br>портал</p></div>
-            </a>
-        </li>
+      }?>
     </ul>
 </div>
 <?require_once('php/blocks/footer.php');?>

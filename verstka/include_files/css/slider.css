@@ -25,18 +25,19 @@
 /* line 13, ../scss/gunsstyle/_slider.scss */
 .slider > div:first-child {
   height: calc(100vh - 26px - 270px - 1.45rem * 3.5);
+  min-height: 250px;
   width: 100%;
   padding: 0;
   position: relative;
 }
-/* line 18, ../scss/gunsstyle/_slider.scss */
+/* line 19, ../scss/gunsstyle/_slider.scss */
 .slider > div:first-child > div {
   width: 100%;
   display: none;
   height: 100%;
   overflow: hidden;
 }
-/* line 23, ../scss/gunsstyle/_slider.scss */
+/* line 24, ../scss/gunsstyle/_slider.scss */
 .slider > div:first-child > div > a {
   position: relative;
   overflow: hidden;
@@ -44,7 +45,7 @@
   height: 100%;
   display: block;
 }
-/* line 29, ../scss/gunsstyle/_slider.scss */
+/* line 30, ../scss/gunsstyle/_slider.scss */
 .slider > div:first-child > div > a > img {
   min-width: 100%;
   height: 100%;
@@ -53,7 +54,7 @@
   -o-object-fit: cover;
   object-fit: cover;
 }
-/* line 35, ../scss/gunsstyle/_slider.scss */
+/* line 36, ../scss/gunsstyle/_slider.scss */
 .slider > div:first-child > div > a > p {
   position: absolute;
   height: 40px;
@@ -73,38 +74,38 @@
   line-height: 28px;
   line-height: 1.96786rem;
 }
-/* line 49, ../scss/gunsstyle/_slider.scss */
+/* line 50, ../scss/gunsstyle/_slider.scss */
 .slider > div:first-child > div > a:hover p {
   bottom: 0;
 }
-/* line 54, ../scss/gunsstyle/_slider.scss */
+/* line 55, ../scss/gunsstyle/_slider.scss */
 .slider > div:first-child > div.current {
   display: block;
 }
-/* line 55, ../scss/gunsstyle/_slider.scss */
+/* line 56, ../scss/gunsstyle/_slider.scss */
 .slider > div:first-child > div.bprev, .slider > div:first-child > div.bnext {
   position: absolute;
   z-index: 2;
   top: 0;
   left: 0;
 }
-/* line 61, ../scss/gunsstyle/_slider.scss */
+/* line 62, ../scss/gunsstyle/_slider.scss */
 .slider > div:first-child > div.bprev {
   display: block;
 }
-/* line 63, ../scss/gunsstyle/_slider.scss */
+/* line 64, ../scss/gunsstyle/_slider.scss */
 .slider > div:first-child > div.bprev img {
   animation: .3s slide-by-prev ease-in-out;
 }
-/* line 65, ../scss/gunsstyle/_slider.scss */
+/* line 66, ../scss/gunsstyle/_slider.scss */
 .slider > div:first-child > div.bnext {
   display: block;
 }
-/* line 67, ../scss/gunsstyle/_slider.scss */
+/* line 68, ../scss/gunsstyle/_slider.scss */
 .slider > div:first-child > div.bnext img {
   animation: .3s slide-by-next ease-in-out;
 }
-/* line 70, ../scss/gunsstyle/_slider.scss */
+/* line 71, ../scss/gunsstyle/_slider.scss */
 .slider > div:first-child > a {
   position: absolute;
   padding: 10px 20px;
@@ -123,42 +124,42 @@
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-/* line 81, ../scss/gunsstyle/_slider.scss */
+/* line 82, ../scss/gunsstyle/_slider.scss */
 .slider > div:first-child > a.nav-next {
   right: 0;
   -webkit-box-shadow: 3px 0 3px rgba(30, 30, 30, 0.5);
   -moz-box-shadow: 3px 0 3px rgba(30, 30, 30, 0.5);
   box-shadow: 3px 0 3px rgba(30, 30, 30, 0.5);
 }
-/* line 82, ../scss/gunsstyle/_slider.scss */
+/* line 83, ../scss/gunsstyle/_slider.scss */
 .slider > div:first-child > a.nav-prev {
   left: 0;
   -webkit-box-shadow: -3px 0 3px rgba(30, 30, 30, 0.5);
   -moz-box-shadow: -3px 0 3px rgba(30, 30, 30, 0.5);
   box-shadow: -3px 0 3px rgba(30, 30, 30, 0.5);
 }
-/* line 83, ../scss/gunsstyle/_slider.scss */
+/* line 84, ../scss/gunsstyle/_slider.scss */
 .slider > div:first-child > a:hover {
   background: #e8e8e8;
 }
-/* line 87, ../scss/gunsstyle/_slider.scss */
+/* line 88, ../scss/gunsstyle/_slider.scss */
 .slider > div:first-child > a:active.nav-prev {
   -webkit-box-shadow: inset 3px 0 3px rgba(30, 30, 30, 0.5);
   -moz-box-shadow: inset 3px 0 3px rgba(30, 30, 30, 0.5);
   box-shadow: inset 3px 0 3px rgba(30, 30, 30, 0.5);
 }
-/* line 90, ../scss/gunsstyle/_slider.scss */
+/* line 91, ../scss/gunsstyle/_slider.scss */
 .slider > div:first-child > a:active.nav-next {
   -webkit-box-shadow: inset -3px 0 3px rgba(30, 30, 30, 0.5);
   -moz-box-shadow: inset -3px 0 3px rgba(30, 30, 30, 0.5);
   box-shadow: inset -3px 0 3px rgba(30, 30, 30, 0.5);
 }
-/* line 96, ../scss/gunsstyle/_slider.scss */
+/* line 97, ../scss/gunsstyle/_slider.scss */
 .slider > div:last-child {
   width: 100%;
   padding: 0;
 }
-/* line 99, ../scss/gunsstyle/_slider.scss */
+/* line 100, ../scss/gunsstyle/_slider.scss */
 .slider > div:last-child a {
   display: inline-block;
   width: 15px;
@@ -171,17 +172,17 @@
   vertical-align: middle;
   position: relative;
 }
-/* line 108, ../scss/gunsstyle/_slider.scss */
+/* line 109, ../scss/gunsstyle/_slider.scss */
 .slider > div:last-child a:active:not(.current) {
   -moz-box-shadow: inset 0 2px 2px rgba(145, 145, 145, 0.7);
   -webkit-box-shadow: inset 0 2px 2px rgba(145, 145, 145, 0.7);
   box-shadow: inset 0 2px 2px rgba(145, 145, 145, 0.7);
 }
-/* line 111, ../scss/gunsstyle/_slider.scss */
+/* line 112, ../scss/gunsstyle/_slider.scss */
 .slider > div:last-child a.current {
   background: #2a3e6d;
 }
-/* line 114, ../scss/gunsstyle/_slider.scss */
+/* line 115, ../scss/gunsstyle/_slider.scss */
 .slider > div:last-child a .fimage {
   position: absolute;
   height: 50px;
@@ -193,12 +194,12 @@
   border: 1px solid #919191;
   padding: 3px;
 }
-/* line 124, ../scss/gunsstyle/_slider.scss */
+/* line 125, ../scss/gunsstyle/_slider.scss */
 .slider > div:last-child a .fimage img {
   width: 100%;
   height: 100%;
 }
-/* line 128, ../scss/gunsstyle/_slider.scss */
+/* line 129, ../scss/gunsstyle/_slider.scss */
 .slider > div:last-child a .fimage:after, .slider > div:last-child a .fimage:before {
   position: absolute;
   content: '';
@@ -207,77 +208,81 @@
   border: 5px solid transparent;
   border-top: 5px solid #919191;
 }
-/* line 136, ../scss/gunsstyle/_slider.scss */
+/* line 137, ../scss/gunsstyle/_slider.scss */
 .slider > div:last-child a .fimage:after {
   border-top: 5px solid whitesmoke;
   bottom: -9px;
 }
 
 @media (max-width: 1347px) {
-  /* line 148, ../scss/gunsstyle/_slider.scss */
+  /* line 149, ../scss/gunsstyle/_slider.scss */
   .slider > div:first-child {
     height: calc(100vh - 26px - 20vw - 1.45rem * 3.5);
   }
 }
-@media screen and (max-width: 1023px) {
-  /* line 155, ../scss/gunsstyle/_slider.scss */
+@media (max-width: 1023px) {
+  /* line 156, ../scss/gunsstyle/_slider.scss */
   .slider {
     margin-top: 10px;
     margin-top: 0.725rem;
     margin-bottom: 10px;
     margin-bottom: 0.725rem;
-    width: 100%;
+    margin-left: 10px;
+    width: calc(100% - 20px);
   }
 }
-@media screen and (max-width: 767px) {
-  /* line 164, ../scss/gunsstyle/_slider.scss */
+@media (max-width: 767px) {
+  /* line 166, ../scss/gunsstyle/_slider.scss */
   .slider > div:first-child {
-    max-height: 264px;
-    height: max-content;
+    min-height: unset;
+    height: 264px;
   }
-  /* line 167, ../scss/gunsstyle/_slider.scss */
+  /* line 169, ../scss/gunsstyle/_slider.scss */
   .slider > div:first-child > div {
-    max-height: 264px;
-    height: max-content;
+    height: 100%;
   }
-  /* line 171, ../scss/gunsstyle/_slider.scss */
+  /* line 172, ../scss/gunsstyle/_slider.scss */
   .slider > div:first-child > div > a > img {
-    height: auto;
+    height: 100%;
     width: 100%;
   }
-  /* line 178, ../scss/gunsstyle/_slider.scss */
+  /* line 179, ../scss/gunsstyle/_slider.scss */
+  .slider > div:first-child > div.current:not(.bprev):not(.bnext) > a > p {
+    bottom: 0;
+  }
+  /* line 184, ../scss/gunsstyle/_slider.scss */
   .slider > div:last-child {
     display: none;
   }
 }
 @media (max-width: 400px) {
-  /* line 183, ../scss/gunsstyle/_slider.scss */
+  /* line 189, ../scss/gunsstyle/_slider.scss */
   .slider {
     width: calc(100% - 20px);
     margin-left: 10px;
     margin-right: 10px;
   }
 }
-@media screen and (min-width: 1024px) {
-  /* line 190, ../scss/gunsstyle/_slider.scss */
+@media (min-width: 1024px) {
+  /* line 196, ../scss/gunsstyle/_slider.scss */
   .slider {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     margin-top: 10px;
     margin-top: 0.725rem;
-    width: 75%;
+    width: calc(75% - 10px);
     padding: 0;
   }
 }
 @media (min-width: 1348px) {
-  /* line 200, ../scss/gunsstyle/_slider.scss */
+  /* line 206, ../scss/gunsstyle/_slider.scss */
   .slider > div:first-child {
     height: calc(100vh - 26px - 270px - 1.45rem * 3.5);
     max-height: 1050px;
   }
 
-  /* line 206, ../scss/gunsstyle/_slider.scss */
+  /* line 212, ../scss/gunsstyle/_slider.scss */
   .menu-slides {
     max-width: 1400px;
     width: 100%;

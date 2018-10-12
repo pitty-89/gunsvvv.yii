@@ -12,6 +12,7 @@
   & > div {
     &:first-child {
       height: calc(100vh - 26px - 270px - 1.45rem * 3.5);
+      min-height: 250px;
       width: 100%;
       padding: 0;
       position: relative;
@@ -151,26 +152,31 @@
     }
   }
 }
-@media screen and (max-width: 1023px) {
+@media (max-width: 1023px) {
   .slider {
     @include margin-leader(.5);
     @include margin-trailer(.5);
-    width: 100%;
+    margin-left: 10px;
+    width: calc(100% - 20px);
   }
 }
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
   .slider {
     & > div {
       &:first-child {
-        max-height: 264px;
-        height: max-content;
+        min-height: unset;
+        height: 264px;
         & > div {
-          max-height: 264px;
-          height: max-content;
+          height: 100%;
           & > a {
             & > img {
-              height: auto;
+              height: 100%;
               width: 100%;
+            }
+          }
+          &.current:not(.bprev):not(.bnext) {
+            & > a {
+              & > p { bottom: 0; }
             }
           }
         }
@@ -186,11 +192,11 @@
     margin-right: 10px;
   }
 }
-@media screen and (min-width: 1024px) {
+@media (min-width: 1024px) {
   .slider {
     @include box-sizing(border-box);
     @include margin-leader(.5);
-    width: 75%;
+    width: calc(75% - 10px);
     padding: 0;
   }
 }
