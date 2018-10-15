@@ -655,31 +655,33 @@ body {
   padding: 0;
   color: #1e1e1e;
   min-height: 100vh;
+  display: flex;
+  flex-flow: row wrap;
 }
 
-/* line 12, ../scss/gunsstyle/_base.scss */
+/* line 14, ../scss/gunsstyle/_base.scss */
 * {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 16, ../scss/gunsstyle/_base.scss */
+/* line 18, ../scss/gunsstyle/_base.scss */
 html {
   font-size: 14px;
   line-height: 1.45rem;
 }
-/* line 19, ../scss/gunsstyle/_base.scss */
+/* line 21, ../scss/gunsstyle/_base.scss */
 html body {
   font-family: RobotoRegular;
 }
 
-/* line 23, ../scss/gunsstyle/_base.scss */
+/* line 25, ../scss/gunsstyle/_base.scss */
 h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
 }
 
-/* line 26, ../scss/gunsstyle/_base.scss */
+/* line 28, ../scss/gunsstyle/_base.scss */
 h1 {
   font-size: 44px;
   font-size: 3.157rem;
@@ -687,7 +689,7 @@ h1 {
   line-height: 3.31429rem;
 }
 
-/* line 29, ../scss/gunsstyle/_base.scss */
+/* line 31, ../scss/gunsstyle/_base.scss */
 h2 {
   font-size: 33px;
   font-size: 2.369rem;
@@ -695,7 +697,7 @@ h2 {
   line-height: 2.48571rem;
 }
 
-/* line 32, ../scss/gunsstyle/_base.scss */
+/* line 34, ../scss/gunsstyle/_base.scss */
 h3 {
   font-size: 25px;
   font-size: 1.777rem;
@@ -703,7 +705,7 @@ h3 {
   line-height: 1.96786rem;
 }
 
-/* line 35, ../scss/gunsstyle/_base.scss */
+/* line 37, ../scss/gunsstyle/_base.scss */
 h4 {
   font-size: 19px;
   font-size: 1.333rem;
@@ -711,7 +713,7 @@ h4 {
   line-height: 1.45rem;
 }
 
-/* line 38, ../scss/gunsstyle/_base.scss */
+/* line 40, ../scss/gunsstyle/_base.scss */
 h5 {
   font-size: 14px;
   font-size: 1rem;
@@ -719,7 +721,7 @@ h5 {
   line-height: 1.13929rem;
 }
 
-/* line 41, ../scss/gunsstyle/_base.scss */
+/* line 43, ../scss/gunsstyle/_base.scss */
 h6 {
   font-size: 11px;
   font-size: 0.75rem;
@@ -727,7 +729,7 @@ h6 {
   line-height: 0.93214rem;
 }
 
-/* line 44, ../scss/gunsstyle/_base.scss */
+/* line 46, ../scss/gunsstyle/_base.scss */
 smal {
   font-size: 8px;
   font-size: 0.563rem;
@@ -735,11 +737,11 @@ smal {
   line-height: 0.725rem;
 }
 
-/* line 47, ../scss/gunsstyle/_base.scss */
+/* line 49, ../scss/gunsstyle/_base.scss */
 .shadow {
   position: relative;
 }
-/* line 49, ../scss/gunsstyle/_base.scss */
+/* line 51, ../scss/gunsstyle/_base.scss */
 .shadow:before {
   position: absolute;
   width: 100%;
@@ -751,12 +753,12 @@ smal {
   z-index: 5;
 }
 
-/* line 60, ../scss/gunsstyle/_base.scss */
+/* line 62, ../scss/gunsstyle/_base.scss */
 .hidden {
   display: none;
 }
 
-/* line 61, ../scss/gunsstyle/_base.scss */
+/* line 63, ../scss/gunsstyle/_base.scss */
 .module {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -764,12 +766,12 @@ smal {
   background: red;
 }
 
-/* line 65, ../scss/gunsstyle/_base.scss */
+/* line 67, ../scss/gunsstyle/_base.scss */
 .line, .footer {
   width: 100%;
 }
 
-/* line 68, ../scss/gunsstyle/_base.scss */
+/* line 70, ../scss/gunsstyle/_base.scss */
 .divider {
   width: 100%;
   height: 100%;
@@ -780,9 +782,10 @@ smal {
   margin-bottom: 1.45rem;
 }
 
-/* line 75, ../scss/gunsstyle/_base.scss */
+/* line 77, ../scss/gunsstyle/_base.scss */
 .footer {
   text-align: center;
+  align-self: flex-end;
   margin-bottom: 0;
   background: radial-gradient(#1e1e1e 15%, rgba(0, 0, 0, 0) 16%) 0 0, radial-gradient(#1e1e1e 15%, rgba(0, 0, 0, 0) 16%) 8px 8px, radial-gradient(rgba(245, 245, 245, 0.1) 15%, rgba(0, 0, 0, 0) 20%) 0 1px, radial-gradient(rgba(245, 245, 245, 0.1) 15%, rgba(0, 0, 0, 0) 20%) 8px 9px;
   background-color: #1e1e1e;
@@ -792,14 +795,14 @@ smal {
   padding-bottom: 10px;
   padding-bottom: 0.725rem;
 }
-/* line 88, ../scss/gunsstyle/_base.scss */
+/* line 91, ../scss/gunsstyle/_base.scss */
 .footer > ul {
   margin: 0 auto;
   width: initial;
   display: inline-block;
   line-height: initial;
 }
-/* line 93, ../scss/gunsstyle/_base.scss */
+/* line 96, ../scss/gunsstyle/_base.scss */
 .footer > ul > li {
   display: inline-block;
   padding: 2px 6px 0 0;
@@ -808,13 +811,13 @@ smal {
   vertical-align: top;
   border-right: 1px solid #919191;
 }
-/* line 100, ../scss/gunsstyle/_base.scss */
+/* line 103, ../scss/gunsstyle/_base.scss */
 .footer > ul > li:last-child {
   border-right: 0;
   padding: 2px 0 0 0;
   margin: 0 0 0 0;
 }
-/* line 105, ../scss/gunsstyle/_base.scss */
+/* line 108, ../scss/gunsstyle/_base.scss */
 .footer > ul > li a {
   color: #919191;
   -moz-transition: 0.3s;
@@ -822,12 +825,12 @@ smal {
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-/* line 108, ../scss/gunsstyle/_base.scss */
+/* line 111, ../scss/gunsstyle/_base.scss */
 .footer > ul > li a:hover {
   color: #d4534a;
 }
 
-/* line 115, ../scss/gunsstyle/_base.scss */
+/* line 118, ../scss/gunsstyle/_base.scss */
 .container {
   width: 100%;
   max-width: 1024px;
@@ -921,47 +924,49 @@ a.text-blue:hover {
 }
 
 @media (max-width: 767px) {
-  /* line 120, ../scss/gunsstyle/_base.scss */
+  /* line 123, ../scss/gunsstyle/_base.scss */
   .footer {
     margin-top: 10px;
     margin-top: 0.725rem;
   }
 }
 @media (max-width: 550px) {
-  /* line 126, ../scss/gunsstyle/_base.scss */
+  /* line 129, ../scss/gunsstyle/_base.scss */
   .footer > ul {
     width: 100%;
   }
-  /* line 128, ../scss/gunsstyle/_base.scss */
+  /* line 131, ../scss/gunsstyle/_base.scss */
   .footer > ul > li {
     width: 100%;
-    margin: 0 0 10px 0;
+    margin: 0 0 3px 0;
     padding: 0;
     border-right: 0;
     text-align: left;
   }
-  /* line 134, ../scss/gunsstyle/_base.scss */
+  /* line 137, ../scss/gunsstyle/_base.scss */
   .footer > ul > li > a {
+    font-size: 12px;
+    line-height: normal;
     display: inline-block;
     width: 100%;
     padding: 3px 10px;
   }
 }
 @media (min-width: 768px) {
-  /* line 147, ../scss/gunsstyle/_base.scss */
+  /* line 152, ../scss/gunsstyle/_base.scss */
   .line, .footer {
     margin-top: 10px;
     margin-top: 0.725rem;
     margin-bottom: 5px;
     margin-bottom: 0.3625rem;
   }
-  /* line 150, ../scss/gunsstyle/_base.scss */
+  /* line 155, ../scss/gunsstyle/_base.scss */
   .line.no-mt, .no-mt.footer {
     margin-top: 0px;
     margin-top: 0rem;
   }
 
-  /* line 154, ../scss/gunsstyle/_base.scss */
+  /* line 159, ../scss/gunsstyle/_base.scss */
   .footer {
     margin-top: 5px;
     margin-top: 0.3625rem;
@@ -969,24 +974,24 @@ a.text-blue:hover {
   }
 }
 @media (min-width: 1024px) {
-  /* line 163, ../scss/gunsstyle/_base.scss */
+  /* line 168, ../scss/gunsstyle/_base.scss */
   .line, .footer {
     max-width: 1400px;
     width: 100%;
     margin: 1.45rem auto 0.725rem auto;
   }
-  /* line 167, ../scss/gunsstyle/_base.scss */
+  /* line 172, ../scss/gunsstyle/_base.scss */
   .line.no-mt, .no-mt.footer {
     margin-top: 0px;
     margin-top: 0rem;
   }
 
-  /* line 171, ../scss/gunsstyle/_base.scss */
+  /* line 176, ../scss/gunsstyle/_base.scss */
   .footer {
     max-width: none;
     margin: 0.725rem auto 0 auto;
   }
-  /* line 173, ../scss/gunsstyle/_base.scss */
+  /* line 178, ../scss/gunsstyle/_base.scss */
   .footer > ul {
     max-width: 1400px;
   }
