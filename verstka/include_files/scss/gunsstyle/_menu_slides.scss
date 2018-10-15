@@ -146,6 +146,9 @@
       @media (min-width: 1025px) and (max-width: 1347px) and (min-height: 1025px) {
         height: 20vw;
       }
+      @media (min-width: 1348px) {
+        height: 270px;
+      }
     }
   }
   @media (max-width: 767px) {
