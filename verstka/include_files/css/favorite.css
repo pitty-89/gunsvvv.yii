@@ -654,31 +654,33 @@ body {
   padding: 0;
   color: #1e1e1e;
   min-height: 100vh;
+  display: flex;
+  flex-flow: row wrap;
 }
 
-/* line 12, ../scss/gunsstyle/_base.scss */
+/* line 14, ../scss/gunsstyle/_base.scss */
 * {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 16, ../scss/gunsstyle/_base.scss */
+/* line 18, ../scss/gunsstyle/_base.scss */
 html {
   font-size: 14px;
   line-height: 1.45rem;
 }
-/* line 19, ../scss/gunsstyle/_base.scss */
+/* line 21, ../scss/gunsstyle/_base.scss */
 html body {
   font-family: RobotoRegular;
 }
 
-/* line 23, ../scss/gunsstyle/_base.scss */
+/* line 25, ../scss/gunsstyle/_base.scss */
 h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
 }
 
-/* line 26, ../scss/gunsstyle/_base.scss */
+/* line 28, ../scss/gunsstyle/_base.scss */
 h1 {
   font-size: 44px;
   font-size: 3.157rem;
@@ -686,7 +688,7 @@ h1 {
   line-height: 3.31429rem;
 }
 
-/* line 29, ../scss/gunsstyle/_base.scss */
+/* line 31, ../scss/gunsstyle/_base.scss */
 h2 {
   font-size: 33px;
   font-size: 2.369rem;
@@ -694,7 +696,7 @@ h2 {
   line-height: 2.48571rem;
 }
 
-/* line 32, ../scss/gunsstyle/_base.scss */
+/* line 34, ../scss/gunsstyle/_base.scss */
 h3 {
   font-size: 25px;
   font-size: 1.777rem;
@@ -702,7 +704,7 @@ h3 {
   line-height: 1.96786rem;
 }
 
-/* line 35, ../scss/gunsstyle/_base.scss */
+/* line 37, ../scss/gunsstyle/_base.scss */
 h4 {
   font-size: 19px;
   font-size: 1.333rem;
@@ -710,7 +712,7 @@ h4 {
   line-height: 1.45rem;
 }
 
-/* line 38, ../scss/gunsstyle/_base.scss */
+/* line 40, ../scss/gunsstyle/_base.scss */
 h5 {
   font-size: 14px;
   font-size: 1rem;
@@ -718,7 +720,7 @@ h5 {
   line-height: 1.13929rem;
 }
 
-/* line 41, ../scss/gunsstyle/_base.scss */
+/* line 43, ../scss/gunsstyle/_base.scss */
 h6 {
   font-size: 11px;
   font-size: 0.75rem;
@@ -726,7 +728,7 @@ h6 {
   line-height: 0.93214rem;
 }
 
-/* line 44, ../scss/gunsstyle/_base.scss */
+/* line 46, ../scss/gunsstyle/_base.scss */
 smal {
   font-size: 8px;
   font-size: 0.563rem;
@@ -734,11 +736,11 @@ smal {
   line-height: 0.725rem;
 }
 
-/* line 47, ../scss/gunsstyle/_base.scss */
+/* line 49, ../scss/gunsstyle/_base.scss */
 .shadow {
   position: relative;
 }
-/* line 49, ../scss/gunsstyle/_base.scss */
+/* line 51, ../scss/gunsstyle/_base.scss */
 .shadow:before {
   position: absolute;
   width: 100%;
@@ -750,12 +752,12 @@ smal {
   z-index: 5;
 }
 
-/* line 60, ../scss/gunsstyle/_base.scss */
+/* line 62, ../scss/gunsstyle/_base.scss */
 .hidden {
   display: none;
 }
 
-/* line 61, ../scss/gunsstyle/_base.scss */
+/* line 63, ../scss/gunsstyle/_base.scss */
 .module {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -763,12 +765,12 @@ smal {
   background: red;
 }
 
-/* line 65, ../scss/gunsstyle/_base.scss */
+/* line 67, ../scss/gunsstyle/_base.scss */
 .line, .footer {
   width: 100%;
 }
 
-/* line 68, ../scss/gunsstyle/_base.scss */
+/* line 70, ../scss/gunsstyle/_base.scss */
 .divider {
   width: 100%;
   height: 100%;
@@ -779,9 +781,10 @@ smal {
   margin-bottom: 1.45rem;
 }
 
-/* line 75, ../scss/gunsstyle/_base.scss */
+/* line 77, ../scss/gunsstyle/_base.scss */
 .footer {
   text-align: center;
+  align-self: flex-end;
   margin-bottom: 0;
   background: radial-gradient(#1e1e1e 15%, rgba(0, 0, 0, 0) 16%) 0 0, radial-gradient(#1e1e1e 15%, rgba(0, 0, 0, 0) 16%) 8px 8px, radial-gradient(rgba(245, 245, 245, 0.1) 15%, rgba(0, 0, 0, 0) 20%) 0 1px, radial-gradient(rgba(245, 245, 245, 0.1) 15%, rgba(0, 0, 0, 0) 20%) 8px 9px;
   background-color: #1e1e1e;
@@ -791,14 +794,14 @@ smal {
   padding-bottom: 10px;
   padding-bottom: 0.725rem;
 }
-/* line 88, ../scss/gunsstyle/_base.scss */
+/* line 91, ../scss/gunsstyle/_base.scss */
 .footer > ul {
   margin: 0 auto;
   width: initial;
   display: inline-block;
   line-height: initial;
 }
-/* line 93, ../scss/gunsstyle/_base.scss */
+/* line 96, ../scss/gunsstyle/_base.scss */
 .footer > ul > li {
   display: inline-block;
   padding: 2px 6px 0 0;
@@ -807,13 +810,13 @@ smal {
   vertical-align: top;
   border-right: 1px solid #919191;
 }
-/* line 100, ../scss/gunsstyle/_base.scss */
+/* line 103, ../scss/gunsstyle/_base.scss */
 .footer > ul > li:last-child {
   border-right: 0;
   padding: 2px 0 0 0;
   margin: 0 0 0 0;
 }
-/* line 105, ../scss/gunsstyle/_base.scss */
+/* line 108, ../scss/gunsstyle/_base.scss */
 .footer > ul > li a {
   color: #919191;
   -moz-transition: 0.3s;
@@ -821,12 +824,12 @@ smal {
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-/* line 108, ../scss/gunsstyle/_base.scss */
+/* line 111, ../scss/gunsstyle/_base.scss */
 .footer > ul > li a:hover {
   color: #d4534a;
 }
 
-/* line 115, ../scss/gunsstyle/_base.scss */
+/* line 118, ../scss/gunsstyle/_base.scss */
 .container {
   width: 100%;
   max-width: 1024px;
@@ -920,47 +923,49 @@ a.text-blue:hover {
 }
 
 @media (max-width: 767px) {
-  /* line 120, ../scss/gunsstyle/_base.scss */
+  /* line 123, ../scss/gunsstyle/_base.scss */
   .footer {
     margin-top: 10px;
     margin-top: 0.725rem;
   }
 }
 @media (max-width: 550px) {
-  /* line 126, ../scss/gunsstyle/_base.scss */
+  /* line 129, ../scss/gunsstyle/_base.scss */
   .footer > ul {
     width: 100%;
   }
-  /* line 128, ../scss/gunsstyle/_base.scss */
+  /* line 131, ../scss/gunsstyle/_base.scss */
   .footer > ul > li {
     width: 100%;
-    margin: 0 0 10px 0;
+    margin: 0 0 3px 0;
     padding: 0;
     border-right: 0;
     text-align: left;
   }
-  /* line 134, ../scss/gunsstyle/_base.scss */
+  /* line 137, ../scss/gunsstyle/_base.scss */
   .footer > ul > li > a {
+    font-size: 12px;
+    line-height: normal;
     display: inline-block;
     width: 100%;
     padding: 3px 10px;
   }
 }
 @media (min-width: 768px) {
-  /* line 147, ../scss/gunsstyle/_base.scss */
+  /* line 152, ../scss/gunsstyle/_base.scss */
   .line, .footer {
     margin-top: 10px;
     margin-top: 0.725rem;
     margin-bottom: 5px;
     margin-bottom: 0.3625rem;
   }
-  /* line 150, ../scss/gunsstyle/_base.scss */
+  /* line 155, ../scss/gunsstyle/_base.scss */
   .line.no-mt, .no-mt.footer {
     margin-top: 0px;
     margin-top: 0rem;
   }
 
-  /* line 154, ../scss/gunsstyle/_base.scss */
+  /* line 159, ../scss/gunsstyle/_base.scss */
   .footer {
     margin-top: 5px;
     margin-top: 0.3625rem;
@@ -968,24 +973,24 @@ a.text-blue:hover {
   }
 }
 @media (min-width: 1024px) {
-  /* line 163, ../scss/gunsstyle/_base.scss */
+  /* line 168, ../scss/gunsstyle/_base.scss */
   .line, .footer {
     max-width: 1400px;
     width: 100%;
     margin: 1.45rem auto 0.725rem auto;
   }
-  /* line 167, ../scss/gunsstyle/_base.scss */
+  /* line 172, ../scss/gunsstyle/_base.scss */
   .line.no-mt, .no-mt.footer {
     margin-top: 0px;
     margin-top: 0rem;
   }
 
-  /* line 171, ../scss/gunsstyle/_base.scss */
+  /* line 176, ../scss/gunsstyle/_base.scss */
   .footer {
     max-width: none;
     margin: 0.725rem auto 0 auto;
   }
-  /* line 173, ../scss/gunsstyle/_base.scss */
+  /* line 178, ../scss/gunsstyle/_base.scss */
   .footer > ul {
     max-width: 1400px;
   }
@@ -1018,7 +1023,7 @@ a.text-blue:hover {
   background-size: cover;
   background-repeat: no-repeat;
 }
-/* line 22, ../scss/gunsstyle/_menu_slides.scss */
+/* line 21, ../scss/gunsstyle/_menu_slides.scss */
 .menu-slides > ul > li a:after {
   content: '';
   width: 100%;
@@ -1034,7 +1039,7 @@ a.text-blue:hover {
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-/* line 34, ../scss/gunsstyle/_menu_slides.scss */
+/* line 33, ../scss/gunsstyle/_menu_slides.scss */
 .menu-slides > ul > li a div {
   width: initial;
   position: absolute;
@@ -1043,7 +1048,7 @@ a.text-blue:hover {
   height: 100%;
   z-index: 2;
 }
-/* line 41, ../scss/gunsstyle/_menu_slides.scss */
+/* line 40, ../scss/gunsstyle/_menu_slides.scss */
 .menu-slides > ul > li a div p {
   margin-top: 81px;
   margin-top: 5.8rem;
@@ -1057,17 +1062,13 @@ a.text-blue:hover {
   z-index: 1;
 }
 @media (max-width: 600px) {
-  /* line 41, ../scss/gunsstyle/_menu_slides.scss */
+  /* line 40, ../scss/gunsstyle/_menu_slides.scss */
   .menu-slides > ul > li a div p {
     margin-top: 10px;
     margin-top: 0.725rem;
   }
-  /* line 51, ../scss/gunsstyle/_menu_slides.scss */
-  .menu-slides > ul > li a div p br {
-    display: none;
-  }
 }
-/* line 54, ../scss/gunsstyle/_menu_slides.scss */
+/* line 52, ../scss/gunsstyle/_menu_slides.scss */
 .menu-slides > ul > li a div:after {
   content: '';
   position: absolute;
@@ -1079,41 +1080,85 @@ a.text-blue:hover {
   z-index: 0;
 }
 @media (max-width: 550px) {
-  /* line 34, ../scss/gunsstyle/_menu_slides.scss */
+  /* line 33, ../scss/gunsstyle/_menu_slides.scss */
   .menu-slides > ul > li a div {
     width: 100%;
     right: 0;
   }
 }
-/* line 70, ../scss/gunsstyle/_menu_slides.scss */
+/* line 68, ../scss/gunsstyle/_menu_slides.scss */
 .menu-slides > ul > li a:hover:after {
   opacity: 0;
 }
-/* line 76, ../scss/gunsstyle/_menu_slides.scss */
+/* line 74, ../scss/gunsstyle/_menu_slides.scss */
 .menu-slides > ul > li:nth-child(even) a {
   color: whitesmoke;
 }
-/* line 78, ../scss/gunsstyle/_menu_slides.scss */
+/* line 76, ../scss/gunsstyle/_menu_slides.scss */
 .menu-slides > ul > li:nth-child(even) a:hover, .menu-slides > ul > li:nth-child(even) a:active, .menu-slides > ul > li:nth-child(even) a:focus {
   color: whitesmoke;
 }
-/* line 79, ../scss/gunsstyle/_menu_slides.scss */
+/* line 77, ../scss/gunsstyle/_menu_slides.scss */
 .menu-slides > ul > li:nth-child(even) a:before {
   background: rgba(30, 30, 30, 0.5);
 }
-/* line 83, ../scss/gunsstyle/_menu_slides.scss */
+/* line 81, ../scss/gunsstyle/_menu_slides.scss */
 .menu-slides > ul > li:nth-child(odd) a {
   color: #2a3e6d;
 }
-/* line 85, ../scss/gunsstyle/_menu_slides.scss */
+/* line 83, ../scss/gunsstyle/_menu_slides.scss */
 .menu-slides > ul > li:nth-child(odd) a:hover, .menu-slides > ul > li:nth-child(odd) a:active, .menu-slides > ul > li:nth-child(odd) a:focus {
   color: #2a3e6d;
 }
-/* line 86, ../scss/gunsstyle/_menu_slides.scss */
+/* line 84, ../scss/gunsstyle/_menu_slides.scss */
 .menu-slides > ul > li:nth-child(odd) a:before {
   background: rgba(245, 245, 245, 0.5);
 }
-@media (max-width: 400px) {
+@media (max-width: 900px) and (max-height: 1024px) {
+  /* line 9, ../scss/gunsstyle/_menu_slides.scss */
+  .menu-slides > ul > li {
+    width: calc(50% - 5px);
+    height: calc((100vw - 30px) / 4);
+    margin-bottom: 10px;
+    margin-bottom: 0.725rem;
+  }
+  /* line 90, ../scss/gunsstyle/_menu_slides.scss */
+  .menu-slides > ul > li:nth-child(odd) {
+    margin-right: 10px;
+  }
+  /* line 91, ../scss/gunsstyle/_menu_slides.scss */
+  .menu-slides > ul > li:nth-child(even) {
+    margin-right: 0;
+  }
+  /* line 95, ../scss/gunsstyle/_menu_slides.scss */
+  .menu-slides > ul > li a div p {
+    margin-top: 20px;
+    margin-top: 1.45rem;
+  }
+}
+@media (max-width: 1024px) and (min-height: 1025px) {
+  /* line 9, ../scss/gunsstyle/_menu_slides.scss */
+  .menu-slides > ul > li {
+    width: calc(50% - 5px);
+    height: calc((100vw - 30px) / 4);
+    margin-bottom: 10px;
+    margin-bottom: 0.725rem;
+  }
+  /* line 104, ../scss/gunsstyle/_menu_slides.scss */
+  .menu-slides > ul > li:nth-child(odd) {
+    margin-right: 10px;
+  }
+  /* line 105, ../scss/gunsstyle/_menu_slides.scss */
+  .menu-slides > ul > li:nth-child(even) {
+    margin-right: 0;
+  }
+  /* line 109, ../scss/gunsstyle/_menu_slides.scss */
+  .menu-slides > ul > li a div p {
+    margin-top: 20px;
+    margin-top: 1.45rem;
+  }
+}
+@media (max-width: 525px) {
   /* line 9, ../scss/gunsstyle/_menu_slides.scss */
   .menu-slides > ul > li {
     width: 100%;
@@ -1122,45 +1167,45 @@ a.text-blue:hover {
     margin-bottom: 10px;
     margin-bottom: 0.725rem;
   }
-  /* line 95, ../scss/gunsstyle/_menu_slides.scss */
+  /* line 121, ../scss/gunsstyle/_menu_slides.scss */
   .menu-slides > ul > li:last-child {
     margin-bottom: 0;
   }
-}
-@media (max-width: 900px) {
-  /* line 9, ../scss/gunsstyle/_menu_slides.scss */
-  .menu-slides > ul > li {
-    width: calc(50% - 5px);
-    height: calc((100vw - 30px) / 4);
-    margin-bottom: 10px;
-    margin-bottom: 0.725rem;
-  }
-  /* line 102, ../scss/gunsstyle/_menu_slides.scss */
-  .menu-slides > ul > li:nth-child(odd) {
-    margin-right: 10px;
-  }
-  /* line 103, ../scss/gunsstyle/_menu_slides.scss */
-  .menu-slides > ul > li:nth-child(even) {
-    margin-right: 0;
-  }
-  /* line 107, ../scss/gunsstyle/_menu_slides.scss */
+  /* line 126, ../scss/gunsstyle/_menu_slides.scss */
   .menu-slides > ul > li a div p {
-    margin-top: 20px;
-    margin-top: 1.45rem;
+    margin-top: 5px;
+    margin-top: 0.3625rem;
   }
 }
-@media (min-width: 901px) {
+@media (min-width: 900px) and (max-height: 1024px) {
   /* line 9, ../scss/gunsstyle/_menu_slides.scss */
   .menu-slides > ul > li {
     width: calc((100% - 30px) / 4);
     margin-right: 10px;
   }
-  /* line 116, ../scss/gunsstyle/_menu_slides.scss */
+  /* line 135, ../scss/gunsstyle/_menu_slides.scss */
   .menu-slides > ul > li:last-child {
     margin-right: 0;
   }
 }
-@media (min-width: 901px) and (max-width: 1347px) {
+@media (min-width: 1025px) and (min-height: 1025px) {
+  /* line 9, ../scss/gunsstyle/_menu_slides.scss */
+  .menu-slides > ul > li {
+    width: calc((100% - 30px) / 4);
+    margin-right: 10px;
+  }
+  /* line 140, ../scss/gunsstyle/_menu_slides.scss */
+  .menu-slides > ul > li:last-child {
+    margin-right: 0;
+  }
+}
+@media (min-width: 900px) and (max-height: 1024px) {
+  /* line 9, ../scss/gunsstyle/_menu_slides.scss */
+  .menu-slides > ul > li {
+    height: 20vw;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1347px) and (min-height: 1025px) {
   /* line 9, ../scss/gunsstyle/_menu_slides.scss */
   .menu-slides > ul > li {
     height: 20vw;
@@ -1313,7 +1358,7 @@ a.text-blue:hover {
   .menu > a.menu__toggle-list {
     cursor: pointer;
     display: inline-block;
-    padding: 10px 0 0 10px;
+    padding: 0 0 0 10px;
     width: initial;
     vertical-align: top;
     line-height: initial;
@@ -1323,7 +1368,7 @@ a.text-blue:hover {
   .menu > a.menu__toggle-list i {
     display: inline-block;
     line-height: 2.6rem;
-    font-size: 3rem;
+    font-size: 2rem;
   }
   /* line 90, ../scss/gunsstyle/_menu_left.scss */
   .menu > ul {
@@ -1340,10 +1385,10 @@ a.text-blue:hover {
     right: 10px;
     z-index: 5;
     background: whitesmoke;
-    border: 1px solid #2a3e6d;
-    -moz-box-shadow: -1px 1px 2px rgba(30, 30, 30, 0.6);
-    -webkit-box-shadow: -1px 1px 2px rgba(30, 30, 30, 0.6);
-    box-shadow: -1px 1px 2px rgba(30, 30, 30, 0.6);
+    border: 1px solid #1e1e1e;
+    -moz-box-shadow: 4px 4px 4px rgba(30, 30, 30, 0.9);
+    -webkit-box-shadow: 4px 4px 4px rgba(30, 30, 30, 0.9);
+    box-shadow: 4px 4px 4px rgba(30, 30, 30, 0.9);
   }
   /* line 104, ../scss/gunsstyle/_menu_left.scss */
   .menu > ul.menu__toggle-open > li {
@@ -1430,18 +1475,19 @@ a.text-blue:hover {
 .slider > div:first-child {
   height: calc(100vh - 26px - 270px - 1.45rem * 3.5);
   min-height: 250px;
+  max-height: 350px;
   width: 100%;
   padding: 0;
   position: relative;
 }
-/* line 19, ../scss/gunsstyle/_slider.scss */
+/* line 20, ../scss/gunsstyle/_slider.scss */
 .slider > div:first-child > div {
   width: 100%;
   display: none;
   height: 100%;
   overflow: hidden;
 }
-/* line 24, ../scss/gunsstyle/_slider.scss */
+/* line 25, ../scss/gunsstyle/_slider.scss */
 .slider > div:first-child > div > a {
   position: relative;
   overflow: hidden;
@@ -1449,7 +1495,7 @@ a.text-blue:hover {
   height: 100%;
   display: block;
 }
-/* line 30, ../scss/gunsstyle/_slider.scss */
+/* line 31, ../scss/gunsstyle/_slider.scss */
 .slider > div:first-child > div > a > img {
   min-width: 100%;
   height: 100%;
@@ -1458,7 +1504,7 @@ a.text-blue:hover {
   -o-object-fit: cover;
   object-fit: cover;
 }
-/* line 36, ../scss/gunsstyle/_slider.scss */
+/* line 37, ../scss/gunsstyle/_slider.scss */
 .slider > div:first-child > div > a > p {
   position: absolute;
   height: 40px;
@@ -1466,50 +1512,45 @@ a.text-blue:hover {
   bottom: -40px;
   left: 0;
   width: 100%;
-  padding: 5px 20px;
-  background: rgba(30, 30, 30, 0.5);
+  padding: 5px 10px;
   color: whitesmoke;
-  -moz-transition: 0.3s;
-  -o-transition: 0.3s;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
   font-size: 25px;
   font-size: 1.777rem;
   line-height: 28px;
   line-height: 1.96786rem;
 }
-/* line 50, ../scss/gunsstyle/_slider.scss */
+/* line 49, ../scss/gunsstyle/_slider.scss */
 .slider > div:first-child > div > a:hover p {
   bottom: 0;
 }
-/* line 55, ../scss/gunsstyle/_slider.scss */
+/* line 54, ../scss/gunsstyle/_slider.scss */
 .slider > div:first-child > div.current {
   display: block;
 }
-/* line 56, ../scss/gunsstyle/_slider.scss */
+/* line 55, ../scss/gunsstyle/_slider.scss */
 .slider > div:first-child > div.bprev, .slider > div:first-child > div.bnext {
   position: absolute;
   z-index: 2;
   top: 0;
   left: 0;
 }
-/* line 62, ../scss/gunsstyle/_slider.scss */
+/* line 61, ../scss/gunsstyle/_slider.scss */
 .slider > div:first-child > div.bprev {
   display: block;
 }
-/* line 64, ../scss/gunsstyle/_slider.scss */
+/* line 63, ../scss/gunsstyle/_slider.scss */
 .slider > div:first-child > div.bprev img {
   animation: .3s slide-by-prev ease-in-out;
 }
-/* line 66, ../scss/gunsstyle/_slider.scss */
+/* line 65, ../scss/gunsstyle/_slider.scss */
 .slider > div:first-child > div.bnext {
   display: block;
 }
-/* line 68, ../scss/gunsstyle/_slider.scss */
+/* line 67, ../scss/gunsstyle/_slider.scss */
 .slider > div:first-child > div.bnext img {
   animation: .3s slide-by-next ease-in-out;
 }
-/* line 71, ../scss/gunsstyle/_slider.scss */
+/* line 70, ../scss/gunsstyle/_slider.scss */
 .slider > div:first-child > a {
   position: absolute;
   padding: 10px 20px;
@@ -1528,42 +1569,42 @@ a.text-blue:hover {
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-/* line 82, ../scss/gunsstyle/_slider.scss */
+/* line 81, ../scss/gunsstyle/_slider.scss */
 .slider > div:first-child > a.nav-next {
   right: 0;
   -webkit-box-shadow: 3px 0 3px rgba(30, 30, 30, 0.5);
   -moz-box-shadow: 3px 0 3px rgba(30, 30, 30, 0.5);
   box-shadow: 3px 0 3px rgba(30, 30, 30, 0.5);
 }
-/* line 83, ../scss/gunsstyle/_slider.scss */
+/* line 82, ../scss/gunsstyle/_slider.scss */
 .slider > div:first-child > a.nav-prev {
   left: 0;
   -webkit-box-shadow: -3px 0 3px rgba(30, 30, 30, 0.5);
   -moz-box-shadow: -3px 0 3px rgba(30, 30, 30, 0.5);
   box-shadow: -3px 0 3px rgba(30, 30, 30, 0.5);
 }
-/* line 84, ../scss/gunsstyle/_slider.scss */
+/* line 83, ../scss/gunsstyle/_slider.scss */
 .slider > div:first-child > a:hover {
   background: #e8e8e8;
 }
-/* line 88, ../scss/gunsstyle/_slider.scss */
+/* line 87, ../scss/gunsstyle/_slider.scss */
 .slider > div:first-child > a:active.nav-prev {
   -webkit-box-shadow: inset 3px 0 3px rgba(30, 30, 30, 0.5);
   -moz-box-shadow: inset 3px 0 3px rgba(30, 30, 30, 0.5);
   box-shadow: inset 3px 0 3px rgba(30, 30, 30, 0.5);
 }
-/* line 91, ../scss/gunsstyle/_slider.scss */
+/* line 90, ../scss/gunsstyle/_slider.scss */
 .slider > div:first-child > a:active.nav-next {
   -webkit-box-shadow: inset -3px 0 3px rgba(30, 30, 30, 0.5);
   -moz-box-shadow: inset -3px 0 3px rgba(30, 30, 30, 0.5);
   box-shadow: inset -3px 0 3px rgba(30, 30, 30, 0.5);
 }
-/* line 97, ../scss/gunsstyle/_slider.scss */
+/* line 96, ../scss/gunsstyle/_slider.scss */
 .slider > div:last-child {
   width: 100%;
   padding: 0;
 }
-/* line 100, ../scss/gunsstyle/_slider.scss */
+/* line 99, ../scss/gunsstyle/_slider.scss */
 .slider > div:last-child a {
   display: inline-block;
   width: 15px;
@@ -1576,17 +1617,17 @@ a.text-blue:hover {
   vertical-align: middle;
   position: relative;
 }
-/* line 109, ../scss/gunsstyle/_slider.scss */
+/* line 108, ../scss/gunsstyle/_slider.scss */
 .slider > div:last-child a:active:not(.current) {
   -moz-box-shadow: inset 0 2px 2px rgba(145, 145, 145, 0.7);
   -webkit-box-shadow: inset 0 2px 2px rgba(145, 145, 145, 0.7);
   box-shadow: inset 0 2px 2px rgba(145, 145, 145, 0.7);
 }
-/* line 112, ../scss/gunsstyle/_slider.scss */
+/* line 111, ../scss/gunsstyle/_slider.scss */
 .slider > div:last-child a.current {
   background: #2a3e6d;
 }
-/* line 115, ../scss/gunsstyle/_slider.scss */
+/* line 114, ../scss/gunsstyle/_slider.scss */
 .slider > div:last-child a .fimage {
   position: absolute;
   height: 50px;
@@ -1598,12 +1639,12 @@ a.text-blue:hover {
   border: 1px solid #919191;
   padding: 3px;
 }
-/* line 125, ../scss/gunsstyle/_slider.scss */
+/* line 124, ../scss/gunsstyle/_slider.scss */
 .slider > div:last-child a .fimage img {
   width: 100%;
   height: 100%;
 }
-/* line 129, ../scss/gunsstyle/_slider.scss */
+/* line 128, ../scss/gunsstyle/_slider.scss */
 .slider > div:last-child a .fimage:after, .slider > div:last-child a .fimage:before {
   position: absolute;
   content: '';
@@ -1612,20 +1653,20 @@ a.text-blue:hover {
   border: 5px solid transparent;
   border-top: 5px solid #919191;
 }
-/* line 137, ../scss/gunsstyle/_slider.scss */
+/* line 136, ../scss/gunsstyle/_slider.scss */
 .slider > div:last-child a .fimage:after {
   border-top: 5px solid whitesmoke;
   bottom: -9px;
 }
 
 @media (max-width: 1347px) {
-  /* line 149, ../scss/gunsstyle/_slider.scss */
+  /* line 148, ../scss/gunsstyle/_slider.scss */
   .slider > div:first-child {
     height: calc(100vh - 26px - 20vw - 1.45rem * 3.5);
   }
 }
 @media (max-width: 1023px) {
-  /* line 156, ../scss/gunsstyle/_slider.scss */
+  /* line 155, ../scss/gunsstyle/_slider.scss */
   .slider {
     margin-top: 10px;
     margin-top: 0.725rem;
@@ -1635,40 +1676,127 @@ a.text-blue:hover {
     width: calc(100% - 20px);
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   /* line 166, ../scss/gunsstyle/_slider.scss */
-  .slider > div:first-child {
-    min-height: unset;
-    height: 264px;
-  }
-  /* line 169, ../scss/gunsstyle/_slider.scss */
   .slider > div:first-child > div {
     height: 100%;
   }
-  /* line 172, ../scss/gunsstyle/_slider.scss */
+  /* line 168, ../scss/gunsstyle/_slider.scss */
+  .slider > div:first-child > div > a {
+    padding-bottom: 40px;
+  }
+  /* line 170, ../scss/gunsstyle/_slider.scss */
   .slider > div:first-child > div > a > img {
     height: 100%;
     width: 100%;
   }
-  /* line 179, ../scss/gunsstyle/_slider.scss */
-  .slider > div:first-child > div.current:not(.bprev):not(.bnext) > a > p {
+  /* line 174, ../scss/gunsstyle/_slider.scss */
+  .slider > div:first-child > div > a > p {
+    font-size: 11px;
+    display: block;
+    background: #1e1e1e;
     bottom: 0;
+    font-size: 12px;
   }
-  /* line 184, ../scss/gunsstyle/_slider.scss */
-  .slider > div:last-child {
-    display: none;
+  /* line 180, ../scss/gunsstyle/_slider.scss */
+  .slider > div:first-child > div.bprev > a > p {
+    animation: .3s slide-by-prev ease-in-out;
+  }
+  /* line 185, ../scss/gunsstyle/_slider.scss */
+  .slider > div:first-child > div.bnext > a > p {
+    animation: .3s slide-by-next ease-in-out;
   }
 }
-@media (max-width: 400px) {
-  /* line 189, ../scss/gunsstyle/_slider.scss */
+@media (max-width: 525px) {
+  /* line 194, ../scss/gunsstyle/_slider.scss */
   .slider {
     width: calc(100% - 20px);
     margin-left: 10px;
     margin-right: 10px;
   }
+  /* line 199, ../scss/gunsstyle/_slider.scss */
+  .slider > div:first-child {
+    min-height: unset;
+    height: 264px;
+  }
+  /* line 202, ../scss/gunsstyle/_slider.scss */
+  .slider > div:first-child > a {
+    padding: 5px 10px;
+    font-size: 12px;
+    background: transparent;
+  }
+  /* line 206, ../scss/gunsstyle/_slider.scss */
+  .slider > div:first-child > a.nav-prev, .slider > div:first-child > a.nav-next {
+    -webkit-box-shadow: 3px 0 3px rgba(30, 30, 30, 0);
+    -moz-box-shadow: 3px 0 3px rgba(30, 30, 30, 0);
+    box-shadow: 3px 0 3px rgba(30, 30, 30, 0);
+  }
+  /* line 209, ../scss/gunsstyle/_slider.scss */
+  .slider > div:first-child > a.nav-prev:active, .slider > div:first-child > a.nav-next:active {
+    -webkit-box-shadow: 3px 0 3px rgba(30, 30, 30, 0);
+    -moz-box-shadow: 3px 0 3px rgba(30, 30, 30, 0);
+    box-shadow: 3px 0 3px rgba(30, 30, 30, 0);
+  }
+  /* line 211, ../scss/gunsstyle/_slider.scss */
+  .slider > div:first-child > a > span {
+    position: relative;
+    z-index: 2;
+  }
+  /* line 215, ../scss/gunsstyle/_slider.scss */
+  .slider > div:first-child > a:before, .slider > div:first-child > a:after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    left: 0;
+  }
+  /* line 222, ../scss/gunsstyle/_slider.scss */
+  .slider > div:first-child > a:before {
+    z-index: 0;
+    background: rgba(30, 30, 30, 0.5);
+    height: 224px;
+    top: calc(50% - 127px);
+  }
+  /* line 228, ../scss/gunsstyle/_slider.scss */
+  .slider > div:first-child > a:after {
+    background: rgba(245, 245, 245, 0.6);
+    height: 100%;
+    top: 0;
+    z-index: 1;
+  }
+  /* line 235, ../scss/gunsstyle/_slider.scss */
+  .slider > div:first-child > a.nav-prev:after {
+    -webkit-box-shadow: 3px 0 3px rgba(30, 30, 30, 0.5);
+    -moz-box-shadow: 3px 0 3px rgba(30, 30, 30, 0.5);
+    box-shadow: 3px 0 3px rgba(30, 30, 30, 0.5);
+  }
+  /* line 238, ../scss/gunsstyle/_slider.scss */
+  .slider > div:first-child > a.nav-next:after {
+    -webkit-box-shadow: -3px 0 3px rgba(30, 30, 30, 0.5);
+    -moz-box-shadow: -3px 0 3px rgba(30, 30, 30, 0.5);
+    box-shadow: -3px 0 3px rgba(30, 30, 30, 0.5);
+  }
+  /* line 242, ../scss/gunsstyle/_slider.scss */
+  .slider > div:last-child {
+    display: none;
+  }
+}
+@media (min-width: 526px) {
+  /* line 253, ../scss/gunsstyle/_slider.scss */
+  .slider > div:first-child > div > a > p {
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+}
+@media (min-width: 769px) {
+  /* line 268, ../scss/gunsstyle/_slider.scss */
+  .slider > div:first-child > div > a > p {
+    background: rgba(30, 30, 30, 0.5);
+  }
 }
 @media (min-width: 1024px) {
-  /* line 196, ../scss/gunsstyle/_slider.scss */
+  /* line 278, ../scss/gunsstyle/_slider.scss */
   .slider {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -1680,13 +1808,12 @@ a.text-blue:hover {
   }
 }
 @media (min-width: 1348px) {
-  /* line 206, ../scss/gunsstyle/_slider.scss */
+  /* line 288, ../scss/gunsstyle/_slider.scss */
   .slider > div:first-child {
     height: calc(100vh - 26px - 270px - 1.45rem * 3.5);
-    max-height: 1050px;
   }
 
-  /* line 212, ../scss/gunsstyle/_slider.scss */
+  /* line 293, ../scss/gunsstyle/_slider.scss */
   .menu-slides {
     max-width: 1400px;
     width: 100%;

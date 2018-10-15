@@ -32,6 +32,14 @@ var PFunctions = function(selector, context) {
     }
 
     /**
+     * Включает тень на странице
+     * @param add - включить тень на всю страницу или нет
+    */
+    this.bodyShadow = function(add) {
+      self.toggleClass('body', 'shadow', true);
+    }
+
+    /**
      * Возвращает ближайшего родителя с классом cls
      * @param el - элемент от которого необходимо начать поиск
      * @param cls - класс по которому производится выборка

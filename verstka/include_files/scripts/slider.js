@@ -16,6 +16,9 @@ var slider = function() {
     this.autoChange = false;
     this.interval = false;
 
+    /**
+    * Инициализация слайдера
+    */
     this.init = function() {
         if (self.finit === false) {
             for (var iBlock in self.$slider.getElementsByTagName('div')) {
@@ -36,6 +39,9 @@ var slider = function() {
             }, 10);
         }
     };
+    /**
+    * События на слайдере
+    */
     this.actions = function() {
         var arNavs = self.$cNavs.getElementsByTagName('a');
         for (var iNav in arNavs) {
@@ -81,6 +87,9 @@ var slider = function() {
             };
         }
     };
+    /**
+    * Автосмена слайдеров
+    */
     this.auto = function() {
         if (self.autoChange) {
             self.interval = setInterval(function() {
@@ -94,6 +103,11 @@ var slider = function() {
             }
         }
     };
+    /** Смена текущего слайда на иной
+    * @param cIndex - номер индекса слайда для скрытия
+    * @param nIndex - номер индекса слайда для показа
+    * @param direction - направление всплытия нового слайда (предыдущий, следующий)
+    */
     this.newSlide = function(cIndex, nIndex, direction) {
         var $cSlide = self.$cSlides.getElementsByClassName('slide-' + cIndex)[0],
             $nSlide = self.$cSlides.getElementsByClassName('slide-' + nIndex)[0],

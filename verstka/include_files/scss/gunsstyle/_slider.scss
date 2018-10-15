@@ -13,6 +13,7 @@
     &:first-child {
       height: calc(100vh - 26px - 270px - 1.45rem * 3.5);
       min-height: 250px;
+      max-height: 350px;
       width: 100%;
       padding: 0;
       position: relative;
@@ -40,10 +41,8 @@
             bottom: -40px;
             left: 0;
             width: 100%;
-            padding: 5px 20px;
-            background: rgba($cblack, .5);
+            padding: 5px 10px;
             color: $cwhite;
-            @include transition($transition);
             @include adjust-font-size-to($h3);
           }
           &:hover {
@@ -160,24 +159,83 @@
     width: calc(100% - 20px);
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .slider {
     & > div {
       &:first-child {
-        min-height: unset;
-        height: 264px;
         & > div {
           height: 100%;
           & > a {
+            padding-bottom: 40px;
             & > img {
               height: 100%;
               width: 100%;
             }
-          }
-          &.current:not(.bprev):not(.bnext) {
-            & > a {
-              & > p { bottom: 0; }
+            & > p {
+             font-size: 11px; display: block; background: $cblack; bottom: 0; font-size: 12px;
             }
+          }
+          &.bprev {
+            & > a {
+              & > p { animation: .3s slide-by-prev ease-in-out; }
+            }
+          }
+          &.bnext {
+            & > a {
+              & > p { animation: .3s slide-by-next ease-in-out; }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 525px) {
+  .slider {
+    width: calc(100% - 20px);
+    margin-left: 10px;
+    margin-right: 10px;
+    & > div {
+      &:first-child {
+        min-height: unset;
+        height: 264px;
+        & > a {
+          padding: 5px 10px;
+          font-size: 12px;
+          background: transparent;
+          &.nav-prev,
+          &.nav-next {
+            @include bshadow(3px 0 3px rgba($cblack, 0));
+            &:active { @include bshadow(3px 0 3px rgba($cblack, 0)); }
+          }
+          & > span {
+            position: relative;
+            z-index: 2;
+          }
+          &:before,
+          &:after {
+            position: absolute;
+            content: '';
+            width: 100%;
+            left: 0;
+          }
+          &:before {
+            z-index: 0;
+            background: rgba($cblack,.5);
+            height: 224px;
+            top: calc(50% - 127px);
+          }
+          &:after {
+            background: rgba($cwhite, .6);
+            height: 100%;
+            top: 0;
+            z-index: 1;
+          }
+          &.nav-prev {
+            &:after { @include bshadow(3px 0 3px rgba($cblack, .5)); }
+          }
+          &.nav-next {
+            &:after { @include bshadow(-3px 0 3px rgba($cblack, .5)); }
           }
         }
       }
@@ -185,11 +243,35 @@
     }
   }
 }
-@media (max-width: 400px) {
+
+@media (min-width: 526px) {
   .slider {
-    width: calc(100% - 20px);
-    margin-left: 10px;
-    margin-right: 10px;
+    & > div {
+      &:first-child {
+        & > div {
+          & > a {
+            & > p {
+              @include transition($transition);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 769px) {
+  .slider {
+    & > div {
+      &:first-child {
+        & > div {
+          & > a {
+            & > p {
+              background: rgba($cblack, .5);
+            }
+          }
+        }
+      }
+    }
   }
 }
 @media (min-width: 1024px) {
@@ -205,7 +287,6 @@
     & > div {
       &:first-child {
         height: calc(100vh - 26px - 270px - 1.45rem * 3.5);
-        max-height: 1050px;
       }
     }
   }

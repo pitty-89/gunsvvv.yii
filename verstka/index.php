@@ -37,8 +37,8 @@
                 </div><?
                 $first = $first ? false : $first;
             }
-            ?><a class="js-nav nav-prev" href="#">prev</a>
-            <a class="js-nav nav-next" href="#">next</a>
+            ?><a class="js-nav nav-prev" href="#"><span>prev</span></a>
+            <a class="js-nav nav-next" href="#"><span>next</span></a>
         </div>
         <div data-action="navs"><?
             for ($i = 0; $i < count($arSlides); $i++) {

@@ -7,20 +7,30 @@ var toggleMenu = function() {
     this.cb = 'menu__toggle-list';
     this.cs = 'menu__toggle-open';
     this.da = 'list';
+    this.f = false;
+    this.body = false;
 
     this.init = function() {
         var a = document.getElementsByClassName(self.cb),
             f = false;
+        self.body = document.getElementsByTagName('body')[0];
         for (var i in a) {
             var b = a[i];
             if (typeof b == 'object' && typeof b.dataset[self.da] != 'undefined') {
                 var l = document.getElementById(b.dataset[self.da]);
                 b.onclick = function(e) {
                     e.preventDefault();
-                    // блок меню открыт
-                    if (l.className.indexOf(self.cs) !== -1) self.removeClass(l, self.cs);
+                    console.log('body: ', self.body);
                     // блок меню скрыт
-                    else self.addClass(l, self.cs);
+                    if (l.className.indexOf(self.cs) !== -1) {
+                      l.className = '';
+                      self.body.className = '';
+                    }
+                    // блок меню открыт
+                    else {
+                      self.addClass(l, self.cs);
+                      self.body.className = 'shadow';
+                    }
                 };
                 f = f === false ? true : f;
             }
@@ -35,12 +45,14 @@ var toggleMenu = function() {
             var en = e.target.nodeName,
                 ec = e.target.className,
                 a = document.getElementsByClassName(self.cb);
+
             for (var i in a) {
                 if (typeof a[i] === 'object') {
                     var l = document.getElementById(a[i].dataset[self.da]);
                     if (l.className.indexOf(self.cs) !== -1) {
                         if (self.is(a[i], en, ec) === false && self.has(a[i], en, ec) === false &&
                             self.is(l, en, ec) === false && self.has(l,en, ec) === false) {
+                            self.body.className = '';
                             self.removeClass(l, self.cs);
                         }
                     }
