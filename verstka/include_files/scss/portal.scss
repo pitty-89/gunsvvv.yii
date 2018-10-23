@@ -140,6 +140,7 @@
     &-three {
       display: flex;
       flex-flow: row wrap;
+      justify-content: space-between;
       @include margin-trailer(1);
       @media (max-width: 660px) {
         @include margin-trailer(.5);
@@ -155,7 +156,7 @@
           }
         }
         @media (min-width: 661px) {
-          width: calc(100%/3);
+          width: calc((100% - 20px)/3);
           ul {
             li {
               text-align: left;
@@ -198,6 +199,7 @@
     &-half {
       display: flex;
       flex-flow: row wrap;
+      justify-content: space-between;
       @include margin-trailer(1);
       @media (max-width: 660px) {
         @include margin-trailer(.5);
@@ -206,7 +208,7 @@
       }
       & > .container__sections__item {
         @media (min-width: 661px) {
-          width: 50%;
+          width: calc(50% - 10px);
           & > a {
             width: 50%;
             display: inline-block;
