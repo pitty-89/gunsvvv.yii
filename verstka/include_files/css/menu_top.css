@@ -1,10 +1,11 @@
 @charset "UTF-8";
 /* line 1, ../scss/gunsstyle/_menu_top.scss */
 .header {
+  width: 100%;
   position: relative;
   z-index: 4;
 }
-/* line 4, ../scss/gunsstyle/_menu_top.scss */
+/* line 5, ../scss/gunsstyle/_menu_top.scss */
 .header:before {
   content: '';
   position: absolute;
@@ -22,7 +23,7 @@
   -webkit-box-shadow: 0 3px 4px rgba(30, 30, 30, 0.3);
   box-shadow: 0 3px 4px rgba(30, 30, 30, 0.3);
 }
-/* line 18, ../scss/gunsstyle/_menu_top.scss */
+/* line 19, ../scss/gunsstyle/_menu_top.scss */
 .header > a {
   width: 16.6666%;
   text-align: center;
@@ -37,7 +38,7 @@
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-/* line 25, ../scss/gunsstyle/_menu_top.scss */
+/* line 26, ../scss/gunsstyle/_menu_top.scss */
 .header > a i {
   width: 70%;
   background: url("/verstka/include_files/images/logo/l_blue.png") no-repeat;
@@ -52,25 +53,25 @@
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-/* line 34, ../scss/gunsstyle/_menu_top.scss */
+/* line 35, ../scss/gunsstyle/_menu_top.scss */
 .header > a i:before {
   content: unset;
 }
-/* line 38, ../scss/gunsstyle/_menu_top.scss */
+/* line 39, ../scss/gunsstyle/_menu_top.scss */
 .header > a:hover {
   text-decoration: none;
   color: #d4534a;
 }
-/* line 41, ../scss/gunsstyle/_menu_top.scss */
+/* line 42, ../scss/gunsstyle/_menu_top.scss */
 .header > a:hover i {
   background: url("/verstka/include_files/images/logo/l_orange.png") no-repeat;
   background-size: contain;
 }
-/* line 47, ../scss/gunsstyle/_menu_top.scss */
+/* line 48, ../scss/gunsstyle/_menu_top.scss */
 .header > div {
   width: 83.3333%;
 }
-/* line 53, ../scss/gunsstyle/_menu_top.scss */
+/* line 54, ../scss/gunsstyle/_menu_top.scss */
 .header > * {
   margin-top: 20px;
   margin-top: 1.45rem;
@@ -79,35 +80,35 @@
   position: relative;
   z-index: 1;
 }
-/* line 60, ../scss/gunsstyle/_menu_top.scss */
+/* line 61, ../scss/gunsstyle/_menu_top.scss */
 .header__search {
   text-align: right;
   margin-bottom: 6px;
   margin-bottom: 0.435rem;
 }
-/* line 63, ../scss/gunsstyle/_menu_top.scss */
+/* line 64, ../scss/gunsstyle/_menu_top.scss */
 .header__search form {
   width: 30%;
   display: inline-block;
   margin: 0 10px 0 0;
   white-space: nowrap;
 }
-/* line 68, ../scss/gunsstyle/_menu_top.scss */
+/* line 69, ../scss/gunsstyle/_menu_top.scss */
 .header__search form input[type="text"] {
   width: calc(100% - 40px);
 }
-/* line 69, ../scss/gunsstyle/_menu_top.scss */
+/* line 70, ../scss/gunsstyle/_menu_top.scss */
 .header__search form .btn {
   border: 1px solid #919191;
   border-left: 0;
 }
-/* line 76, ../scss/gunsstyle/_menu_top.scss */
+/* line 77, ../scss/gunsstyle/_menu_top.scss */
 .header__menu__item {
   display: inline-block;
   vertical-align: top;
   position: relative;
 }
-/* line 80, ../scss/gunsstyle/_menu_top.scss */
+/* line 81, ../scss/gunsstyle/_menu_top.scss */
 .header__menu__item a {
   display: inline-block;
   vertical-align: top;
@@ -125,16 +126,16 @@
   color: whitesmoke;
   font-family: RobotoRegular;
 }
-/* line 90, ../scss/gunsstyle/_menu_top.scss */
+/* line 91, ../scss/gunsstyle/_menu_top.scss */
 .header__menu__item a:hover {
   color: #d4534a;
 }
-/* line 93, ../scss/gunsstyle/_menu_top.scss */
+/* line 94, ../scss/gunsstyle/_menu_top.scss */
 .header__menu__item.with-sub > a {
   padding-right: 20px;
   position: relative;
 }
-/* line 96, ../scss/gunsstyle/_menu_top.scss */
+/* line 97, ../scss/gunsstyle/_menu_top.scss */
 .header__menu__item.with-sub > a:after {
   font-family: icomoon;
   font-size: 14px;
@@ -148,20 +149,20 @@
   top: 2px;
   line-height: inherit;
 }
-/* line 109, ../scss/gunsstyle/_menu_top.scss */
+/* line 110, ../scss/gunsstyle/_menu_top.scss */
 .header__menu__item.with-sub.open > a:after {
   content: '\f107';
 }
-/* line 114, ../scss/gunsstyle/_menu_top.scss */
+/* line 115, ../scss/gunsstyle/_menu_top.scss */
 .header__menu__item.open > a {
   color: #d4534a;
   background: #2a3e6d;
 }
-/* line 115, ../scss/gunsstyle/_menu_top.scss */
+/* line 116, ../scss/gunsstyle/_menu_top.scss */
 .header__menu__item.open > .header__menu__item-sublist {
   display: block;
 }
-/* line 117, ../scss/gunsstyle/_menu_top.scss */
+/* line 118, ../scss/gunsstyle/_menu_top.scss */
 .header__menu__item-sublist {
   display: none;
   position: absolute;
@@ -169,7 +170,7 @@
   z-index: 4;
   left: 0;
 }
-/* line 124, ../scss/gunsstyle/_menu_top.scss */
+/* line 125, ../scss/gunsstyle/_menu_top.scss */
 .header__menu__item-sublist > div a {
   width: 100%;
   min-width: 200px;
@@ -188,12 +189,12 @@
   white-space: nowrap;
   border-bottom: 1px solid #2a3e6d;
 }
-/* line 137, ../scss/gunsstyle/_menu_top.scss */
+/* line 138, ../scss/gunsstyle/_menu_top.scss */
 .header__menu__item-sublist > div.with-sub > a {
   position: relative;
   padding-right: 20px;
 }
-/* line 140, ../scss/gunsstyle/_menu_top.scss */
+/* line 141, ../scss/gunsstyle/_menu_top.scss */
 .header__menu__item-sublist > div.with-sub > a:after {
   font-family: 'icomoon';
   font-size: 14px;
@@ -207,17 +208,17 @@
   top: 0;
   line-height: inherit;
 }
-/* line 152, ../scss/gunsstyle/_menu_top.scss */
+/* line 153, ../scss/gunsstyle/_menu_top.scss */
 .header__menu__item-sublist > div.open {
   position: relative;
 }
-/* line 154, ../scss/gunsstyle/_menu_top.scss */
+/* line 155, ../scss/gunsstyle/_menu_top.scss */
 .header__menu__item-sublist > div.open > a {
   color: #d4534a;
   background: #2a3e6d;
   border-bottom: 1px solid #d4534a;
 }
-/* line 155, ../scss/gunsstyle/_menu_top.scss */
+/* line 156, ../scss/gunsstyle/_menu_top.scss */
 .header__menu__item-sublist > div.open > div {
   display: block;
   position: absolute;
@@ -225,33 +226,33 @@
   z-index: 2;
   top: 0;
 }
-/* line 162, ../scss/gunsstyle/_menu_top.scss */
+/* line 163, ../scss/gunsstyle/_menu_top.scss */
 .header__menu__item-sublist > div.open > div a:hover {
   color: #d4534a;
   background: #2a3e6d;
   border-bottom: 1px solid #d4534a;
 }
-/* line 163, ../scss/gunsstyle/_menu_top.scss */
+/* line 164, ../scss/gunsstyle/_menu_top.scss */
 .header__menu__item-sublist > div.open > div a:last-child {
   border-bottom: 0;
 }
-/* line 165, ../scss/gunsstyle/_menu_top.scss */
+/* line 166, ../scss/gunsstyle/_menu_top.scss */
 .header__menu__item-sublist > div.open > div a:last-child:hover {
   border-bottom: 0;
 }
-/* line 171, ../scss/gunsstyle/_menu_top.scss */
+/* line 172, ../scss/gunsstyle/_menu_top.scss */
 .header__menu__item-sublist > div:last-child > a {
   border-bottom: 0;
 }
-/* line 172, ../scss/gunsstyle/_menu_top.scss */
+/* line 173, ../scss/gunsstyle/_menu_top.scss */
 .header__menu__item-sublist > div:last-child:hover .header__menu__item-sublist > div:last-child > a {
   border-bottom: 0;
 }
-/* line 176, ../scss/gunsstyle/_menu_top.scss */
+/* line 177, ../scss/gunsstyle/_menu_top.scss */
 .header__menu__item.auth {
   float: right;
 }
-/* line 177, ../scss/gunsstyle/_menu_top.scss */
+/* line 178, ../scss/gunsstyle/_menu_top.scss */
 .header__menu__item.reg {
   float: right;
 }
@@ -262,17 +263,17 @@
     margin-bottom: 1.45rem;
     z-index: 5;
   }
-  /* line 183, ../scss/gunsstyle/_menu_top.scss */
+  /* line 184, ../scss/gunsstyle/_menu_top.scss */
   .header:before {
     padding-bottom: 0px;
     padding-bottom: 0rem;
   }
-  /* line 186, ../scss/gunsstyle/_menu_top.scss */
+  /* line 187, ../scss/gunsstyle/_menu_top.scss */
   .header > * {
     margin-top: 0px;
     margin-top: 0rem;
   }
-  /* line 189, ../scss/gunsstyle/_menu_top.scss */
+  /* line 190, ../scss/gunsstyle/_menu_top.scss */
   .header > div {
     width: 100%;
     display: flex;
@@ -283,22 +284,22 @@
     -webkit-box-shadow: 0 3px 4px rgba(30, 30, 30, 0.3);
     box-shadow: 0 3px 4px rgba(30, 30, 30, 0.3);
   }
-  /* line 197, ../scss/gunsstyle/_menu_top.scss */
+  /* line 198, ../scss/gunsstyle/_menu_top.scss */
   .header > a {
     display: none;
   }
-  /* line 200, ../scss/gunsstyle/_menu_top.scss */
+  /* line 201, ../scss/gunsstyle/_menu_top.scss */
   .header__search {
     display: inline-block;
     order: 1;
     margin-bottom: 0;
   }
-  /* line 204, ../scss/gunsstyle/_menu_top.scss */
+  /* line 205, ../scss/gunsstyle/_menu_top.scss */
   .header__search form {
     width: auto;
     margin: 5px 10px;
   }
-  /* line 209, ../scss/gunsstyle/_menu_top.scss */
+  /* line 210, ../scss/gunsstyle/_menu_top.scss */
   .header__menu {
     display: none;
   }
@@ -312,7 +313,7 @@
       left: 0;
     }
   }
-  /* line 215, ../scss/gunsstyle/_menu_top.scss */
+  /* line 216, ../scss/gunsstyle/_menu_top.scss */
   .header__menu.open {
     display: flex;
     flex-flow: wrap;
@@ -326,7 +327,7 @@
     z-index: 6;
     animation: 0.3s menu-by-left ease-in-out;
   }
-  /* line 228, ../scss/gunsstyle/_menu_top.scss */
+  /* line 229, ../scss/gunsstyle/_menu_top.scss */
   .header__menu-toggle {
     order: 0;
     padding: 5px 0;
@@ -337,14 +338,14 @@
     cursor: pointer;
     text-align: center;
   }
-  /* line 237, ../scss/gunsstyle/_menu_top.scss */
+  /* line 238, ../scss/gunsstyle/_menu_top.scss */
   .header__menu-toggle i {
     position: relative;
     font-size: 22px;
     display: block;
     height: 100%;
   }
-  /* line 242, ../scss/gunsstyle/_menu_top.scss */
+  /* line 243, ../scss/gunsstyle/_menu_top.scss */
   .header__menu-toggle i:after {
     position: absolute;
     bottom: 0;
@@ -356,79 +357,79 @@
     vertical-align: top;
     font-family: RobotoRegular;
   }
-  /* line 255, ../scss/gunsstyle/_menu_top.scss */
+  /* line 256, ../scss/gunsstyle/_menu_top.scss */
   .header__menu__item {
     display: block;
     order: 0;
   }
-  /* line 257, ../scss/gunsstyle/_menu_top.scss */
+  /* line 258, ../scss/gunsstyle/_menu_top.scss */
   .header__menu__item > a {
     color: #2a3e6d;
     width: 100%;
     font-size: 16px;
     font-family: RobotoBold;
   }
-  /* line 264, ../scss/gunsstyle/_menu_top.scss */
+  /* line 265, ../scss/gunsstyle/_menu_top.scss */
   .header__menu__item.reg {
     float: none;
     order: 2;
   }
-  /* line 268, ../scss/gunsstyle/_menu_top.scss */
+  /* line 269, ../scss/gunsstyle/_menu_top.scss */
   .header__menu__item.auth {
     float: none;
     order: 1;
   }
-  /* line 272, ../scss/gunsstyle/_menu_top.scss */
+  /* line 273, ../scss/gunsstyle/_menu_top.scss */
   .header__menu__item-sublist {
     width: 100%;
     position: relative;
     top: 0;
   }
-  /* line 277, ../scss/gunsstyle/_menu_top.scss */
+  /* line 278, ../scss/gunsstyle/_menu_top.scss */
   .header__menu__item-sublist > a:first-child {
     -moz-box-shadow: inset 0 2px 4px rgba(30, 30, 30, 0.7);
     -webkit-box-shadow: inset 0 2px 4px rgba(30, 30, 30, 0.7);
     box-shadow: inset 0 2px 4px rgba(30, 30, 30, 0.7);
   }
-  /* line 279, ../scss/gunsstyle/_menu_top.scss */
+  /* line 280, ../scss/gunsstyle/_menu_top.scss */
   .header__menu__item-sublist > a:first-child.open {
     -moz-box-shadow: inset 0 2px 4px rgba(245, 245, 245, 0.7);
     -webkit-box-shadow: inset 0 2px 4px rgba(245, 245, 245, 0.7);
     box-shadow: inset 0 2px 4px rgba(245, 245, 245, 0.7);
   }
-  /* line 283, ../scss/gunsstyle/_menu_top.scss */
+  /* line 284, ../scss/gunsstyle/_menu_top.scss */
   .header__menu__item-sublist > a:last-child {
     -moz-box-shadow: inset 0 -2px 4px rgba(30, 30, 30, 0.7);
     -webkit-box-shadow: inset 0 -2px 4px rgba(30, 30, 30, 0.7);
     box-shadow: inset 0 -2px 4px rgba(30, 30, 30, 0.7);
   }
-  /* line 285, ../scss/gunsstyle/_menu_top.scss */
+  /* line 286, ../scss/gunsstyle/_menu_top.scss */
   .header__menu__item-sublist > a:last-child.open {
     -moz-box-shadow: inset 0 -2px 4px rgba(245, 245, 245, 0.7);
     -webkit-box-shadow: inset 0 -2px 4px rgba(245, 245, 245, 0.7);
     box-shadow: inset 0 -2px 4px rgba(245, 245, 245, 0.7);
   }
-  /* line 291, ../scss/gunsstyle/_menu_top.scss */
+  /* line 292, ../scss/gunsstyle/_menu_top.scss */
   .header__menu__item-sublist > .with-sub > a {
     white-space: normal;
   }
-  /* line 296, ../scss/gunsstyle/_menu_top.scss */
+  /* line 297, ../scss/gunsstyle/_menu_top.scss */
   .header__menu__item-sublist > .with-sub.open > a:after {
     content: '\f107';
   }
-  /* line 300, ../scss/gunsstyle/_menu_top.scss */
+  /* line 301, ../scss/gunsstyle/_menu_top.scss */
   .header__menu__item-sublist > .with-sub.open > div {
     position: relative;
     left: 0;
     top: 0;
   }
-  /* line 307, ../scss/gunsstyle/_menu_top.scss */
+  /* line 308, ../scss/gunsstyle/_menu_top.scss */
   .header__menu__item-sublist > .with-sub:first-child > a {
     -moz-box-shadow: inset 0 2px 4px rgba(30, 30, 30, 0.7);
     -webkit-box-shadow: inset 0 2px 4px rgba(30, 30, 30, 0.7);
     box-shadow: inset 0 2px 4px rgba(30, 30, 30, 0.7);
   }
-  /* line 312, ../scss/gunsstyle/_menu_top.scss */
+  /* line 313, ../scss/gunsstyle/_menu_top.scss */
   .header__menu__item-sublist > .with-sub:last-child > a {
     -moz-box-shadow: inset 0 -2px 4px rgba(30, 30, 30, 0.7);
     -webkit-box-shadow: inset 0 -2px 4px rgba(30, 30, 30, 0.7);
@@ -436,7 +437,7 @@
   }
 }
 @media (min-width: 801px) {
-  /* line 323, ../scss/gunsstyle/_menu_top.scss */
+  /* line 324, ../scss/gunsstyle/_menu_top.scss */
   .header__menu-toggle {
     display: none;
   }
